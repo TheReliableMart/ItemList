@@ -1,0 +1,27 @@
+.footer {
+  text-align: center;
+  margin: 0;
+  padding: 0px 0;
+  background-color:  #3C3D37;
+  width: 100vw;
+  min-height: 5vh;  
+  max-height: 25vh;
+  color: #f8f9fa;
+}
+
+.anker{
+  text-decoration: none; 
+  /* font-size: 20px; */
+  color: blue;
+  font-size: 15px;
+
+}
+.p {
+  margin: 0;
+}
+
+.whatsappIcon {
+  width: 15px;
+  height: 15px; 
+  margin-top: 15px;
+}

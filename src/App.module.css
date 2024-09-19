@@ -1,0 +1,26 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  /* overflow-x: hidden; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+}
+
+.content {
+  flex: 1; /* This makes the content area grow to fill the available space */
+}
+
+.footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  /* Optional: Add padding or other styles as needed */
+}
+
+th, td {
+  text-align: left;
+  border: 1px solid #ddd;
+}

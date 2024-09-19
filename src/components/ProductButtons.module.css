@@ -1,0 +1,69 @@
+/* Container for buttons with horizontal scroll */
+.buttonContainer {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the start */
+  padding: 10px 0; /* Padding around buttons */
+  margin: 0 auto; /* Center container */
+  max-width: 100%; /* Take full width of parent */
+  overflow-x: auto; /* Enable horizontal scroll */
+  white-space: nowrap; /* Prevent buttons from wrapping */
+  position: sticky; /* Stick to the top of the viewport */
+  top: 0; /* Stick to the top of the page */
+  background-color: white; /* Background to avoid transparency issues */
+  /* z-index: 1000;  */
+  /* Ensure it stays above other content */
+}
+
+/* Button styling */
+.customButton {
+  background-color: #6CBEC7; /* Blue background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding inside the button */
+  margin: 5px; /* Margin between buttons */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bolder; /* Bold font */
+  text-align: center; /* Center text */
+  cursor: pointer; /* Show pointer on hover */
+  text-decoration: none; /* Remove text decoration */
+  /* box-shadow: 0px 2px 6px rgba(55, 58, 29, 0.99); */
+   /* Add shadow effect */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  white-space: nowrap; /* Prevent text wrapping inside the button */
+}
+
+/* Button hover effect */
+.customButton:hover {
+  background-color: #0057b3c9; /* Darker blue on hover */
+}
+
+/* Focus state for accessibility */
+.customButton:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Custom shadow for focus */
+}
+
+/* Active button styling */
+.activeButton {
+  background-color: #1230AE !important; /* Green background for active state */
+  border-color: #1230AE !important; /* Green border for active state */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .buttonContainer {
+    padding: 10px 5px; /* Adjust padding for smaller screens */
+  }
+
+  .customButton {
+    font-size: 14px; /* Reduce font size */
+    padding: 8px 15px; /* Adjust padding for compact design */
+  }
+}
+
+/* Body swipe area to prevent content from interfering with horizontal scroll */
+.bodySwipeArea {
+  flex: 1; /* Allow flex growth */
+  padding: 10px; /* Padding for content */
+  overflow: hidden; /* Prevent unwanted horizontal scroll */
+}
