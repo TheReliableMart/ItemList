@@ -134,7 +134,7 @@ const categories = [
   { name: 'Mouse and MousePads', id: 'MouseandMousePads' },
   { name: 'Trimmers', id: 'Trimmers' },
   { name: 'Watches', id: 'Watches' },
-  // { name: 'Plastic Files', id: 'plastic-files' },
+  { name: 'Power Banks', id: 'PowerBanks' },
   // { name: 'Rulers', id: 'rulers' },
   // { name: 'Drawing Related', id: 'drawing-related' },
   // { name: 'Calculators', id: 'calculators' },
