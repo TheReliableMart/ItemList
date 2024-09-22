@@ -55,6 +55,7 @@
 .btn {
   display: inline-block;
   text-align: center;
+  border-color: white; 
   padding: 4px 8px;
   background-color: #7EACB5; /* Green button */
   color: white;

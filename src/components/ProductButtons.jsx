@@ -132,13 +132,13 @@ const categories = [
   { name: 'USBs', id: 'USBs' },
   { name: 'Mic and Headphones', id: 'MicAndHeadphones' },
   { name: 'Mouse and MousePads', id: 'MouseandMousePads' },
-  { name: 'Trimmers', id: 'Trimmers' },
+  // { name: 'Trimmers', id: 'Trimmers' },
   { name: 'Watches', id: 'Watches' },
   { name: 'Power Banks', id: 'PowerBanks' },
   // { name: 'Rulers', id: 'rulers' },
   // { name: 'Drawing Related', id: 'drawing-related' },
   // { name: 'Calculators', id: 'calculators' },
-  // { name: 'Sports', id: 'sports' },
+  { name: 'Sports', id: 'sports' },
   // { name: 'Others', id: 'others' }
 ];
 
