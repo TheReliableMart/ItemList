@@ -1,22 +1,66 @@
 .header {
   text-align: center;
   margin-bottom: 0px;
-  text-align: center;
-  
   padding: 20px 0;
   background-color: #3C3D37;
   width: 100vw;
-
-}
-.para{
-color: rgb(243, 173, 173);
-padding-top: 0px;
-
 }
 
-.header h1 {
-  font-size: 35px;
+.brandName {
+  font-size: 45px;
+  background: linear-gradient(270deg, #007bff, #7EACB5);
+  background-size: 400% 400%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gradientSlide 6s ease-in-out infinite, slideIn 2s ease-out forwards;
+}
+
+.description {
+  font-size: 12px;
   color: #FFF4EA;
-  
-  /* color: #000000; */
+  opacity: 0;
+  animation: pump 2s ease-out forwards infinite;
+  animation-delay: 1.5s; /* Delays until the brand name is halfway */
+}
+
+/* Gradient Slide Animation */
+@keyframes gradientSlide {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Slide In from Left Animation */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Pumping Animation for Description */
+@keyframes pump {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

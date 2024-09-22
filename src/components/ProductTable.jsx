@@ -8,6 +8,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import OriginalMicroCable from './Pictures/OriginalMicroCable.jpg';
 import Lightening1500 from './Pictures/Lightening1500.jpg';
 import USBHub from './Pictures/USBHub.jpg';
+import HDMIcableOrg from './Pictures/HDMIcableOrg.jpg';
+import ANSTYlighteningCable from './Pictures/ANSTYlighteningCable.jpg';
 // import ringrough180 from './Pictures/RingRoughRegister2.jpg';
 // import NonRingRoughRegister150 from './Pictures/NonRingRoughRegister150.jpg';
 // import NonRingRoughRegister210 from './Pictures/NonRingRoughRegister210.jpg';
@@ -97,28 +99,30 @@ const products = [
     items: [
       { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '200', pictureUrl: [] },
       { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
-      { id: '3', name: 'TypeC Charging Cable', description: 'Original Cable', price: '450', pictureUrl: [] },
-      { id: '4', name: 'TypeC Charging Cable', description: 'Normal Quality Cable', price: '450', pictureUrl: [] },
+      { id: '3', name: 'TypeC Charging Cable', description: 'Original Cable', price: '450', pictureUrl: [], customClass:'sold' },
+      { id: '4', name: 'TypeC Charging Cable', description: 'Normal Quality Cable', price: '300', pictureUrl: [] },
       { id: '5', name: 'Anker Lightening Cable', description: 'MFi Certified', price: '2450', pictureUrl: [] },
-      { id: '6', name: 'Lightening Cable', description: 'Normal Quality Cable', price: '450', pictureUrl: [] },
-      { id: '7', name: 'HDMI Cable', description: '1m Length', price: '500', pictureUrl: [] },
+      { id: '6', name: 'ANSTY Lightening Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
+      { id: '7', name: 'Lightening Cable', description: 'Basic Quality', price: '300', pictureUrl: [] },
+      { id: '8', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '450', pictureUrl: [HDMIcableOrg] },
+      { id: '9', name: 'HDMI Cable', description: 'Normal Quality 1m Length', price: '300', pictureUrl: [HDMIcableOrg] },
 
       {
-        id: '8', name: 'Aux Cable', description: '1m Length', price: '360', pictureUrl: [],
+        id: '10', name: 'Aux Cable', description: '1m Length', price: '360', pictureUrl: [],
         // customClass: 'description',
       },
      
-      { id: '9', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
+      { id: '11', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
      
       
-        { id: '10', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] }, 
-        { id: '11', name: ' HDMI to Lightening', description: '', price: '--', pictureUrl: [], customClass: "sold"  },
+        { id: '12', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] }, 
+        // { id: '11', name: ' HDMI to Lightening', description: '', price: '--', pictureUrl: [], customClass: "sold"  },
         
-        { id: '12', name: 'Type c to 3.5mm', description: '', price: '--', pictureUrl: [], customClass: "sold"  },
-        { id: '13', name: '2 in 1 3.5mm connector', description: '', price: '--', pictureUrl: [] , customClass: "sold" }, 
+        // { id: '12', name: 'Type c to 3.5mm', description: '', price: '--', pictureUrl: [], customClass: "sold"  },
+        // { id: '13', name: '2 in 1 3.5mm connector', description: '', price: '--', pictureUrl: [] , customClass: "sold" }, 
         
-        { id: '14', name: 'Lightening to 3.5mm', description: '', price: '--', pictureUrl: [] , customClass: "sold" }, 
-        { id: '15', name: 'HDMI to Type C', description: '', price: '--', pictureUrl: [], customClass: "sold" },
+        // { id: '14', name: 'Lightening to 3.5mm', description: '', price: '--', pictureUrl: [] , customClass: "sold" }, 
+        // { id: '15', name: 'HDMI to Type C', description: '', price: '--', pictureUrl: [], customClass: "sold" },
      
     
     ],

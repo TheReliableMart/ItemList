@@ -1,12 +1,11 @@
 import React from 'react';
-import styles from './Header.module.css';
+import styles from './Header.module.css'; // Assuming you're using CSS Modules
 
 function Header() {
   return (
     <header className={styles.header}>
-      
-      <h1>The Reliable Mart</h1>
-      <p className={styles.para}>Where the Quality Matters</p>
+      <h1 className={styles.brandName}>The Reliable Mart</h1>
+      <p className={styles.description}>Where the Quality Matters</p>
     </header>
   );
 }
