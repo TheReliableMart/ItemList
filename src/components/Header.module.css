@@ -8,7 +8,7 @@
 
 .brandName {
   font-size: 45px;
-  background: linear-gradient(270deg, #007bff, #7EACB5);
+  background: linear-gradient(270deg, #7EACB5, #007bff);
   background-size: 400% 400%;
   color: transparent;
   -webkit-background-clip: text;

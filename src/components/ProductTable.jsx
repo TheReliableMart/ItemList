@@ -28,8 +28,8 @@ import Sandisk2400 from './Pictures/Sandisk2400.jpg';
 
 
 //MIC 
-import Gionee450 from './Pictures/Gionee450.jpg';
 import enrg from './Pictures/Lavalier1000.jpg';
+import SpaceHeadphones from './Pictures/SpaceHeadphones.jpg';
 import Boya2800 from './Pictures/Boya2800.jpg';
 import GamingHandsfree from './Pictures/GamingHandsfree.jpg';
 import Faster4900 from './Pictures/Faster4900.jpg';
@@ -80,6 +80,13 @@ import Faster20W from './Pictures/Faster20W.jpg';
 // import Calc552 from './Pictures/552.CasioCalculator.jpg';
 
 //SPORTS
+import Gosan from './Pictures/Gosan.jpg';
+import BKHard from './Pictures/BKHard.jpg';
+import BKHard from './Pictures/BKHard.jpg';
+import MZHard from './Pictures/MZHard.jpg';
+import SajjadHard from './Pictures/SajjadHard.jpg';
+import Trump from './Pictures/Trump.jpg';
+import Voltric from './Pictures/Voltric.jpg';
 
 
 //OTHERS
@@ -98,18 +105,18 @@ const products = [
     category: 'Accessories',
     id: 'Accessories',
     items: [
-      { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '200', pictureUrl: [] },
-      { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
+      { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [] },
+      { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '400', pictureUrl: [OriginalMicroCable] },
       { id: '3', name: 'TypeC Charging Cable', description: 'Original Cable', price: '450', pictureUrl: [], customClass:'sold' },
       { id: '4', name: 'TypeC Charging Cable', description: 'Normal Quality Cable', price: '300', pictureUrl: [] },
       { id: '5', name: 'Anker Lightening Cable', description: 'MFi Certified', price: '2450', pictureUrl: [MFiCable] },
       { id: '6', name: 'ANSTY Lightening Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
-      { id: '7', name: 'Lightening Cable', description: 'Basic Quality', price: '300', pictureUrl: [] },
+      { id: '7', name: 'Lightening Cable', description: 'Basic Quality', price: '280', pictureUrl: [] },
       { id: '8', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '450', pictureUrl: [HDMIcableOrg] },
       { id: '9', name: 'HDMI Cable', description: 'Normal Quality 1m Length', price: '300', pictureUrl: [HDMIcableOrg] },
 
       {
-        id: '10', name: 'Aux Cable', description: '1m Length', price: '360', pictureUrl: [],
+        id: '10', name: 'Aux Cable', description: '1m Length', price: '320', pictureUrl: [],
         // customClass: 'description',
       },
      
@@ -134,12 +141,11 @@ const products = [
     items: [
       { id: '1', name: 'Sandisk OTG Drive M3.0 256GB', description: 'Compatible with OTG-enabled Android devices.', price: '6800', pictureUrl: [Sandisk6800] },
       { id: '2', name: 'Sandisk Otg Dual Drive Android', description: `64GB Flash || Brand Warranty`, price: '2400', pictureUrl: [Sandisk2400],  },
-      { id: '3', name: 'SanDisk - Ultra Fit 3.1', description: '128GB Flash', price: '3100', pictureUrl: [Sandisk3100] },
-      { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '256GB Flash', price: '6750', pictureUrl: [Sandisk6750] },
-      { id: '5', name: 'SanDisk - Ultra Fit 3.1', description: '32GB Flash', price: '1500', pictureUrl: [Sandisk1500] },
+      { id: '3', name: 'SanDisk - Ultra Fit 3.1', description: '128GB Flash', price: '3100', pictureUrl: [Sandisk3100], customClass: 'sold' },
+      { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '256GB Flash', price: '6750', pictureUrl: [Sandisk6750] , customClass: 'sold'},
+      { id: '5', name: 'SanDisk - Ultra Fit 3.1', description: '32GB Flash', price: '1500', pictureUrl: [Sandisk1500] , customClass: 'sold'},
       {
-         id: '6', name: 'SanDisk - Ultra Flair 3.0 ', description: '512GB Flash', price: '13500 ', pictureUrl: [Sandisk13500],
-         // customClass: 'soldClass',
+         id: '6', name: 'SanDisk - Ultra Flair 3.0 ', description: '512GB Flash', price: '13500 ', pictureUrl: [Sandisk13500], customClass: 'sold'
        },
     ],
   },
@@ -150,10 +156,11 @@ const products = [
       { id: '1', name: 'BOYA mic', description: 'Original Boya Mic with 18 months warranty. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '2800', pictureUrl: [Boya2800], customClass: 'description' },
        { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '1000', pictureUrl: [enrg] },
       { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '450', pictureUrl: [Gionee450] },
-     { id: '4', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold"  },
-      { id: '5', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description'},
+      { id: '4', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones] , customClass:'description'},
+     { id: '5', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold"  },
+      { id: '6', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description'},
 
-      { id: '6', name: 'Redmi Buds 3 White Global', description: `Brand: Xiaomi
+      { id: '7', name: 'Redmi Buds 3 White Global', description: `Brand: Xiaomi
  Model: Redmi buds 3
  Colour: White
  Wireless connection: Bluetooth 5.2   
@@ -171,11 +178,11 @@ const products = [
     category: 'Mouse and MousePads',
     id: 'MouseandMousePads',
     items: [
-      { id: '1', name: 'RGB Mouse', description: 'Wired with 7 lights & mouse pad', price: '600', pictureUrl: [GamingMouse520],
+      { id: '1', name: 'RGB Mouse', description: 'Wired with 7 lights & mouse pad', price: '750', pictureUrl: [GamingMouse520],
         // customClass: 'sold'
        },
       { id: '2', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons, Dual connectivity', price: '1800', pictureUrl: [gamingMouseWireless], customClass: 'sold' },
-      { id: '3', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '120', pictureUrl: [MousePad120] },
+      { id: '3', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '160', pictureUrl: [MousePad120] },
     ],
   },
   // {
@@ -298,17 +305,21 @@ customClass: 'description' },
         //  customClass:'sold'
 
        },
-      { id: '3', name: 'Bedminton Rackets', description: 'Gosen M 25', price: '3500', pictureUrl: [],
+      { id: '3', name: 'Bedminton Rackets', description: 'Gosen M 25', price: '3500', pictureUrl: [Gosan],
         //  customClass:'sold'
 
        },
       { id: '4', name: 'Cricket Tennis Ball', description: 'FG Don', price: '400', pictureUrl: [] },
       { id: '5', name: 'Cricket Tennis Ball', description: 'Shine Ball', price: '400', pictureUrl: [] },
-      { id: '6', name: 'Shuttle trump', description: 'original High Quality', price: '350', pictureUrl: [],
+      { id: '6', name: 'Cricket Tennis Ball', description: 'Large Size Ball', price: '400', pictureUrl: [] },
+      { id: '6', name: 'Cricket Hard Ball', description: 'BK Sports, can be used for 20 overs', price: '400', pictureUrl: [BKHard] },
+      { id: '6', name: 'Cricket Hard Ball', description: 'MZ Sports, can be used for 20 overs', price: '400', pictureUrl: [MZHard] },
+      { id: '6', name: 'Cricket Hard Ball', description: 'Sajjad Sports, can be used for 20 overs', price: '400', pictureUrl: [SajjadHard] },
+      { id: '7', name: 'Shuttle trump', description: 'original High Quality', price: '350', pictureUrl: [Trump],
         //  customClass:'sold'
 
        },
-      { id: '7', name: 'Shuttle voltric', description: 'normal quality', price: '250', pictureUrl: [],
+      { id: '8', name: 'Shuttle voltric', description: 'normal quality', price: '250', pictureUrl: [Voltric],
         //  customClass:'sold'
 
       },
@@ -717,7 +728,7 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll = true }) => {
                             className={styles.btn}
                             onClick={() => handleShowModal(item)}
                           >
-                            <i className="fas fa-eye" ></i> {/* Font Awesome icon for "View" */}
+                            <strong>view</strong> {/* Font Awesome icon for "View" */}
                           </button>
                         </div>
                       ) : (
