@@ -169,7 +169,7 @@ const products = [
         Model: Redmi buds 3, Colour: White, Wireless connection: Bluetooth 5.2,  Battery Capacity: 35mAh (single earbud), Battery type: Lithium-ion polymer battery, Input parameters: 5V70mA, Communication Range: 10m (open space free of obstacles), Single earbud net weight: 4.5 g, Earbud dimensions: 40.7 x 16.9 x 18.7mm. `, price: '6000', pictureUrl: [Redmi7450], customClass: "description  sold",
       },
       { id: '7', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description' },
-      
+
       { id: '8', name: 'Gaming Headphone', description: 'Gaming Headphones with RGB lights', price: '2750', pictureUrl: [GamingHandsfree], customClass: "sold" },
     ],
   },
@@ -348,7 +348,7 @@ const products = [
         id: '13', name: 'PingPong Ball', description: 'Double Circle', price: '250', pictureUrl: [PingPongDoubleCircle],
         //  customClass:'sold'
       },
-      
+
       {
         id: '14', name: 'Poker Cards', description: 'Good quality Plastic Cards', price: '250', pictureUrl: [PokerCards],
         //  customClass:'sold'
