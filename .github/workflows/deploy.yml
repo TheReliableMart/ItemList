@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "lts/*" # Use the latest LTS version of Node.js
+          node-version: "lts/*" # Using the latest LTS version of Node.js
 
       - name: Install dependencies
         run: npm ci # Faster and more reliable than npm install
@@ -25,10 +25,10 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Upload production-ready build files
+      - name: Upload production build files
         uses: actions/upload-artifact@v3
         with:
-          name: production-files
+          name: production-build
           path: ./dist
 
   deploy:
@@ -38,10 +38,10 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-      - name: Download artifact
+      - name: Download artifact from build
         uses: actions/download-artifact@v3
         with:
-          name: production-files
+          name: production-build
           path: ./dist
 
       - name: Deploy to GitHub Pages

@@ -29,6 +29,7 @@ import Sandisk2400 from './Pictures/Sandisk2400.jpg';
 
 //MIC 
 import enrg from './Pictures/Lavalier1000.jpg';
+import Gionee450 from './Pictures/Gionee450.jpg';
 import SpaceHeadphones from './Pictures/SpaceHeadphones.jpg';
 import Boya2800 from './Pictures/Boya2800.jpg';
 import GamingHandsfree from './Pictures/GamingHandsfree.jpg';
@@ -80,13 +81,16 @@ import Faster20W from './Pictures/Faster20W.jpg';
 // import Calc552 from './Pictures/552.CasioCalculator.jpg';
 
 //SPORTS
+import YonexPair from './Pictures/YonexPair.jpg';
+import YonexSingle from './Pictures/YonexSingle.jpg';
 import Gosan from './Pictures/Gosan.jpg';
-import BKHard from './Pictures/BKHard.jpg';
+import FGdon from './Pictures/FGdon.jpg';
 import BKHard from './Pictures/BKHard.jpg';
 import MZHard from './Pictures/MZHard.jpg';
 import SajjadHard from './Pictures/SajjadHard.jpg';
 import Trump from './Pictures/Trump.jpg';
 import Voltric from './Pictures/Voltric.jpg';
+import PokerCards from './Pictures/PokerCards.jpg';
 
 
 //OTHERS
@@ -107,7 +111,7 @@ const products = [
     items: [
       { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [] },
       { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '400', pictureUrl: [OriginalMicroCable] },
-      { id: '3', name: 'TypeC Charging Cable', description: 'Original Cable', price: '450', pictureUrl: [], customClass:'sold' },
+      { id: '3', name: 'TypeC Charging Cable', description: 'Original Cable', price: '450', pictureUrl: [], customClass: 'sold' },
       { id: '4', name: 'TypeC Charging Cable', description: 'Normal Quality Cable', price: '300', pictureUrl: [] },
       { id: '5', name: 'Anker Lightening Cable', description: 'MFi Certified', price: '2450', pictureUrl: [MFiCable] },
       { id: '6', name: 'ANSTY Lightening Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
@@ -119,20 +123,20 @@ const products = [
         id: '10', name: 'Aux Cable', description: '1m Length', price: '320', pictureUrl: [],
         // customClass: 'description',
       },
-     
+
       { id: '11', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
-     
-      
-        { id: '12', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] }, 
-        // { id: '11', name: ' HDMI to Lightening', description: '', price: '--', pictureUrl: [], customClass: "sold"  },
-        
-        // { id: '12', name: 'Type c to 3.5mm', description: '', price: '--', pictureUrl: [], customClass: "sold"  },
-        // { id: '13', name: '2 in 1 3.5mm connector', description: '', price: '--', pictureUrl: [] , customClass: "sold" }, 
-        
-        // { id: '14', name: 'Lightening to 3.5mm', description: '', price: '--', pictureUrl: [] , customClass: "sold" }, 
-        // { id: '15', name: 'HDMI to Type C', description: '', price: '--', pictureUrl: [], customClass: "sold" },
-     
-    
+
+
+      { id: '12', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] },
+      // { id: '11', name: ' HDMI to Lightening', description: '', price: '--', pictureUrl: [], customClass: "sold"  },
+
+      // { id: '12', name: 'Type c to 3.5mm', description: '', price: '--', pictureUrl: [], customClass: "sold"  },
+      // { id: '13', name: '2 in 1 3.5mm connector', description: '', price: '--', pictureUrl: [] , customClass: "sold" }, 
+
+      // { id: '14', name: 'Lightening to 3.5mm', description: '', price: '--', pictureUrl: [] , customClass: "sold" }, 
+      // { id: '15', name: 'HDMI to Type C', description: '', price: '--', pictureUrl: [], customClass: "sold" },
+
+
     ],
   },
   {
@@ -140,27 +144,28 @@ const products = [
     id: 'USBs',
     items: [
       { id: '1', name: 'Sandisk OTG Drive M3.0 256GB', description: 'Compatible with OTG-enabled Android devices.', price: '6800', pictureUrl: [Sandisk6800] },
-      { id: '2', name: 'Sandisk Otg Dual Drive Android', description: `64GB Flash || Brand Warranty`, price: '2400', pictureUrl: [Sandisk2400],  },
+      { id: '2', name: 'Sandisk Otg Dual Drive Android', description: `64GB Flash || Brand Warranty`, price: '2400', pictureUrl: [Sandisk2400], },
       { id: '3', name: 'SanDisk - Ultra Fit 3.1', description: '128GB Flash', price: '3100', pictureUrl: [Sandisk3100], customClass: 'sold' },
-      { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '256GB Flash', price: '6750', pictureUrl: [Sandisk6750] , customClass: 'sold'},
-      { id: '5', name: 'SanDisk - Ultra Fit 3.1', description: '32GB Flash', price: '1500', pictureUrl: [Sandisk1500] , customClass: 'sold'},
+      { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '256GB Flash', price: '6750', pictureUrl: [Sandisk6750], customClass: 'sold' },
+      { id: '5', name: 'SanDisk - Ultra Fit 3.1', description: '32GB Flash', price: '1500', pictureUrl: [Sandisk1500], customClass: 'sold' },
       {
-         id: '6', name: 'SanDisk - Ultra Flair 3.0 ', description: '512GB Flash', price: '13500 ', pictureUrl: [Sandisk13500], customClass: 'sold'
-       },
+        id: '6', name: 'SanDisk - Ultra Flair 3.0 ', description: '512GB Flash', price: '13500 ', pictureUrl: [Sandisk13500], customClass: 'sold'
+      },
     ],
   },
   {
     category: 'Mic and Headphones',
     id: 'MicAndHeadphones',
-    items: [ 
+    items: [
       { id: '1', name: 'BOYA mic', description: 'Original Boya Mic with 18 months warranty. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '2800', pictureUrl: [Boya2800], customClass: 'description' },
-       { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '1000', pictureUrl: [enrg] },
+      { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '1000', pictureUrl: [enrg] },
       { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '450', pictureUrl: [Gionee450] },
-      { id: '4', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones] , customClass:'description'},
-     { id: '5', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold"  },
-      { id: '6', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description'},
+      { id: '4', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description' },
+      { id: '5', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold" },
+      { id: '6', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description' },
 
-      { id: '7', name: 'Redmi Buds 3 White Global', description: `Brand: Xiaomi
+      {
+        id: '7', name: 'Redmi Buds 3 White Global', description: `Brand: Xiaomi
  Model: Redmi buds 3
  Colour: White
  Wireless connection: Bluetooth 5.2   
@@ -170,7 +175,8 @@ const products = [
  Communication Range: 10m (open space free of obstacles)
  Single earbud net weight: 4.5 g
  Earbud dimensions: 40.7 x 16.9 x 18.7mm
- `, price: '6000', pictureUrl: [Redmi7450],  customClass: "description  sold",},
+ `, price: '6000', pictureUrl: [Redmi7450], customClass: "description  sold",
+      },
     ],
   },
 
@@ -178,9 +184,10 @@ const products = [
     category: 'Mouse and MousePads',
     id: 'MouseandMousePads',
     items: [
-      { id: '1', name: 'RGB Mouse', description: 'Wired with 7 lights & mouse pad', price: '750', pictureUrl: [GamingMouse520],
+      {
+        id: '1', name: 'RGB Mouse', description: 'Wired with 7 lights & mouse pad', price: '750', pictureUrl: [GamingMouse520],
         // customClass: 'sold'
-       },
+      },
       { id: '2', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons, Dual connectivity', price: '1800', pictureUrl: [gamingMouseWireless], customClass: 'sold' },
       { id: '3', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '160', pictureUrl: [MousePad120] },
     ],
@@ -204,26 +211,31 @@ const products = [
     category: 'Watches',
     id: 'Watches',
     items: [
-      { id: '1', name: 'Yolo Epic Bluetooth Calling Smart Watch', description: `1.91" Bright HD display, Bluetooth calling, music playback, built-in speaker and microphone, 120+ professional sports modes, heart rate, blood pressure & blood oxygen monitoring, messages and app notifications synchronization, AI voice assistant, sleep monitoring, weather updates, smart battery life, IP67 water resistant. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '8500', pictureUrl: [Yolo8500],
-         customClass:'description',
-         },
-
-
-      { id: '2', name: 'Yolo Fortuner Pro Bluetooth Calling Smart Watch - Mystery Black', description: 'Ultra-bright 1.32" HD display, Bluetooth calling, music playback, built-in HD speaker and microphone, heart rate sensor, blood pressure & blood oxygen tracking, 120+ professional sports modes, real-time notifications, weather forecast, AI voice assistant, IP67 water & dustproof, long-lasting battery life. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '12000', pictureUrl: [Yolo12000],
-
-        customClass:"description",
-       },
-      { id: '3', name: 'Yolo Thunder Bluetooth Calling Smart Watch - Admiral Blue', description: 'Rounded 1.32", high-resolution display, Bluetooth Calling, answering and dialing calls and listening to music on the go, 28 mainstream sports modes, heart rate tracking, blood pressure & blood oxygen monitoring, stay connected with real-time smart notifications, live watch faces for a personal touch of style, AI voice assistant, sleep monitoring, weather information, smart battery life, IP67 water resistant. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '10000', pictureUrl: [Yolo10000] ,
-        customClass:"description",
-        
+      {
+        id: '1', name: 'Yolo Epic Bluetooth Calling Smart Watch', description: `1.91" Bright HD display, Bluetooth calling, music playback, built-in speaker and microphone, 120+ professional sports modes, heart rate, blood pressure & blood oxygen monitoring, messages and app notifications synchronization, AI voice assistant, sleep monitoring, weather updates, smart battery life, IP67 water resistant. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '8500', pictureUrl: [Yolo8500],
+        customClass: 'description',
       },
 
 
-      { id: '4', name: 'Yolo Fortuner Bluetooth Calling Smart Watch - Charcoal Black', description: 'Built-in Speaker and Microphone, 1.3" HD Display, Live Watch Faces, Multiple Sports Modes, Heart Rate Sensor, SpO2, IP67 Water Resistant, Smart Notifications and Much More.  NOTE: This Item has brand warranty, not to be claimed through seller.', price: '10000', pictureUrl: [Yolo10000Charcoal],
-        customClass:"description",
-       },
-      { id: '5', name: 'Itel Smart Watch - Isw 31 With Bt Phone Call', description: 'BT calling, Clear voice, 1.72" HD color display, Blood Oxygen Monitor SpO2, Heart Rate Monitor, Narrow Metal Bezel Design, Multiple Sport Modes (7+ Sport Modes), Smart Notifications, Music Playback & Control, Camera Control, IP67 Water Resistance, 1 Year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.', price: '10000', pictureUrl: [Itel10000],
-        customClass:'description ',
+      {
+        id: '2', name: 'Yolo Fortuner Pro Bluetooth Calling Smart Watch - Mystery Black', description: 'Ultra-bright 1.32" HD display, Bluetooth calling, music playback, built-in HD speaker and microphone, heart rate sensor, blood pressure & blood oxygen tracking, 120+ professional sports modes, real-time notifications, weather forecast, AI voice assistant, IP67 water & dustproof, long-lasting battery life. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '12000', pictureUrl: [Yolo12000],
+
+        customClass: "description",
+      },
+      {
+        id: '3', name: 'Yolo Thunder Bluetooth Calling Smart Watch - Admiral Blue', description: 'Rounded 1.32", high-resolution display, Bluetooth Calling, answering and dialing calls and listening to music on the go, 28 mainstream sports modes, heart rate tracking, blood pressure & blood oxygen monitoring, stay connected with real-time smart notifications, live watch faces for a personal touch of style, AI voice assistant, sleep monitoring, weather information, smart battery life, IP67 water resistant. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '10000', pictureUrl: [Yolo10000],
+        customClass: "description",
+
+      },
+
+
+      {
+        id: '4', name: 'Yolo Fortuner Bluetooth Calling Smart Watch - Charcoal Black', description: 'Built-in Speaker and Microphone, 1.3" HD Display, Live Watch Faces, Multiple Sports Modes, Heart Rate Sensor, SpO2, IP67 Water Resistant, Smart Notifications and Much More.  NOTE: This Item has brand warranty, not to be claimed through seller.', price: '10000', pictureUrl: [Yolo10000Charcoal],
+        customClass: "description",
+      },
+      {
+        id: '5', name: 'Itel Smart Watch - Isw 31 With Bt Phone Call', description: 'BT calling, Clear voice, 1.72" HD color display, Blood Oxygen Monitor SpO2, Heart Rate Monitor, Narrow Metal Bezel Design, Multiple Sport Modes (7+ Sport Modes), Smart Notifications, Music Playback & Control, Camera Control, IP67 Water Resistance, 1 Year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.', price: '10000', pictureUrl: [Itel10000],
+        customClass: 'description ',
 
       },
     ],
@@ -232,7 +244,8 @@ const products = [
     category: 'Power Banks',
     id: 'PowerBanks',
     items: [
-      { id: '1', name: 'Faster E 18X (Fast Charging Wireless Power Bank)', description: `Brand : Faster
+      {
+        id: '1', name: 'Faster E 18X (Fast Charging Wireless Power Bank)', description: `Brand : Faster
  Model No : E-18X Wireless
  Micro Input : 5V/9V/12V 18W(Max)
  Type-C Input & Output : 5V/9V/12V 18W(Max)
@@ -244,9 +257,11 @@ const products = [
  Net Weight : 236g
  Gross Weight : 270g
  Product Dimension : 14.8 x 6.9 x 1.6 cm
- Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4123', pictureUrl: [Fasterwireless] , customClass : 'description'},
+ Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4123', pictureUrl: [Fasterwireless], customClass: 'description'
+      },
 
- { id: '2', name: 'Faster S10-PD 20watt 10000mah Power Bank', description: `Brand : Faster
+      {
+        id: '2', name: 'Faster S10-PD 20watt 10000mah Power Bank', description: `Brand : Faster
  Model No : S10-PD
  Type-C Input : 5V-3A / 9V-2A
  Type-C Output : 5V-3A / 9V-2.22A / 12V-1.5A
@@ -255,14 +270,17 @@ const products = [
  Net Weight : 180g
  Product Dimension : 875726 mm
  Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4638', pictureUrl: [Faster20W],
-customClass: 'description' },
+        customClass: 'description'
+      },
 
- { id: '3', name: 'Faster M5 5000mah Power Bank', description: `Brand : Faster
+      {
+        id: '3', name: 'Faster M5 5000mah Power Bank', description: `Brand : Faster
  Capacity : 5000
  Output : 2.1A
  Battery Type : Polymer Lithium
  Warranty : 1 Year Warranty. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '1855', pictureUrl: [Faster5k],
-customClass: 'description' },
+        customClass: 'description'
+      },
     ],
   },
   // {
@@ -297,29 +315,39 @@ customClass: 'description' },
     category: 'Sports',
     id: 'sports',
     items: [
-      { id: '1', name: 'Bedminton Rackets', description: 'Yonex arc 11 pair', price: '4000', pictureUrl: [],
+      {
+        id: '1', name: 'Bedminton Rackets', description: 'Yonex arc 11 pair', price: '4000', pictureUrl: [YonexPair],
         //  customClass:'sold'
 
-       },
-      { id: '2', name: 'Bedminton Rackets', description: 'Yonex astrox 100 single', price: '4000', pictureUrl: [],
+      },
+      {
+        id: '2', name: 'Bedminton Rackets', description: 'Yonex astrox 100 single', price: '4000', pictureUrl: [YonexSingle],
         //  customClass:'sold'
 
-       },
-      { id: '3', name: 'Bedminton Rackets', description: 'Gosen M 25', price: '3500', pictureUrl: [Gosan],
+      },
+      {
+        id: '3', name: 'Bedminton Rackets', description: 'Gosen M 25', price: '3500', pictureUrl: [Gosan],
         //  customClass:'sold'
 
-       },
-      { id: '4', name: 'Cricket Tennis Ball', description: 'FG Don', price: '400', pictureUrl: [] },
+      },
+      { id: '4', name: 'Cricket Tennis Ball', description: 'FG Don', price: '400', pictureUrl: [FGdon] },
       { id: '5', name: 'Cricket Tennis Ball', description: 'Shine Ball', price: '400', pictureUrl: [] },
       { id: '6', name: 'Cricket Tennis Ball', description: 'Large Size Ball', price: '400', pictureUrl: [] },
       { id: '6', name: 'Cricket Hard Ball', description: 'BK Sports, can be used for 20 overs', price: '400', pictureUrl: [BKHard] },
       { id: '6', name: 'Cricket Hard Ball', description: 'MZ Sports, can be used for 20 overs', price: '400', pictureUrl: [MZHard] },
       { id: '6', name: 'Cricket Hard Ball', description: 'Sajjad Sports, can be used for 20 overs', price: '400', pictureUrl: [SajjadHard] },
-      { id: '7', name: 'Shuttle trump', description: 'original High Quality', price: '350', pictureUrl: [Trump],
+      {
+        id: '7', name: 'Shuttle trump', description: 'original High Quality', price: '350', pictureUrl: [Trump],
         //  customClass:'sold'
 
-       },
-      { id: '8', name: 'Shuttle voltric', description: 'normal quality', price: '250', pictureUrl: [Voltric],
+      },
+      {
+        id: '8', name: 'Shuttle voltric', description: 'normal quality', price: '250', pictureUrl: [Voltric],
+        //  customClass:'sold'
+
+      },
+      {
+        id: '9', name: 'Poker Cards', description: 'Good quality Plastic Cards', price: '250', pictureUrl: [PokerCards],
         //  customClass:'sold'
 
       },
@@ -377,7 +405,7 @@ customClass: 'description' },
 
 //   // Close the modal
 //   const handleCloseModal = () => {
-  //     setSelectedItem(null);
+//     setSelectedItem(null);
 //   };
 
 //   // Helper function to calculate discounted price
@@ -408,12 +436,12 @@ customClass: 'description' },
 //             </thead>
 //             <tbody>
 //               {category.items.map(item => {
-  //                 const hasDescriptionClass = item.customClass?.includes('description');
+//                 const hasDescriptionClass = item.customClass?.includes('description');
 //                 const hasPriceClass = item.customClass?.includes('price');
 //                 const isSold = item.customClass?.includes('sold');
 
 //                 return (
-  //                   <tr key={item.id}>
+//                   <tr key={item.id}>
 //                     <td>{item.id}</td>
 //                     <td>{item.name}</td>
 //                     <td>
@@ -427,11 +455,11 @@ customClass: 'description' },
 //                           </button>
 //                         </div>
 //                       ) : (
-  //                         item.description
-  //                       )}
-  //                     </td>
-  //                     <td>
-  //                       {hasPriceClass && !isSold ? (
+//                         item.description
+//                       )}
+//                     </td>
+//                     <td>
+//                       {hasPriceClass && !isSold ? (
 //                         <div>
 //                           <span style={{ textDecoration: 'line-through' }}>
 //                             {item.price}
@@ -439,14 +467,14 @@ customClass: 'description' },
 //                           <span>{calculateDiscountedPrice(item.price)}</span>
 //                         </div>
 //                       ) : (
-  //                         item.price
+//                         item.price
 //                       )}
 //                     </td>
 //                     <td>
 //                       {isSold ? (
-  //                         <button className={`${styles.btn} ${styles.disabledBtn}`} disabled>
-  //                           Sold
-  //                         </button>
+//                         <button className={`${styles.btn} ${styles.disabledBtn}`} disabled>
+//                           Sold
+//                         </button>
 //                       ) : (
 //                         <a
 //                           href={generateWhatsAppLink(item.name, item.price, item.customClass)}
@@ -510,7 +538,7 @@ customClass: 'description' },
 //   const filteredProducts = selectedCategory === 'all'
 //   ? products
 //     : products.filter(category => category.id === selectedCategory);
-    
+
 //   // Generate WhatsApp link based on the item name and price
 //   const generateWhatsAppLink = (name, price) => {
 //     const numericPrice = price.split(' ')[0]; // Extract numeric part of price
