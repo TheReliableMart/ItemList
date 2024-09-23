@@ -78,8 +78,9 @@
   background-color: #d3d3d3; /* No change on hover for disabled */
 }
 .heads{
-  min-width: 110px;
+  min-width: 100px;
 }
+
 /* Heading Styles */
 .heading {
   background-color: #AAB396;

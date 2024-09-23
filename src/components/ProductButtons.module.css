@@ -17,7 +17,7 @@
 /* Button styling */
 .customButton {
   background-color: #6CBEC7; /* Blue background */
-  color: white; /* White text */
+  color: black; /* White text */
   padding: 10px 20px; /* Padding inside the button */
   margin: 5px; /* Margin between buttons */
   border-radius: 5px; /* Rounded corners */
@@ -35,6 +35,7 @@
 /* Button hover effect */
 .customButton:hover {
   background-color: #0057b3c9; /* Darker blue on hover */
+  color: white;
 }
 
 /* Focus state for accessibility */
@@ -47,6 +48,7 @@
 .activeButton {
   background-color: #1230AE !important; /* Green background for active state */
   border-color: #1230AE !important; /* Green border for active state */
+  color: white;
 }
 
 /* Responsive styles for smaller screens */

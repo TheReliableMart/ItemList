@@ -9,6 +9,7 @@ import OriginalMicroCable from './Pictures/OriginalMicroCable.jpg';
 import Lightening1500 from './Pictures/Lightening1500.jpg';
 import USBHub from './Pictures/USBHub.jpg';
 import HDMIcableOrg from './Pictures/HDMIcableOrg.jpg';
+import MFiCable from './Pictures/MFiCable.jpg';
 import ANSTYlighteningCable from './Pictures/ANSTYlighteningCable.jpg';
 // import ringrough180 from './Pictures/RingRoughRegister2.jpg';
 // import NonRingRoughRegister150 from './Pictures/NonRingRoughRegister150.jpg';
@@ -101,7 +102,7 @@ const products = [
       { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
       { id: '3', name: 'TypeC Charging Cable', description: 'Original Cable', price: '450', pictureUrl: [], customClass:'sold' },
       { id: '4', name: 'TypeC Charging Cable', description: 'Normal Quality Cable', price: '300', pictureUrl: [] },
-      { id: '5', name: 'Anker Lightening Cable', description: 'MFi Certified', price: '2450', pictureUrl: [] },
+      { id: '5', name: 'Anker Lightening Cable', description: 'MFi Certified', price: '2450', pictureUrl: [MFiCable] },
       { id: '6', name: 'ANSTY Lightening Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
       { id: '7', name: 'Lightening Cable', description: 'Basic Quality', price: '300', pictureUrl: [] },
       { id: '8', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '450', pictureUrl: [HDMIcableOrg] },
@@ -147,10 +148,10 @@ const products = [
     id: 'MicAndHeadphones',
     items: [ 
       { id: '1', name: 'BOYA mic', description: 'Original Boya Mic with 18 months warranty. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '2800', pictureUrl: [Boya2800], customClass: 'description' },
-       { id: '2', name: 'Lavalier Wired Mic', description: '5m Wire', price: '1000', pictureUrl: [enrg] },
+       { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '1000', pictureUrl: [enrg] },
       { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '450', pictureUrl: [Gionee450] },
      { id: '4', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold"  },
-      { id: '5', name: 'FASTER EARBUD E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description'},
+      { id: '5', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description'},
 
       { id: '6', name: 'Redmi Buds 3 White Global', description: `Brand: Xiaomi
  Model: Redmi buds 3
@@ -162,7 +163,7 @@ const products = [
  Communication Range: 10m (open space free of obstacles)
  Single earbud net weight: 4.5 g
  Earbud dimensions: 40.7 x 16.9 x 18.7mm
- `, price: '6000', pictureUrl: [Redmi7450],  customClass: "description ",},
+ `, price: '6000', pictureUrl: [Redmi7450],  customClass: "description  sold",},
     ],
   },
 
@@ -173,7 +174,7 @@ const products = [
       { id: '1', name: 'RGB Mouse', description: 'Wired with 7 lights & mouse pad', price: '600', pictureUrl: [GamingMouse520],
         // customClass: 'sold'
        },
-      { id: '2', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons, Dual connectivity(bluetooth & 2.4GHz)', price: '1800', pictureUrl: [gamingMouseWireless], customClass: 'sold' },
+      { id: '2', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons, Dual connectivity', price: '1800', pictureUrl: [gamingMouseWireless], customClass: 'sold' },
       { id: '3', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '120', pictureUrl: [MousePad120] },
     ],
   },
