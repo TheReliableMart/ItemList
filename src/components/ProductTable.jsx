@@ -90,6 +90,8 @@ import MZHard from './Pictures/MZHard.jpg';
 import SajjadHard from './Pictures/SajjadHard.jpg';
 import Trump from './Pictures/Trump.jpg';
 import Voltric from './Pictures/Voltric.jpg';
+import PingPongButterfly from './Pictures/PingPongButterfly.jpg';
+import PingPongDoubleCircle from './Pictures/PingPongDoubleCircle.jpg';
 import PokerCards from './Pictures/PokerCards.jpg';
 
 
@@ -160,23 +162,15 @@ const products = [
       { id: '1', name: 'BOYA mic', description: 'Original Boya Mic with 18 months warranty. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '2800', pictureUrl: [Boya2800], customClass: 'description' },
       { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '1000', pictureUrl: [enrg] },
       { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '450', pictureUrl: [Gionee450] },
-      { id: '4', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description' },
-      { id: '5', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold" },
-      { id: '6', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description' },
-
+      { id: '4', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold" },
+      { id: '5', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description' },
       {
-        id: '7', name: 'Redmi Buds 3 White Global', description: `Brand: Xiaomi
- Model: Redmi buds 3
- Colour: White
- Wireless connection: Bluetooth 5.2   
- Battery Capacity: 35mAh (single earbud)
- Battery type: Lithium-ion polymer battery
- Input parameters: 5V70mA
- Communication Range: 10m (open space free of obstacles)
- Single earbud net weight: 4.5 g
- Earbud dimensions: 40.7 x 16.9 x 18.7mm
- `, price: '6000', pictureUrl: [Redmi7450], customClass: "description  sold",
+        id: '6', name: 'Redmi Buds 3 White Global', description: `Brand: Xiaomi
+        Model: Redmi buds 3, Colour: White, Wireless connection: Bluetooth 5.2,  Battery Capacity: 35mAh (single earbud), Battery type: Lithium-ion polymer battery, Input parameters: 5V70mA, Communication Range: 10m (open space free of obstacles), Single earbud net weight: 4.5 g, Earbud dimensions: 40.7 x 16.9 x 18.7mm. `, price: '6000', pictureUrl: [Redmi7450], customClass: "description  sold",
       },
+      { id: '7', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description' },
+      
+      { id: '8', name: 'Gaming Headphone', description: 'Gaming Headphones with RGB lights', price: '2750', pictureUrl: [GamingHandsfree], customClass: "sold" },
     ],
   },
 
@@ -333,21 +327,30 @@ const products = [
       { id: '4', name: 'Cricket Tennis Ball', description: 'FG Don', price: '400', pictureUrl: [FGdon] },
       { id: '5', name: 'Cricket Tennis Ball', description: 'Shine Ball', price: '400', pictureUrl: [] },
       { id: '6', name: 'Cricket Tennis Ball', description: 'Large Size Ball', price: '400', pictureUrl: [] },
-      { id: '6', name: 'Cricket Hard Ball', description: 'BK Sports, can be used for 20 overs', price: '400', pictureUrl: [BKHard] },
-      { id: '6', name: 'Cricket Hard Ball', description: 'MZ Sports, can be used for 20 overs', price: '400', pictureUrl: [MZHard] },
-      { id: '6', name: 'Cricket Hard Ball', description: 'Sajjad Sports, can be used for 20 overs', price: '400', pictureUrl: [SajjadHard] },
+      { id: '7', name: 'Cricket Hard Ball', description: 'BK Sports, can be used for 20 overs', price: '400', pictureUrl: [BKHard] },
+      { id: '8', name: 'Cricket Hard Ball', description: 'MZ Sports, can be used for 20 overs', price: '400', pictureUrl: [MZHard] },
+      { id: '9', name: 'Cricket Hard Ball', description: 'Sajjad Sports, can be used for 20 overs', price: '400', pictureUrl: [SajjadHard] },
       {
-        id: '7', name: 'Shuttle trump', description: 'original High Quality', price: '350', pictureUrl: [Trump],
+        id: '10', name: 'Shuttle trump', description: 'original High Quality', price: '350', pictureUrl: [Trump],
         //  customClass:'sold'
 
       },
       {
-        id: '8', name: 'Shuttle voltric', description: 'normal quality', price: '250', pictureUrl: [Voltric],
+        id: '11', name: 'Shuttle voltric', description: 'normal quality', price: '250', pictureUrl: [Voltric],
         //  customClass:'sold'
 
       },
       {
-        id: '9', name: 'Poker Cards', description: 'Good quality Plastic Cards', price: '250', pictureUrl: [PokerCards],
+        id: '12', name: 'PingPong Ball', description: 'Butterfly', price: '250', pictureUrl: [PingPongButterfly],
+        //  customClass:'sold'
+      },
+      {
+        id: '13', name: 'PingPong Ball', description: 'Double Circle', price: '250', pictureUrl: [PingPongDoubleCircle],
+        //  customClass:'sold'
+      },
+      
+      {
+        id: '14', name: 'Poker Cards', description: 'Good quality Plastic Cards', price: '250', pictureUrl: [PokerCards],
         //  customClass:'sold'
 
       },
@@ -753,10 +756,10 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll = true }) => {
                       {hasDescriptionClass ? (
                         <div>
                           <button
-                            className={styles.btn}
+                            className={styles.viewButton}
                             onClick={() => handleShowModal(item)}
                           >
-                            <strong>view</strong> {/* Font Awesome icon for "View" */}
+                            View {/* Font Awesome icon for "View" */}
                           </button>
                         </div>
                       ) : (
