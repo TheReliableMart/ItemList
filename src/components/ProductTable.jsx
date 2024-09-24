@@ -49,6 +49,7 @@ import MousePad120 from './Pictures/MousePad120.jpg';
 import Phillips8000 from './Pictures/Phillips8000.jpg';
 import Phillips6000 from './Pictures/Phillips6000.jpg';
 import Phillips10000 from './Pictures/Phillips10000.jpg';
+import Dingling from './Pictures/Dingling.jpg';
 
 
 //TAPES
@@ -186,21 +187,26 @@ const products = [
       { id: '3', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '160', pictureUrl: [MousePad120] },
     ],
   },
-  // {
-  //   category: 'Trimmers',
-  //   id: 'Trimmers',
-  //   items: [
-  //     {
-  //       id: '1', name: 'Philips One Blade Trimmer Qp2520/20', description: 'Brand Warranty', price: '8000 ', pictureUrl: [Phillips8000],
-  //       customClass: 'sold'
-  //       // customClass: 'soldClass',
-  //     },
-  //     { id: '2', name: 'Philips Series 1000 (NT1650/16)', description: 'Nose & Ear Trimmer', price: '6000', pictureUrl: [Phillips6000] ,customClass: 'sold'},
-  //     { id: '3', name: 'Philips Black Beard Trimmer', description: ' Model BT1233/14', price: '10000', pictureUrl: [Phillips10000],
-  //       customClass: 'sold' 
-  //      },
-  //   ],
-  // },
+  {
+    category: 'Trimmers',
+    id: 'Trimmers',
+    items: [
+      {
+        id: '1', name: 'Dingling Professional Trimmer RF-609', description: `The DINGLING has been developed using the latest technical know how. It has been produced using the most modern machinery and all the functions have been thoroughly tested. We hope you will be fully satisfied with the DINGLING. Before use please read the operating instructions carefully,`, price: '3100 ', pictureUrl: [Dingling], 
+        customClass: 'description'
+        // customClass: 'soldClass',
+      },
+      // {
+      //   id: '1', name: 'Philips One Blade Trimmer Qp2520/20', description: 'Brand Warranty', price: '8000 ', pictureUrl: [Phillips8000],
+      //   customClass: 'sold'
+      //   // customClass: 'soldClass',
+      // },
+      // { id: '2', name: 'Philips Series 1000 (NT1650/16)', description: 'Nose & Ear Trimmer', price: '6000', pictureUrl: [Phillips6000] ,customClass: 'sold'},
+      // { id: '3', name: 'Philips Black Beard Trimmer', description: ' Model BT1233/14', price: '10000', pictureUrl: [Phillips10000],
+      //   customClass: 'sold' 
+      //  },
+    ],
+  },
   {
     category: 'Watches',
     id: 'Watches',
@@ -350,7 +356,7 @@ const products = [
       },
 
       {
-        id: '14', name: 'Poker Cards', description: 'Good quality Plastic Cards', price: '250', pictureUrl: [PokerCards],
+        id: '14 ', name: 'Poker Cards', description: 'Good quality Plastic Cards', price: '250', pictureUrl: [PokerCards],
         //  customClass:'sold'
 
       },
