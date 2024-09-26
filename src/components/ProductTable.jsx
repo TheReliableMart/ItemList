@@ -113,9 +113,9 @@ const products = [
     id: 'Accessories',
     items: [
       { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [] },
-      { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '400', pictureUrl: [OriginalMicroCable] },
+      { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
       { id: '3', name: 'TypeC Charging Cable', description: 'Original Cable', price: '450', pictureUrl: [], customClass: 'sold' },
-      { id: '4', name: 'TypeC Charging Cable', description: 'Normal Quality Cable', price: '300', pictureUrl: [] },
+      { id: '4', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 33W', price: '300', pictureUrl: [] },
       { id: '5', name: 'Anker Lightening Cable', description: 'MFi Certified', price: '2450', pictureUrl: [MFiCable] },
       { id: '6', name: 'ANSTY Lightening Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
       { id: '7', name: 'Lightening Cable', description: 'Basic Quality', price: '280', pictureUrl: [] },
@@ -123,7 +123,7 @@ const products = [
       { id: '9', name: 'HDMI Cable', description: 'Normal Quality 1m Length', price: '300', pictureUrl: [HDMIcableOrg] },
 
       {
-        id: '10', name: 'Aux Cable', description: '1m Length', price: '320', pictureUrl: [],
+        id: '10', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [],
         // customClass: 'description',
       },
 
@@ -161,13 +161,13 @@ const products = [
     id: 'MicAndHeadphones',
     items: [
       { id: '1', name: 'BOYA mic', description: 'Original Boya Mic with 18 months warranty. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '2800', pictureUrl: [Boya2800], customClass: 'description' },
-      { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '1000', pictureUrl: [enrg] },
+      { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '9200', pictureUrl: [enrg] },
       { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '450', pictureUrl: [Gionee450] },
       { id: '4', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold" },
       { id: '5', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description' },
       {
         id: '6', name: 'Redmi Buds 3 White Global', description: `Brand: Xiaomi
-        Model: Redmi buds 3, Colour: White, Wireless connection: Bluetooth 5.2,  Battery Capacity: 35mAh (single earbud), Battery type: Lithium-ion polymer battery, Input parameters: 5V70mA, Communication Range: 10m (open space free of obstacles), Single earbud net weight: 4.5 g, Earbud dimensions: 40.7 x 16.9 x 18.7mm. `, price: '6000', pictureUrl: [Redmi7450], customClass: "description  sold",
+        Model: Redmi buds 3, Colour: White, Wireless connection: Bluetooth 5.2,  Battery Capacity: 35mAh (single earbud), Battery type: Lithium-ion polymer battery, Input parameters: 5V70mA, Communication Range: 10m (open space free of obstacles), Single earbud net weight: 4.5 g, Earbud dimensions: 40.7 x 16.9 x 18.7mm. `, price: '5500', pictureUrl: [Redmi7450], customClass: "description  ",
       },
       { id: '7', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description' },
 
@@ -330,28 +330,28 @@ const products = [
         //  customClass:'sold'
 
       },
-      { id: '4', name: 'Cricket Tennis Ball', description: 'FG Don', price: '400', pictureUrl: [FGdon] },
-      { id: '5', name: 'Cricket Tennis Ball', description: 'Shine Ball', price: '400', pictureUrl: [] },
-      { id: '6', name: 'Cricket Tennis Ball', description: 'Large Size Ball', price: '400', pictureUrl: [] },
+      { id: '4', name: 'Cricket Tennis Ball', description: 'FG Don', price: '360', pictureUrl: [FGdon] },
+      { id: '5', name: 'Cricket Tennis Ball', description: 'Shine Ball', price: '360', pictureUrl: [] },
+      { id: '6', name: 'Cricket Tennis Ball', description: 'Large Size Ball', price: '340', pictureUrl: [] },
       { id: '7', name: 'Cricket Hard Ball', description: 'BK Sports, can be used for 20 overs', price: '400', pictureUrl: [BKHard] },
       { id: '8', name: 'Cricket Hard Ball', description: 'MZ Sports, can be used for 20 overs', price: '400', pictureUrl: [MZHard] },
       { id: '9', name: 'Cricket Hard Ball', description: 'Sajjad Sports, can be used for 20 overs', price: '400', pictureUrl: [SajjadHard] },
       {
-        id: '10', name: 'Shuttle trump', description: 'original High Quality', price: '350', pictureUrl: [Trump],
+        id: '10', name: 'Shuttle trump', description: 'original High Quality', price: '380', pictureUrl: [Trump],
         //  customClass:'sold'
 
       },
       {
-        id: '11', name: 'Shuttle voltric', description: 'normal quality', price: '250', pictureUrl: [Voltric],
+        id: '11', name: 'Shuttle voltric', description: 'normal quality', price: '330', pictureUrl: [Voltric],
         //  customClass:'sold'
 
       },
       {
-        id: '12', name: 'PingPong Ball', description: 'Butterfly', price: '250', pictureUrl: [PingPongButterfly],
+        id: '12', name: 'PingPong Ball', description: 'Butterfly', price: '90', pictureUrl: [PingPongButterfly],
         //  customClass:'sold'
       },
       {
-        id: '13', name: 'PingPong Ball', description: 'Double Circle', price: '250', pictureUrl: [PingPongDoubleCircle],
+        id: '13', name: 'PingPong Ball', description: 'Double Circle', price: '70', pictureUrl: [PingPongDoubleCircle],
         //  customClass:'sold'
       },
 
