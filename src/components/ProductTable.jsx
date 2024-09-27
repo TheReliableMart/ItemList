@@ -6,11 +6,14 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 /*Pictures*/
 //ACCESSORIES
 import OriginalMicroCable from './Pictures/OriginalMicroCable.jpg';
+import microbasic from './Pictures/OriginalMicroCable.jpg';
+import typeCbasic from './Pictures/typeCbasic.jpg';
 import Lightening1500 from './Pictures/Lightening1500.jpg';
 import USBHub from './Pictures/USBHub.jpg';
 import HDMIcableOrg from './Pictures/HDMIcableOrg.jpg';
 import MFiCable from './Pictures/MFiCable.jpg';
 import ANSTYlighteningCable from './Pictures/ANSTYlighteningCable.jpg';
+import Connetorpc from './Pictures/Connetorpc.jpg';
 // import ringrough180 from './Pictures/RingRoughRegister2.jpg';
 // import NonRingRoughRegister150 from './Pictures/NonRingRoughRegister150.jpg';
 // import NonRingRoughRegister210 from './Pictures/NonRingRoughRegister210.jpg';
@@ -30,10 +33,11 @@ import Sandisk2400 from './Pictures/Sandisk2400.jpg';
 //MIC 
 import enrg from './Pictures/Lavalier1000.jpg';
 import Gionee450 from './Pictures/Gionee450.jpg';
-import SpaceHeadphones from './Pictures/SpaceHeadphones.jpg';
+import GamingHeadphone from './Pictures/GamingHeadphone.jpg';
 import Boya2800 from './Pictures/Boya2800.jpg';
 import GamingHandsfree from './Pictures/GamingHandsfree.jpg';
 import Faster4900 from './Pictures/Faster4900.jpg';
+import SpaceHeadphones from './Pictures/SpaceHeadphones.jpg';
 import Redmi7450 from './Pictures/Redmi7450.jpg';
 // import Dollar10Pointers from './Pictures/10DollarPointers.jpg';
 
@@ -42,7 +46,7 @@ import GamingMouse520 from './Pictures/GamingMouse520.jpg';
 import gamingMouseWireless from './Pictures/gamingMouseWireless.jpg';
 //1;
 
-import MousePad500 from './Pictures/MousePad500.jpg';
+import MousePad250 from './Pictures/MousePad250.jpg';
 import MousePad120 from './Pictures/MousePad120.jpg';
 
 // Trimmer
@@ -86,6 +90,7 @@ import YonexPair from './Pictures/YonexPair.jpg';
 import YonexSingle from './Pictures/YonexSingle.jpg';
 import Gosan from './Pictures/Gosan.jpg';
 import FGdon from './Pictures/FGdon.jpg';
+import LargeBall from './Pictures/LargeBall.jpg';
 import BKHard from './Pictures/BKHard.jpg';
 import MZHard from './Pictures/MZHard.jpg';
 import SajjadHard from './Pictures/SajjadHard.jpg';
@@ -112,25 +117,26 @@ const products = [
     category: 'Accessories',
     id: 'Accessories',
     items: [
-      { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [] },
+      { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [microbasic] },
       { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
-      { id: '3', name: 'TypeC Charging Cable', description: 'Original Cable', price: '450', pictureUrl: [], customClass: 'sold' },
-      { id: '4', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 33W', price: '300', pictureUrl: [] },
-      { id: '5', name: 'Anker Lightening Cable', description: 'MFi Certified', price: '2450', pictureUrl: [MFiCable] },
-      { id: '6', name: 'ANSTY Lightening Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
-      { id: '7', name: 'Lightening Cable', description: 'Basic Quality', price: '280', pictureUrl: [] },
-      { id: '8', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '450', pictureUrl: [HDMIcableOrg] },
-      { id: '9', name: 'HDMI Cable', description: 'Normal Quality 1m Length', price: '300', pictureUrl: [HDMIcableOrg] },
+      // { id: '3', name: 'TypeC Charging Cable', description: 'Original Cable', price: '--', pictureUrl: [], customClass: 'sold' },
+      { id: '3', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 33W', price: '250', pictureUrl: [typeCbasic] },
+      { id: '4', name: 'Anker Lightening Cable', description: 'MFi Certified', price: '2450', pictureUrl: [MFiCable] },
+      { id: '5', name: 'ANSTY Lightening Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
+      { id: '6', name: 'Lightening Cable', description: 'Basic Quality', price: '280', pictureUrl: [] },
+      { id: '7', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '450', pictureUrl: [HDMIcableOrg] },
+      { id: '8', name: 'HDMI Cable', description: 'Normal Quality 1m Length', price: '300', pictureUrl: [HDMIcableOrg] },
 
       {
-        id: '10', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [],
+        id: '9', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [],
         // customClass: 'description',
       },
 
-      { id: '11', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
+      { id: '10', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
 
 
-      { id: '12', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] },
+      { id: '11', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] },
+      { id: '12', name: '2 in 1 3.5mm', description: 'connector for PCs', price: '150', pictureUrl: [Connetorpc] },
       // { id: '11', name: ' HDMI to Lightening', description: '', price: '--', pictureUrl: [], customClass: "sold"  },
 
       // { id: '12', name: 'Type c to 3.5mm', description: '', price: '--', pictureUrl: [], customClass: "sold"  },
@@ -146,8 +152,8 @@ const products = [
     category: 'USBs',
     id: 'USBs',
     items: [
-      { id: '1', name: 'Sandisk OTG Drive M3.0 256GB', description: 'Compatible with OTG-enabled Android devices.', price: '6800', pictureUrl: [Sandisk6800] },
-      { id: '2', name: 'Sandisk Otg Dual Drive Android', description: `64GB Flash || Brand Warranty`, price: '2400', pictureUrl: [Sandisk2400], },
+      { id: '1', name: 'Sandisk OTG Drive M3.0 256GB', description: 'Compatible with OTG-enabled Android devices.', price: '6800', pictureUrl: [Sandisk6800] , customClass: 'price'},
+      { id: '2', name: 'Sandisk Otg Dual Drive Android', description: `64GB Flash || Brand Warranty`, price: '2400', pictureUrl: [Sandisk2400], customClass: 'price'},
       { id: '3', name: 'SanDisk - Ultra Fit 3.1', description: '128GB Flash', price: '3100', pictureUrl: [Sandisk3100], customClass: 'sold' },
       { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '256GB Flash', price: '6750', pictureUrl: [Sandisk6750], customClass: 'sold' },
       { id: '5', name: 'SanDisk - Ultra Fit 3.1', description: '32GB Flash', price: '1500', pictureUrl: [Sandisk1500], customClass: 'sold' },
@@ -161,17 +167,17 @@ const products = [
     id: 'MicAndHeadphones',
     items: [
       { id: '1', name: 'BOYA mic', description: 'Original Boya Mic with 18 months warranty. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '2800', pictureUrl: [Boya2800], customClass: 'description' },
-      { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '9200', pictureUrl: [enrg] },
-      { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '450', pictureUrl: [Gionee450] },
+      { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '920', pictureUrl: [enrg], customClass: 'price' },
+      { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '450', pictureUrl: [Gionee450], customClass: 'price' },
       { id: '4', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold" },
-      { id: '5', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description' },
-      {
-        id: '6', name: 'Redmi Buds 3 White Global', description: `Brand: Xiaomi
-        Model: Redmi buds 3, Colour: White, Wireless connection: Bluetooth 5.2,  Battery Capacity: 35mAh (single earbud), Battery type: Lithium-ion polymer battery, Input parameters: 5V70mA, Communication Range: 10m (open space free of obstacles), Single earbud net weight: 4.5 g, Earbud dimensions: 40.7 x 16.9 x 18.7mm. `, price: '5500', pictureUrl: [Redmi7450], customClass: "description  ",
-      },
-      { id: '7', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description' },
+      { id: '5', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description sold' },
+      // {
+      //   id: '6', name: 'Redmi Buds 3 White Global', description: `Brand: Xiaomi
+      //   Model: Redmi buds 3, Colour: White, Wireless connection: Bluetooth 5.2,  Battery Capacity: 35mAh (single earbud), Battery type: Lithium-ion polymer battery, Input parameters: 5V70mA, Communication Range: 10m (open space free of obstacles), Single earbud net weight: 4.5 g, Earbud dimensions: 40.7 x 16.9 x 18.7mm. `, price: '5500', pictureUrl: [Redmi7450], customClass: "description  ",
+      // },
+      { id: '6', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description'},
 
-      { id: '8', name: 'Gaming Headphone', description: 'Gaming Headphones with RGB lights', price: '2750', pictureUrl: [GamingHandsfree], customClass: "sold" },
+      { id: '7', name: 'Gaming Headphone', description: 'Gaming Headphones with RGB lights', price: '2750', pictureUrl: [GamingHeadphone], customClass: "" },
     ],
   },
 
@@ -180,11 +186,12 @@ const products = [
     id: 'MouseandMousePads',
     items: [
       {
-        id: '1', name: 'RGB Mouse', description: 'Wired with 7 lights & mouse pad', price: '750', pictureUrl: [GamingMouse520],
+        id: '1', name: 'RGB Mouse', description: 'Wired with 7 lights & mouse pad', price: '690', pictureUrl: [GamingMouse520]
         // customClass: 'sold'
-      },
-      { id: '2', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons, Dual connectivity', price: '1800', pictureUrl: [gamingMouseWireless], customClass: 'sold' },
-      { id: '3', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '160', pictureUrl: [MousePad120] },
+        , customClass: 'price'},
+      { id: '2', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '2000', pictureUrl: [gamingMouseWireless], customClass: '' },
+      { id: '3', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '160', pictureUrl: [MousePad120], customClass: 'price' },
+      { id: '4', name: 'MousePad', description: 'Good Quality Mousepad, available in black ', price: '250', pictureUrl: [MousePad250], customClass: 'price' },
     ],
   },
   {
@@ -257,7 +264,7 @@ const products = [
  Net Weight : 236g
  Gross Weight : 270g
  Product Dimension : 14.8 x 6.9 x 1.6 cm
- Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4123', pictureUrl: [Fasterwireless], customClass: 'description'
+ Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4123', pictureUrl: [Fasterwireless], customClass: 'description price'
       },
 
       {
@@ -270,7 +277,7 @@ const products = [
  Net Weight : 180g
  Product Dimension : 875726 mm
  Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4638', pictureUrl: [Faster20W],
-        customClass: 'description'
+        customClass: 'description price'
       },
 
       {
@@ -279,7 +286,7 @@ const products = [
  Output : 2.1A
  Battery Type : Polymer Lithium
  Warranty : 1 Year Warranty. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '1855', pictureUrl: [Faster5k],
-        customClass: 'description'
+        customClass: 'description price'
       },
     ],
   },
@@ -316,47 +323,52 @@ const products = [
     id: 'sports',
     items: [
       {
-        id: '1', name: 'Bedminton Rackets', description: 'Yonex arc 11 pair', price: '4000', pictureUrl: [YonexPair],
+        id: '1', name: 'Bedminton Rackets', description: 'Yonex arc 11 pair', price: '2000', pictureUrl: [YonexPair],
         //  customClass:'sold'
 
       },
       {
-        id: '2', name: 'Bedminton Rackets', description: 'Yonex astrox 100 single', price: '4000', pictureUrl: [YonexSingle],
+        id: '2', name: 'Bedminton Rackets', description: 'Yonex astrox 100 single', price: '2500', pictureUrl: [YonexSingle],
         //  customClass:'sold'
 
       },
       {
-        id: '3', name: 'Bedminton Rackets', description: 'Gosen M 25', price: '3500', pictureUrl: [Gosan],
+        id: '3', name: 'Bedminton Rackets', description: 'Gosen M 25', price: '2600', pictureUrl: [Gosan],
         //  customClass:'sold'
 
       },
       { id: '4', name: 'Cricket Tennis Ball', description: 'FG Don', price: '360', pictureUrl: [FGdon] },
       { id: '5', name: 'Cricket Tennis Ball', description: 'Shine Ball', price: '360', pictureUrl: [] },
-      { id: '6', name: 'Cricket Tennis Ball', description: 'Large Size Ball', price: '340', pictureUrl: [] },
-      { id: '7', name: 'Cricket Hard Ball', description: 'BK Sports, can be used for 20 overs', price: '400', pictureUrl: [BKHard] },
-      { id: '8', name: 'Cricket Hard Ball', description: 'MZ Sports, can be used for 20 overs', price: '400', pictureUrl: [MZHard] },
-      { id: '9', name: 'Cricket Hard Ball', description: 'Sajjad Sports, can be used for 20 overs', price: '400', pictureUrl: [SajjadHard] },
+      { id: '6', name: 'Cricket Tennis Ball', description: 'Large Size Ball', price: '340', pictureUrl: [LargeBall ] },
+      { id: '7', name: 'Cricket Hard Ball', description: 'BK Sports, can be used upto 20 overs', price: '600', pictureUrl: [BKHard] },
+      { id: '8', name: 'Cricket Hard Ball', description: 'MZ Sports, can be used upto 20 overs', price: '550', pictureUrl: [MZHard] },
+      { id: '9', name: 'Cricket Hard Ball', description: 'Sajjad Sports, can be used upto 20 overs', price: '650', pictureUrl: [SajjadHard] },
       {
         id: '10', name: 'Shuttle trump', description: 'original High Quality', price: '380', pictureUrl: [Trump],
         //  customClass:'sold'
 
       },
       {
-        id: '11', name: 'Shuttle voltric', description: 'normal quality', price: '330', pictureUrl: [Voltric],
+        id: '11', name: 'Shuttle', description: 'GS 1', price: '335', pictureUrl: [],
         //  customClass:'sold'
 
       },
       {
-        id: '12', name: 'PingPong Ball', description: 'Butterfly', price: '90', pictureUrl: [PingPongButterfly],
+        id: '12', name: 'Shuttle voltric', description: 'normal quality', price: '250', pictureUrl: [Voltric],
+        //  customClass:'sold'
+
+      },
+      {
+        id: '13', name: 'PingPong Ball', description: 'Butterfly', price: '90', pictureUrl: [PingPongButterfly],
         //  customClass:'sold'
       },
       {
-        id: '13', name: 'PingPong Ball', description: 'Double Circle', price: '70', pictureUrl: [PingPongDoubleCircle],
+        id: '14', name: 'PingPong Ball', description: 'Double Circle', price: '70', pictureUrl: [PingPongDoubleCircle],
         //  customClass:'sold'
       },
 
       {
-        id: '14 ', name: 'Poker Cards', description: 'Good quality Plastic Cards', price: '250', pictureUrl: [PokerCards],
+        id: '15 ', name: 'Poker Cards', description: 'Good quality Plastic Cards', price: '270', pictureUrl: [PokerCards],
         //  customClass:'sold'
 
       },
@@ -381,312 +393,6 @@ const products = [
 
 
 
-// // //NEW CODE WITHout DISCOUNT
-
-// const ProductTable = ({ selectedCategory }) => {
-//   const [selectedItem, setSelectedItem] = useState(null);
-
-//   // Filter products based on the selected category
-//   const filteredProducts = selectedCategory === 'all'
-//     ? products
-//     : products.filter(category => category.id === selectedCategory);
-
-//   // Generate WhatsApp link based on the item name, price, and custom class
-//   const generateWhatsAppLink = (name, price, customClass) => {
-//     const numericPrice = price.split(' ')[0]; // Extract numeric part of price
-//     const message = `I want to buy ${name} with price ${numericPrice} PKR`; // Prepare WhatsApp message
-
-//     let whatsappNumber = '923343288223'; // Default WhatsApp number
-
-//     // Change WhatsApp number if a specific class is matched
-//     if (customClass?.includes('specific-class')) {
-//       whatsappNumber = '923105688796';
-//     }
-
-//     // Return the WhatsApp API link with the message
-//     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-//   };
-
-//   // Handle button click to show modal
-//   const handleShowModal = (item) => {
-//     setSelectedItem(item);
-//   };
-
-//   // Close the modal
-//   const handleCloseModal = () => {
-//     setSelectedItem(null);
-//   };
-
-//   // Helper function to calculate discounted price
-//   const calculateDiscountedPrice = (price) => {
-//     const numericPrice = parseFloat(price.split(' ')[0]);
-//     const discountedPrice = (numericPrice * 0.9).toFixed(2);
-//     return `${discountedPrice} PKR`;
-//   };
-
-//   return (
-//     <div className={styles.tableContainer}>
-//       {filteredProducts.map((category, index) => (
-//         <div key={index} id={category.id}>
-//           {/* Category Heading */}
-//           <h2 className={styles.heading}>{category.category}</h2>
-
-//           {/* Product Table */}
-//           <table className={`table table-striped ${styles.table}`}>
-//             <thead>
-//               <tr>
-//                 <th className={styles.head}>S/No</th>
-//                 <th className={styles.heads}>Items</th>
-//                 <th className={styles.head}>Description</th>
-//                 <th className={styles.head}>Price</th>
-//                 <th className={styles.head}>Buy</th>
-//                 <th className={styles.head}>Picture</th>
-//               </tr>
-//             </thead>
-//             <tbody>
-//               {category.items.map(item => {
-//                 const hasDescriptionClass = item.customClass?.includes('description');
-//                 const hasPriceClass = item.customClass?.includes('price');
-//                 const isSold = item.customClass?.includes('sold');
-
-//                 return (
-//                   <tr key={item.id}>
-//                     <td>{item.id}</td>
-//                     <td>{item.name}</td>
-//                     <td>
-//                       {hasDescriptionClass ? (
-//                         <div>
-//                           <button
-//                             className={styles.viewButton}
-//                             onClick={() => handleShowModal(item)}
-//                           >
-//                             View Description
-//                           </button>
-//                         </div>
-//                       ) : (
-//                         item.description
-//                       )}
-//                     </td>
-//                     <td>
-//                       {hasPriceClass && !isSold ? (
-//                         <div>
-//                           <span style={{ textDecoration: 'line-through' }}>
-//                             {item.price}
-//                           </span>{' '}
-//                           <span>{calculateDiscountedPrice(item.price)}</span>
-//                         </div>
-//                       ) : (
-//                         item.price
-//                       )}
-//                     </td>
-//                     <td>
-//                       {isSold ? (
-//                         <button className={`${styles.btn} ${styles.disabledBtn}`} disabled>
-//                           Sold
-//                         </button>
-//                       ) : (
-//                         <a
-//                           href={generateWhatsAppLink(item.name, item.price, item.customClass)}
-//                           target="_blank"
-//                           rel="noopener noreferrer"
-//                           className={styles.btn}
-//                         >
-//                           <i className="fas fa-shopping-cart"></i>
-//                         </a>
-//                       )}
-//                     </td>
-//                     <td>
-//                       <a
-//                         href={item.pictureUrl}
-//                         target="_blank"
-//                         rel="noopener noreferrer"
-//                         className={styles.btn}
-//                       >
-//                         <i className="fas fa-camera"></i>
-//                       </a>
-//                     </td>
-//                   </tr>
-//                 );
-//               })}
-//             </tbody>
-//           </table>
-
-//           {/* Divider between categories */}
-//           <hr style={{ border: '2px solid black', marginBottom: '20px' }} />
-//         </div>
-//       ))}
-
-//       {/* Modal for showing full description */}
-//       {selectedItem && (
-//         <div className={styles.modalOverlay} onClick={handleCloseModal}>
-//           <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
-//             <h2>{selectedItem.name}</h2>
-//             <p>{selectedItem.description}</p>
-//             <button className={styles.closeModalButton} onClick={handleCloseModal}>
-//               Close
-//             </button>
-//           </div>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default ProductTable;
-
-
-
-
-
-// // CODE WITH ALL ITEMS 10%
-
-// const ProductTable = ({ selectedCategory }) => {
-//   const [selectedItem, setSelectedItem] = useState(null);
-
-//   // Filter products based on the selected category
-//   const filteredProducts = selectedCategory === 'all'
-//   ? products
-//     : products.filter(category => category.id === selectedCategory);
-
-//   // Generate WhatsApp link based on the item name and price
-//   const generateWhatsAppLink = (name, price) => {
-//     const numericPrice = price.split(' ')[0]; // Extract numeric part of price
-//     const message = `I want to buy ${name} with price ${numericPrice} PKR`; // Prepare WhatsApp message
-//     const whatsappNumber = '923343288223'; // Default WhatsApp number
-//     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-//   };
-
-//   // Handle button click to show modal
-//   const handleShowModal = (item) => {
-//     setSelectedItem(item);
-//   };
-
-//   // Close the modal
-//   const handleCloseModal = () => {
-//     setSelectedItem(null);
-//   };
-
-//   // Calculate the discounted price (10% off)
-//   const applyDiscount = (price) => {
-//     const numericPrice = parseFloat(price.split(' ')[0]);
-//     return (numericPrice * 0.9).toFixed(2);
-//   };
-
-//   return (
-//     <div className={styles.tableContainer}>
-//       {filteredProducts.map((category, index) => (
-//         <div key={index} id={category.id}>
-//           {/* Category Heading */}
-//           <h2 className={styles.heading}>{category.category}</h2>
-
-//           {/* Product Table */}
-//           <table className={`table table-striped ${styles.table}`}>
-//             <thead>
-//               <tr>
-//                 <th className={styles.head}>S/No</th>
-//                 <th className={styles.heads}>Items</th>
-//                 <th className={styles.head}>Description</th>
-//                 <th className={styles.head}>Price</th>
-//                 <th className={styles.head}>Buy</th>
-//                 <th className={styles.head}>Picture</th>
-//               </tr>
-//             </thead>
-//             <tbody>
-//               {category.items.map(item => {
-//                 const hasDescriptionClass = item.customClass?.includes('description');
-//                 const isSold = item.customClass?.includes('sold');
-
-//                 const originalPrice = item.price;
-//                 const discountedPrice = applyDiscount(item.price);
-
-//                 return (
-//                   <tr key={item.id}>
-//                     <td>{item.id}</td>
-//                     <td>{item.name}</td>
-//                     <td>
-//                       {hasDescriptionClass ? (
-//                         <div>
-//                           <button
-//                             className={styles.viewButton}
-//                             onClick={() => handleShowModal(item)}
-//                           >
-//                             View Description
-//                           </button>
-//                         </div>
-//                       ) : (
-//                         item.description
-//                       )}
-//                     </td>
-//                     <td>
-//                       {isSold ? (
-//                         <span>{originalPrice}</span>
-//                       ) : (
-//                         <div>
-//                           <span style={{ textDecoration: 'line-through' }}>
-//                             {originalPrice}
-//                           </span>{' '}
-//                           <span>{discountedPrice} PKR</span>
-//                         </div>
-//                       )}
-//                     </td>
-//                     <td>
-//                       {isSold ? (
-//                         <button className={`${styles.btn} ${styles.disabledBtn}`} disabled>
-//                           Sold
-//                         </button>
-//                       ) : (
-//                         <a
-//                           href={generateWhatsAppLink(item.name, discountedPrice)}
-//                           target="_blank"
-//                           rel="noopener noreferrer"
-//                           className={styles.btn}
-//                         >
-//                           <i className="fas fa-shopping-cart"></i>
-//                         </a>
-//                       )}
-//                     </td>
-//                     <td>
-//                       <a
-//                         href={item.pictureUrl}
-//                         target="_blank"
-//                         rel="noopener noreferrer"
-//                         className={styles.btn}
-//                       >
-//                         <i className="fas fa-camera"></i>
-//                       </a>
-//                     </td>
-//                   </tr>
-//                 );
-//               })}
-//             </tbody>
-//           </table>
-
-//           {/* Divider between categories */}
-//           <hr style={{ border: '2px solid black', marginBottom: '20px' }} />
-//         </div>
-//       ))}
-
-//       {/* Modal for showing full description */}
-//       {selectedItem && (
-//         <div className={styles.modalOverlay} onClick={handleCloseModal}>
-//           <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
-//             <h2>{selectedItem.name}</h2>
-//             <p>{selectedItem.description}</p>
-//             <button className={styles.closeModalButton} onClick={handleCloseModal}>
-//               Close
-//             </button>
-//           </div>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-// // export default ProductTable;
-// import React, { useState } from 'react';
-// import styles from './ProductTable.module.css';
-// import products from './products'; // Assume your products are imported here
-
 const ProductTable = ({ selectedCategory, applyDiscountToAll = true }) => {
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -698,8 +404,8 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll = true }) => {
   // Generate WhatsApp link based on the item name and price
   const generateWhatsAppLink = (name, price) => {
     const numericPrice = price.split(' ')[0]; // Extract numeric part of price
-    const message = `I want to buy ${name} with price ${numericPrice} PKR`; // Prepare WhatsApp message
-    const whatsappNumber = '923343288223'; // Default WhatsApp number
+    const message = `I am interested in ${name} with price ${numericPrice} PKR`; // Prepare WhatsApp message
+    const whatsappNumber = '923160175207'; // Default WhatsApp number
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   };
 
@@ -716,9 +422,15 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll = true }) => {
   // Calculate the discounted price (10% off)
   const applyDiscount = (price) => {
     const numericPrice = parseFloat(price.split(' ')[0]);
-    return (numericPrice * 0.9).toFixed(2);
+    
+    // Check if the numeric price is greater than 1000
+    // if (numericPrice > 1000) {
+    //   return (numericPrice * 0.85).toFixed(2); // 15% off
+    // } else {
+      return (numericPrice * 0.9).toFixed(2); // 25% off
+    // }
   };
-
+  
   return (
     <div className={styles.tableContainer}>
       {filteredProducts.map((category, index) => (
