@@ -8,7 +8,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import OriginalMicroCable from './Pictures/OriginalMicroCable.jpg';
 import microbasic from './Pictures/OriginalMicroCable.jpg';
 import HDMiBasic from './Pictures/HDMiBasic.jpg';
-import Aux from './Pictures/Aux.jpg';
+import Acable from './Pictures/Acable.jpg';
 
 import typeCbasic from './Pictures/typeCbasic.jpg';
 import Lightening1500 from './Pictures/Lightening1500.jpg';
@@ -134,7 +134,7 @@ const products = [
       { id: '8', name: 'HDMI Cable', description: 'Normal Quality 1.5m Length', price: '300', pictureUrl: [HDMiBasic] },
 
       {
-        id: '9', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Aux],
+        id: '9', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Acable],
         // customClass: 'description',
       },
 
