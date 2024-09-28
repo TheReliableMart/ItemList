@@ -31,6 +31,7 @@ import Sandisk3100 from './Pictures/Sandisk3100.jpg';
 import Sandisk6750 from './Pictures/Sandisk6750.jpg';
 import Sandisk1500 from './Pictures/Sandisk1500.jpg';
 import Sandisk2400 from './Pictures/Sandisk2400.jpg';
+import SandiskiXpand from './Pictures/SandiskiXpand.jpg';
 
 
 
@@ -160,11 +161,12 @@ const products = [
     items: [
       { id: '1', name: 'Sandisk OTG Drive M3.0 256GB', description: 'Compatible with OTG-enabled Android devices.', price: '6800', pictureUrl: [Sandisk6800] , customClass: 'price'},
       { id: '2', name: 'Sandisk Otg Dual Drive Android', description: `64GB Flash || Brand Warranty`, price: '2400', pictureUrl: [Sandisk2400], customClass: 'price'},
-      { id: '3', name: 'SanDisk - Ultra Fit 3.1', description: '128GB Flash', price: '3100', pictureUrl: [Sandisk3100], customClass: 'sold' },
-      { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '256GB Flash', price: '6750', pictureUrl: [Sandisk6750], customClass: 'sold' },
-      { id: '5', name: 'SanDisk - Ultra Fit 3.1', description: '32GB Flash', price: '1500', pictureUrl: [Sandisk1500], customClass: 'sold' },
+      { id: '3', name: 'Sandisk iXpand Flash Drive', description: `256GB || Brand Warranty`, price: '18000', pictureUrl: [SandiskiXpand], customClass: 'price'},
+      { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '128GB Flash', price: '3100', pictureUrl: [Sandisk3100], customClass: 'noPrice' },
+      // { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '256GB Flash', price: '6750', pictureUrl: [Sandisk6750], customClass: 'noPrice' },
+      { id: '5', name: 'SanDisk - Ultra Fit 3.1', description: '32GB Flash', price: '1500', pictureUrl: [Sandisk1500], customClass: 'noPrice' },
       {
-        id: '6', name: 'SanDisk - Ultra Flair 3.0 ', description: '512GB Flash', price: '13500 ', pictureUrl: [Sandisk13500], customClass: 'sold'
+        id: '6', name: 'SanDisk - Ultra Flair 3.0 ', description: '512GB Flash', price: '13500 ', pictureUrl: [Sandisk13500], customClass: 'noPrice'
       },
     ],
   },
@@ -174,16 +176,16 @@ const products = [
     items: [
       { id: '1', name: 'BOYA mic', description: 'Original Boya Mic with 18 months warranty. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '2800', pictureUrl: [Boya2800], customClass: 'description' },
       { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '920', pictureUrl: [enrg], customClass: 'price' },
-      { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '450', pictureUrl: [Gionee450], customClass: 'price' },
-      { id: '4', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold" },
-      { id: '5', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description sold' },
+      { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '400', pictureUrl: [Gionee450], customClass: 'price' },
+      // { id: '4', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold" },
+      { id: '4', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description sold' },
       // {
       //   id: '6', name: 'Redmi Buds 3 White Global', description: `Brand: Xiaomi
       //   Model: Redmi buds 3, Colour: White, Wireless connection: Bluetooth 5.2,  Battery Capacity: 35mAh (single earbud), Battery type: Lithium-ion polymer battery, Input parameters: 5V70mA, Communication Range: 10m (open space free of obstacles), Single earbud net weight: 4.5 g, Earbud dimensions: 40.7 x 16.9 x 18.7mm. `, price: '5500', pictureUrl: [Redmi7450], customClass: "description  ",
       // },
-      { id: '6', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description'},
+      { id: '5', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description'},
 
-      { id: '7', name: 'K2 Gaming Headphones', description: 'Gaming Headphones with RGB lights, 50mm driver, comfortable design, ', price: '2750', pictureUrl: [GamingHeadphone], customClass: "description" },
+      { id: '6', name: 'K2 Gaming Headphones', description: 'Gaming Headphones with RGB lights, 50mm driver, comfortable design, ', price: '2750', pictureUrl: [GamingHeadphone], customClass: "description" },
     ],
   },
 
@@ -399,6 +401,170 @@ const products = [
 
 
 
+// const ProductTable = ({ selectedCategory, applyDiscountToAll = true }) => {
+//   const [selectedItem, setSelectedItem] = useState(null);
+
+//   // Filter products based on the selected category
+//   const filteredProducts = selectedCategory === 'all'
+//     ? products
+//     : products.filter(category => category.id === selectedCategory);
+
+//   // Generate WhatsApp link based on the item name and price
+//   const generateWhatsAppLink = (name, price) => {
+//     const numericPrice = price.split(' ')[0]; // Extract numeric part of price
+//     const message = `I am interested in ${name} with price ${numericPrice} PKR`; // Prepare WhatsApp message
+//     const whatsappNumber = '923160175207'; // Default WhatsApp number
+//     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+//   };
+
+//   // Handle button click to show modal
+//   const handleShowModal = (item) => {
+//     setSelectedItem(item);
+//   };
+
+//   // Close the modal
+//   const handleCloseModal = () => {
+//     setSelectedItem(null);
+//   };
+
+//   // Calculate the discounted price (10% off)
+//   const applyDiscount = (price) => {
+//     const numericPrice = parseFloat(price.split(' ')[0]);
+    
+//     // Check if the numeric price is greater than 1000
+//     // if (numericPrice > 1000) {
+//     //   return (numericPrice * 0.85).toFixed(2); // 15% off
+//     // } else {
+//       return (numericPrice * 0.9).toFixed(2); // 25% off
+//     // }
+//   };
+  
+//   return (
+//     <div className={styles.tableContainer}>
+//       {filteredProducts.map((category, index) => (
+//         <div key={index} id={category.id}>
+//           {/* Category Heading */}
+//           <h2 className={styles.heading}>{category.category}</h2>
+
+//           {/* Product Table */}
+//           <table className={`table table-striped ${styles.table}`}>
+//             <thead>
+//               <tr>
+//                 <th className={styles.head}>S/No</th>
+//                 <th className={styles.heads}>Items</th>
+//                 <th className={styles.head}>Description</th>
+//                 <th className={styles.head}>Price</th>
+//                 <th className={styles.head}>Buy</th>
+//                 <th className={styles.head}>Picture</th>
+//               </tr>
+//             </thead>
+//             <tbody>
+//               {category.items.map(item => {
+//                 const hasDescriptionClass = item.customClass?.includes('description');
+//                 const isSold = item.customClass?.includes('sold');
+//                 const hasPriceClass = item.customClass?.includes('price');
+
+//                 const originalPrice = item.price;
+//                 const discountedPrice = applyDiscount(item.price);
+
+//                 // Discount Logic:
+//                 // Option 1: Apply discount to all items
+//                 // Option 2: Apply discount only to items with 'price' class
+//                 const finalPrice = applyDiscountToAll || hasPriceClass
+//                   ? discountedPrice
+//                   : originalPrice;
+
+//                 return (
+//                   <tr key={item.id}>
+//                     <td>{item.id}</td>
+//                     <td>{item.name}</td>
+//                     <td>
+//                       {hasDescriptionClass ? (
+//                         <div>
+//                           <button
+//                             className={styles.viewButton}
+//                             onClick={() => handleShowModal(item)}
+//                           >
+//                             View {/* Font Awesome icon for "View" */}
+//                           </button>
+//                         </div>
+//                       ) : (
+//                         item.description
+//                       )}
+//                     </td>
+//                     <td>
+//                       {isSold ? (
+//                         <span>{originalPrice}</span>
+//                       ) : (
+//                         <div>
+//                           {/* Show original price with strikethrough if discounted */}
+//                           {applyDiscountToAll || hasPriceClass ? (
+//                             <>
+//                               <span style={{ textDecoration: 'line-through' }}>
+//                                 {originalPrice}
+//                               </span>{' '}
+//                               <span>{finalPrice} PKR</span>
+//                             </>
+//                           ) : (
+//                             <span>{originalPrice}</span>
+//                           )}
+//                         </div>
+//                       )}
+//                     </td>
+//                     <td>
+//                       {isSold ? (
+//                         <button className={`${styles.btn} ${styles.disabledBtn}`} disabled>
+//                           Sold
+//                         </button>
+//                       ) : (
+//                         <a
+//                           href={generateWhatsAppLink(item.name, finalPrice)}
+//                           target="_blank"
+//                           rel="noopener noreferrer"
+//                           className={styles.btn}
+//                         >
+//                           <i className="fas fa-shopping-cart"></i>
+//                         </a>
+//                       )}
+//                     </td>
+//                     <td>
+//                       <a
+//                         href={item.pictureUrl}
+//                         target="_blank"
+//                         rel="noopener noreferrer"
+//                         className={styles.btn}
+//                       >
+//                         <i className="fas fa-camera"></i>
+//                       </a>
+//                     </td>
+//                   </tr>
+//                 );
+//               })}
+//             </tbody>
+//           </table>
+
+//           {/* Divider between categories */}
+//           <hr style={{ border: '2px solid black', marginBottom: '20px' }} />
+//         </div>
+//       ))}
+
+//       {/* Modal for showing full description */}
+//       {selectedItem && (
+//         <div className={styles.modalOverlay} onClick={handleCloseModal}>
+//           <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
+//             <h2>{selectedItem.name}</h2>
+//             <p>{selectedItem.description}</p>
+//             <button className={styles.closeModalButton} onClick={handleCloseModal}>
+//               Close
+//             </button>
+//           </div>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default ProductTable;
 const ProductTable = ({ selectedCategory, applyDiscountToAll = true }) => {
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -428,15 +594,9 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll = true }) => {
   // Calculate the discounted price (10% off)
   const applyDiscount = (price) => {
     const numericPrice = parseFloat(price.split(' ')[0]);
-    
-    // Check if the numeric price is greater than 1000
-    // if (numericPrice > 1000) {
-    //   return (numericPrice * 0.85).toFixed(2); // 15% off
-    // } else {
-      return (numericPrice * 0.9).toFixed(2); // 25% off
-    // }
+    return (numericPrice * 0.9).toFixed(2); // 10% off
   };
-  
+
   return (
     <div className={styles.tableContainer}>
       {filteredProducts.map((category, index) => (
@@ -461,14 +621,16 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll = true }) => {
                 const hasDescriptionClass = item.customClass?.includes('description');
                 const isSold = item.customClass?.includes('sold');
                 const hasPriceClass = item.customClass?.includes('price');
+                const noPriceClass = item.customClass?.includes('noPrice'); // Check if item has noPrice class
 
                 const originalPrice = item.price;
                 const discountedPrice = applyDiscount(item.price);
 
-                // Discount Logic:
-                // Option 1: Apply discount to all items
-                // Option 2: Apply discount only to items with 'price' class
-                const finalPrice = applyDiscountToAll || hasPriceClass
+                // Final Price Logic:
+                // - If applyDiscountToAll is true and the item doesn't have the noPrice class, apply the discount.
+                // - If the item has a 'price' class but no 'noPrice' class, apply the discount.
+                // - If the item has a 'noPrice' class, do not apply the discount.
+                const finalPrice = (!noPriceClass && (applyDiscountToAll || hasPriceClass))
                   ? discountedPrice
                   : originalPrice;
 
@@ -496,7 +658,7 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll = true }) => {
                       ) : (
                         <div>
                           {/* Show original price with strikethrough if discounted */}
-                          {applyDiscountToAll || hasPriceClass ? (
+                          {(!noPriceClass && (applyDiscountToAll || hasPriceClass)) ? (
                             <>
                               <span style={{ textDecoration: 'line-through' }}>
                                 {originalPrice}
