@@ -336,7 +336,7 @@ const products = [
 
       },
       {
-        id: '2', name: 'Bedminton Rackets', description: 'Yonex astrox 100 single', price: '2500', pictureUrl: [YonexSingle],
+        id: '2', name: 'Bedminton Rackets', description: 'Yonex astrox 100 single', price: '2400', pictureUrl: [YonexSingle],
         //  customClass:'sold'
 
       },
