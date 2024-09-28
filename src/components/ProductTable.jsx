@@ -132,7 +132,7 @@ const products = [
       { id: '5', name: 'ANSTY Lightning Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
       { id: '6', name: 'Lightning Cable', description: 'Basic Quality', price: '280', pictureUrl: [Lighteningbasic] },
       { id: '7', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '450', pictureUrl: [HDMIcableOrg] },
-      { id: '8', name: 'HDMI Cable', description: 'Normal Quality 1.5m Length', price: '300', pictureUrl: [HDMiBasic] },
+      { id: '8', name: 'HDMI Cable', description: 'Normal Quality 1.5m Length', price: '300', pictureUrl: [HDMiBasic], customClass: 'sold' },
 
       {
         id: '9', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Acable],
