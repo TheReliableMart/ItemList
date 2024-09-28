@@ -127,9 +127,9 @@ const products = [
       { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
       // { id: '3', name: 'TypeC Charging Cable', description: 'Original Cable', price: '--', pictureUrl: [], customClass: 'sold' },
       { id: '3', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 33W', price: '250', pictureUrl: [typeCbasic] },
-      { id: '4', name: 'Anker Lightening Cable', description: 'MFi Certified', price: '2450', pictureUrl: [MFiCable] },
-      { id: '5', name: 'ANSTY Lightening Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
-      { id: '6', name: 'Lightening Cable', description: 'Basic Quality', price: '280', pictureUrl: [Lighteningbasic] },
+      { id: '4', name: 'Anker Lightning Cable', description: 'MFi Certified', price: '2450', pictureUrl: [MFiCable] },
+      { id: '5', name: 'ANSTY Lightning Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
+      { id: '6', name: 'Lightning Cable', description: 'Basic Quality', price: '280', pictureUrl: [Lighteningbasic] },
       { id: '7', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '450', pictureUrl: [HDMIcableOrg] },
       { id: '8', name: 'HDMI Cable', description: 'Normal Quality 1.5m Length', price: '300', pictureUrl: [HDMiBasic] },
 
@@ -197,7 +197,7 @@ const products = [
         , customClass: 'price'},
       { id: '2', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '2000', pictureUrl: [gamingMouseWireless], customClass: '' },
       { id: '3', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '180', pictureUrl: [MousePad120], customClass: 'price' },
-      { id: '4', name: 'MousePad', description: 'Good Quality Mousepad, available in black ', price: '250', pictureUrl: [MousePad250], customClass: 'price' },
+      { id: '4', name: 'MousePad', description: 'Good Quality Mousepad, available in black ', price: '260', pictureUrl: [MousePad250], customClass: 'price' },
     ],
   },
   {
