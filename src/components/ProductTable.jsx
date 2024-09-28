@@ -7,8 +7,12 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 //ACCESSORIES
 import OriginalMicroCable from './Pictures/OriginalMicroCable.jpg';
 import microbasic from './Pictures/OriginalMicroCable.jpg';
+import HDMiBasic from './Pictures/HDMiBasic.jpg';
+import Aux from './Pictures/Aux.jpg';
+
 import typeCbasic from './Pictures/typeCbasic.jpg';
 import Lightening1500 from './Pictures/Lightening1500.jpg';
+import Lighteningbasic from './Pictures/Lighteningbasic.jpg';
 import USBHub from './Pictures/USBHub.jpg';
 import HDMIcableOrg from './Pictures/HDMIcableOrg.jpg';
 import MFiCable from './Pictures/MFiCable.jpg';
@@ -91,10 +95,12 @@ import YonexSingle from './Pictures/YonexSingle.jpg';
 import Gosan from './Pictures/Gosan.jpg';
 import FGdon from './Pictures/FGdon.jpg';
 import LargeBall from './Pictures/LargeBall.jpg';
+import ShineBall from './Pictures/ShineBall.jpg';
 import BKHard from './Pictures/BKHard.jpg';
 import MZHard from './Pictures/MZHard.jpg';
 import SajjadHard from './Pictures/SajjadHard.jpg';
 import Trump from './Pictures/Trump.jpg';
+import GS1 from './Pictures/GS1.jpg';
 import Voltric from './Pictures/Voltric.jpg';
 import PingPongButterfly from './Pictures/PingPongButterfly.jpg';
 import PingPongDoubleCircle from './Pictures/PingPongDoubleCircle.jpg';
@@ -123,12 +129,12 @@ const products = [
       { id: '3', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 33W', price: '250', pictureUrl: [typeCbasic] },
       { id: '4', name: 'Anker Lightening Cable', description: 'MFi Certified', price: '2450', pictureUrl: [MFiCable] },
       { id: '5', name: 'ANSTY Lightening Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
-      { id: '6', name: 'Lightening Cable', description: 'Basic Quality', price: '280', pictureUrl: [] },
+      { id: '6', name: 'Lightening Cable', description: 'Basic Quality', price: '280', pictureUrl: [Lighteningbasic] },
       { id: '7', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '450', pictureUrl: [HDMIcableOrg] },
-      { id: '8', name: 'HDMI Cable', description: 'Normal Quality 1m Length', price: '300', pictureUrl: [HDMIcableOrg] },
+      { id: '8', name: 'HDMI Cable', description: 'Normal Quality 1.5m Length', price: '300', pictureUrl: [HDMiBasic] },
 
       {
-        id: '9', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [],
+        id: '9', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Aux],
         // customClass: 'description',
       },
 
@@ -177,7 +183,7 @@ const products = [
       // },
       { id: '6', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description'},
 
-      { id: '7', name: 'Gaming Headphone', description: 'Gaming Headphones with RGB lights', price: '2750', pictureUrl: [GamingHeadphone], customClass: "" },
+      { id: '7', name: 'K2 Gaming Headphones', description: 'Gaming Headphones with RGB lights, 50mm driver, comfortable design, ', price: '2750', pictureUrl: [GamingHeadphone], customClass: "description" },
     ],
   },
 
@@ -186,11 +192,11 @@ const products = [
     id: 'MouseandMousePads',
     items: [
       {
-        id: '1', name: 'RGB Mouse', description: 'Wired with 7 lights & mouse pad', price: '690', pictureUrl: [GamingMouse520]
+        id: '1', name: 'RGB Mouse', description: 'Wired with 7 lights', price: '650', pictureUrl: [GamingMouse520]
         // customClass: 'sold'
         , customClass: 'price'},
       { id: '2', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '2000', pictureUrl: [gamingMouseWireless], customClass: '' },
-      { id: '3', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '160', pictureUrl: [MousePad120], customClass: 'price' },
+      { id: '3', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '180', pictureUrl: [MousePad120], customClass: 'price' },
       { id: '4', name: 'MousePad', description: 'Good Quality Mousepad, available in black ', price: '250', pictureUrl: [MousePad250], customClass: 'price' },
     ],
   },
@@ -338,18 +344,18 @@ const products = [
 
       },
       { id: '4', name: 'Cricket Tennis Ball', description: 'FG Don', price: '360', pictureUrl: [FGdon] },
-      { id: '5', name: 'Cricket Tennis Ball', description: 'Shine Ball', price: '360', pictureUrl: [] },
+      { id: '5', name: 'Cricket Tennis Ball', description: 'Shine Ball', price: '360', pictureUrl: [ShineBall] },
       { id: '6', name: 'Cricket Tennis Ball', description: 'Large Size Ball', price: '340', pictureUrl: [LargeBall ] },
       { id: '7', name: 'Cricket Hard Ball', description: 'BK Sports, can be used upto 20 overs', price: '600', pictureUrl: [BKHard] },
       { id: '8', name: 'Cricket Hard Ball', description: 'MZ Sports, can be used upto 20 overs', price: '550', pictureUrl: [MZHard] },
       { id: '9', name: 'Cricket Hard Ball', description: 'Sajjad Sports, can be used upto 20 overs', price: '650', pictureUrl: [SajjadHard] },
       {
-        id: '10', name: 'Shuttle trump', description: 'original High Quality', price: '380', pictureUrl: [Trump],
+        id: '10', name: 'Shuttle trump', description: ' High Quality', price: '380', pictureUrl: [Trump],
         //  customClass:'sold'
 
       },
       {
-        id: '11', name: 'Shuttle', description: 'GS 1', price: '335', pictureUrl: [],
+        id: '11', name: 'Shuttle', description: 'GS 1, High Quality', price: '335', pictureUrl: [GS1],
         //  customClass:'sold'
 
       },
