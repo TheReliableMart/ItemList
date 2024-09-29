@@ -159,9 +159,9 @@ const products = [
     category: 'USBs',
     id: 'USBs',
     items: [
-      { id: '1', name: 'Sandisk OTG Drive M3.0 256GB', description: 'Compatible with OTG-enabled Android devices.', price: '6800', pictureUrl: [Sandisk6800] , customClass: 'price'},
-      { id: '2', name: 'Sandisk Otg Dual Drive Android', description: `64GB Flash || Brand Warranty`, price: '2400', pictureUrl: [Sandisk2400], customClass: 'price'},
-      { id: '3', name: 'Sandisk iXpand Flash Drive', description: `256GB || Brand Warranty`, price: '18000', pictureUrl: [SandiskiXpand], customClass: 'price'},
+      { id: '1', name: 'Sandisk OTG Drive M3.0 256GB', description: 'Compatible with OTG-enabled Android devices.', price: '6800', pictureUrl: [Sandisk6800] , customClass: ''},
+      { id: '2', name: 'Sandisk Otg Dual Drive Android', description: `64GB Flash || Brand Warranty`, price: '2400', pictureUrl: [Sandisk2400], customClass: ''},
+      { id: '3', name: 'Sandisk iXpand Flash Drive', description: `256GB || Brand Warranty`, price: '18000', pictureUrl: [SandiskiXpand], customClass: ''},
       { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '128GB Flash', price: '3100', pictureUrl: [Sandisk3100], customClass: 'noPrice' },
       // { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '256GB Flash', price: '6750', pictureUrl: [Sandisk6750], customClass: 'noPrice' },
       { id: '5', name: 'SanDisk - Ultra Fit 3.1', description: '32GB Flash', price: '1500', pictureUrl: [Sandisk1500], customClass: 'noPrice' },
@@ -175,8 +175,8 @@ const products = [
     id: 'MicAndHeadphones',
     items: [
       { id: '1', name: 'BOYA mic', description: 'Original Boya Mic with 18 months warranty. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '2800', pictureUrl: [Boya2800], customClass: 'description' },
-      { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '920', pictureUrl: [enrg], customClass: 'price' },
-      { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '400', pictureUrl: [Gionee450], customClass: 'price' },
+      { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '920', pictureUrl: [enrg], customClass: '' },
+      { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '400', pictureUrl: [Gionee450], customClass: '' },
       // { id: '4', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold" },
       { id: '4', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description sold' },
       // {
@@ -196,10 +196,10 @@ const products = [
       {
         id: '1', name: 'RGB Mouse', description: 'Wired with 7 lights', price: '650', pictureUrl: [GamingMouse520]
         // customClass: 'sold'
-        , customClass: 'price'},
+        , customClass: ''},
       { id: '2', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1900', pictureUrl: [gamingMouseWireless], customClass: '' },
-      { id: '3', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '180', pictureUrl: [MousePad120], customClass: 'price' },
-      { id: '4', name: 'MousePad', description: 'Good Quality Mousepad, available in black ', price: '260', pictureUrl: [MousePad250], customClass: 'price' },
+      { id: '3', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '180', pictureUrl: [MousePad120], customClass: '' },
+      { id: '4', name: 'MousePad', description: 'Good Quality Mousepad, available in black ', price: '260', pictureUrl: [MousePad250], customClass: '' },
     ],
   },
   {
@@ -272,7 +272,7 @@ const products = [
  Net Weight : 236g
  Gross Weight : 270g
  Product Dimension : 14.8 x 6.9 x 1.6 cm
- Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4123', pictureUrl: [Fasterwireless], customClass: 'description price'
+ Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4123', pictureUrl: [Fasterwireless], customClass: 'description '
       },
 
       {
@@ -285,7 +285,7 @@ const products = [
  Net Weight : 180g
  Product Dimension : 875726 mm
  Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4638', pictureUrl: [Faster20W],
-        customClass: 'description price'
+        customClass: 'description '
       },
 
       {
@@ -294,7 +294,7 @@ const products = [
  Output : 2.1A
  Battery Type : Polymer Lithium
  Warranty : 1 Year Warranty. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '1855', pictureUrl: [Faster5k],
-        customClass: 'description price'
+        customClass: 'description '
       },
     ],
   },
