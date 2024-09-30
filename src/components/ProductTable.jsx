@@ -61,7 +61,7 @@ import Phillips10000 from './Pictures/Phillips10000.jpg';
 import Dingling from './Pictures/Dingling.jpg';
 
 
-//TAPES
+//WATCHES
 
 import Yolo8500 from './Pictures/Yolo8500.jpg';
 import Yolo12000 from './Pictures/Yolo12000.jpg';
@@ -71,10 +71,12 @@ import Itel10000 from './Pictures/Itel10000.jpg';
 
 
 
-//EARBUDS
+//POWERBANKS
 import Faster5k from './Pictures/Faster5k.jpg';
 import Fasterwireless from './Pictures/Fasterwireless.jpg';
 import Faster20W from './Pictures/Faster20W.jpg';
+import SpaceSP075 from './Pictures/SpaceSP075.jpg';
+import FasterW10 from './Pictures/FasterW10.jpg';
 
 
 // //RULERS
@@ -294,6 +296,20 @@ const products = [
  Output : 2.1A
  Battery Type : Polymer Lithium
  Warranty : 1 Year Warranty. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '1855', pictureUrl: [Faster5k],
+        customClass: 'description '
+      },
+      {
+        id: '4', name: 'Space SPEED 20000 mAH', description: `Space SPEED 20000 mAH 3.0 Power Bank SP-075. Qualcomm Quick Charge 3.0, PD Technology, Luxurious, Metallic Body, Modern LCD Display`, price: '8830', pictureUrl: [SpaceSP075],
+        customClass: 'description '
+      },
+      {
+        id: '5', name: 'Faster W10 Mini Power Bank', description: `
+Brand : Faster,
+Model No : W10,
+Capacity : 10000 mAh,
+Output : 2.1A,
+Battery Type:Polymer Lithium,
+Warranty: 1 year Warranty. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4690', pictureUrl: [FasterW10],
         customClass: 'description '
       },
     ],
