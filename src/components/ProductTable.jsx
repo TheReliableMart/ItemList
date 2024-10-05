@@ -43,12 +43,18 @@ import Boya2800 from './Pictures/Boya2800.jpg';
 import GamingHandsfree from './Pictures/GamingHandsfree.jpg';
 import Faster4900 from './Pictures/Faster4900.jpg';
 import SpaceHeadphones from './Pictures/SpaceHeadphones.jpg';
-import Redmi7450 from './Pictures/Redmi7450.jpg';
-// import Dollar10Pointers from './Pictures/10DollarPointers.jpg';
+import BoostGroovewirelessheadset from './Pictures/BoostGroovewirelessheadset.jpg';
+import BoostSonic from './Pictures/BoostSonic.jpg';
+import BoostEcho from './Pictures/BoostEcho.jpg';
+import BoostPulse from './Pictures/BoostPulse.jpg';
+import BoostSync from './Pictures/BoostSync.jpg';
+import Boostwave from './Pictures/Boostwave.jpg';
 
 //Mouse
 import GamingMouse520 from './Pictures/GamingMouse520.jpg';
 import gamingMouseWireless from './Pictures/gamingMouseWireless.jpg';
+import gamingMouseWired from './Pictures/gamingMouseWired.jpg';
+import RGBKeyboard from './Pictures/RGBKeyboard.jpg';
 //1;
 
 import MousePad250 from './Pictures/MousePad250.jpg';
@@ -68,6 +74,8 @@ import Yolo12000 from './Pictures/Yolo12000.jpg';
 import Yolo10000 from './Pictures/Yolo10000.jpg';
 import Yolo10000Charcoal from './Pictures/Yolo10000Charcoal.jpg';
 import Itel10000 from './Pictures/Itel10000.jpg';
+import Astro from './Pictures/Astro.jpg';
+import boostCosmic from './Pictures/boostCosmic.jpg';
 
 
 
@@ -188,6 +196,16 @@ const products = [
       { id: '5', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description'},
 
       { id: '6', name: 'K2 Gaming Headphones', description: 'Gaming Headphones with RGB lights, 50mm driver, comfortable design, ', price: '2750', pictureUrl: [GamingHeadphone], customClass: "description" },
+      { id: '7', name: 'Boost Groove wireless headset', description: 'Experience seamless connectivity with Bluetooth 5.0+EDR on Boost Groove headset for enhanced performance. 5 hours play time with micro SD card supported. Enjoy immersive sound with 40mm speakers and audio jack. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller. ', price: '3000', pictureUrl: [BoostGroovewirelessheadset], customClass: "description noPrice" },
+
+      { id: '8', name: 'Boost Sonic wireless Headset', description: 'Enjoy ultimate calling and play experience with Bluetooth 5.0+EDR and an amazing battery life. Memory card and aux cable supported.  7 color lightening with immersive 40mm speaker. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '3500', pictureUrl: [BoostSonic], customClass: "description noPrice" },
+
+      { id: '9', name: 'Boost Echo wired gaming Headset', description: 'Enjoy comfortable and adjustable Headband with Ergonomic earcups. Stand out in style with dynamic RGB lightening and immersive experience with 7.1 virtual sound and tangle free cable. Communicate clearly with high quality, built-in microphone. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller. ', price: '5500', pictureUrl: [BoostEcho], customClass: "description noPrice" },
+
+      { id: '10', name: 'Boost Pulse wireless Anc Headphone', description: 'Enjoy uninterrupted listening with Bluetooth 5.3 and amazing battery life with dynamic sound. Experience Active Noise Cancellation and talk time upto 20 hours. Fast type-C charging. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '6000', pictureUrl: [BoostPulse], customClass: "description noPrice" },
+      
+      { id: '11', name: 'Boost Sync premium ANC wireless Headset', description: ' Enjoy ultimate calling and listening with Bluetooth 5.4 and an amazing battery life upto 60 hours playing hours. Experience 27dB noise cancellation and 40mm Neodymium speakers. IPX4 resistance offering protection against splashes and sweat. Aux cable supported. Available in black and blue color. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '8000', pictureUrl: [BoostSync], customClass: "description noPrice" },
+      { id: '12', name: 'Boost Wave premium hybrid ANC headset.', description: 'Experience a quality listening upto 80 hours play time with Bluetooth 5.4 and IPX4 water resistance. Enhance gaming experience with 45MS and 35dB Hybrid noise cancellation. Travel case included. Type-C charging with aux cable supported. Available in black and blue color. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '11000', pictureUrl: [Boostwave], customClass: "description noPrice" },
     ],
   },
 
@@ -195,13 +213,21 @@ const products = [
     category: 'Mouse and MousePads',
     id: 'MouseandMousePads',
     items: [
+      { id: '1', name: 'Wired Mouse', description: 'Good Quality mouse', price: '400', pictureUrl: [], customClass: '' },
       {
-        id: '1', name: 'RGB Mouse', description: 'Wired with 7 lights', price: '650', pictureUrl: [GamingMouse520]
+        id: '2', name: 'RGB Mouse', description: 'Wired with 7 lights', price: '650', pictureUrl: [GamingMouse520]
         // customClass: 'sold'
         , customClass: ''},
-      { id: '2', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1900', pictureUrl: [gamingMouseWireless], customClass: 'sold' },
-      { id: '3', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '180', pictureUrl: [MousePad120], customClass: '' },
-      { id: '4', name: 'MousePad', description: 'Good Quality Mousepad, available in black ', price: '260', pictureUrl: [MousePad250], customClass: '' },
+
+      { id: '3', name: 'Wired Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1500', pictureUrl: [gamingMouseWired], customClass: '' },
+
+      { id: '4', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1900', pictureUrl: [gamingMouseWireless], customClass: '' },
+
+      { id: '5', name: 'RGB Semi-Mechanical Keyboard ', description: 'Semi Mechanical wired Keyboard', price: '2250', pictureUrl: [RGBKeyboard], customClass: '' },
+
+      { id: '6', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '180', pictureUrl: [MousePad120], customClass: '' },
+
+      { id: '7', name: 'MousePad', description: 'Good Quality Mousepad, available in black ', price: '260', pictureUrl: [MousePad250], customClass: '' },
     ],
   },
   {
@@ -255,6 +281,21 @@ const products = [
         customClass: 'description ',
 
       },
+      {
+        id: '6', name: 'Boost Astro Smart Watch', description: 'Enjoy the amazing features including heart rate, Bluetooth 5.3, calls, sleep tracker, flashlight, water resistance, find phone, voice assistant and distance tracker. Moreover, have a comfortable wear with multiple dials and 2 straps. Screen size: 1.43 inches. Brand warranty 1 year. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '8500', pictureUrl: [Astro],
+        customClass: 'description ',
+
+      },
+      {
+        id: '7', name: 'Boost Cosmic Smart Watch', description: 'Enjoy automatic heart rate monitor, Bluetooth calling, call notifications, sleep tracker, flashlight, password unlocking, water resistance, find phone, voice assistant, stress test, steps counter and 2.01 inch Amoled. Moreover, enjoy comfortable wear with multiple dials and 2 straps. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '10000', pictureUrl: [boostCosmic],
+        customClass: 'description ',
+
+      },
+      // {
+      //   id: '5', name: 'Itel Smart Watch - ISW 31 With Bt Calling', description: 'BT calling, Clear voice, 1.72" HD color display, Blood Oxygen Monitor SpO2, Heart Rate Monitor, Narrow Metal Bezel Design, Multiple Sport Modes (7+ Sport Modes), Smart Notifications, Music Playback & Control, Camera Control, IP67 Water Resistance, 1 Year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.', price: '10000', pictureUrl: [Itel10000],
+      //   customClass: 'description ',
+
+      // },
     ],
   },
   {
