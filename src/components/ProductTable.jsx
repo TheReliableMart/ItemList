@@ -18,7 +18,7 @@ import HDMIcableOrg from './Pictures/HDMIcableOrg.jpg';
 import MFiCable from './Pictures/MFiCable.jpg';
 import ANSTYlighteningCable from './Pictures/ANSTYlighteningCable.jpg';
 import Connetorpc from './Pictures/Connetorpc.jpg';
-// import ringrough180 from './Pictures/RingRoughRegister2.jpg';
+import OriginalTypeC from './Pictures/OriginalTypeC.jpg';
 // import NonRingRoughRegister150 from './Pictures/NonRingRoughRegister150.jpg';
 // import NonRingRoughRegister210 from './Pictures/NonRingRoughRegister210.jpg';
 
@@ -136,24 +136,24 @@ const products = [
     items: [
       { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [microbasic] },
       { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
-      // { id: '3', name: 'TypeC Charging Cable', description: 'Original Cable', price: '--', pictureUrl: [], customClass: 'sold' },
-      { id: '3', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 33W', price: '250', pictureUrl: [typeCbasic] },
-      { id: '4', name: 'Anker Lightning Cable', description: 'MFi Certified', price: '2450', pictureUrl: [MFiCable] },
-      { id: '5', name: 'ANSTY Lightning Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
-      { id: '6', name: 'Lightning Cable', description: 'Basic Quality', price: '280', pictureUrl: [Lighteningbasic] },
-      { id: '7', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '450', pictureUrl: [HDMIcableOrg] },
-      { id: '8', name: 'HDMI Cable', description: 'Normal Quality 1.5m Length', price: '300', pictureUrl: [HDMiBasic], customClass: 'sold' },
+      { id: '3', name: 'TypeC Charging Cable', description: 'Original infinix Cable', price: '600', pictureUrl: [OriginalTypeC], customClass: '' },
+      { id: '4', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 33W', price: '250', pictureUrl: [typeCbasic] },
+      { id: '5', name: 'Anker Lightning Cable', description: 'MFi Certified', price: '2450', pictureUrl: [MFiCable] },
+      { id: '6', name: 'ANSTY Lightning Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
+      { id: '7', name: 'Lightning Cable', description: 'Basic Quality', price: '280', pictureUrl: [Lighteningbasic] },
+      { id: '8', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '450', pictureUrl: [HDMIcableOrg] },
+      { id: '9', name: 'HDMI Cable', description: 'Normal Quality 1.5m Length', price: '300', pictureUrl: [HDMiBasic], customClass: '' },
 
       {
-        id: '9', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Acable],
+        id: '10', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Acable],
         // customClass: 'description',
       },
 
-      { id: '10', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
+      { id: '11', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
 
 
-      { id: '11', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] },
-      { id: '12', name: '2 in 1 3.5mm', description: 'connector for PCs', price: '150', pictureUrl: [Connetorpc] },
+      { id: '12', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] },
+      { id: '13', name: '2 in 1 3.5mm', description: 'connector for PCs', price: '280', pictureUrl: [Connetorpc] },
       // { id: '11', name: ' HDMI to Lightening', description: '', price: '--', pictureUrl: [], customClass: "sold"  },
 
       // { id: '12', name: 'Type c to 3.5mm', description: '', price: '--', pictureUrl: [], customClass: "sold"  },
@@ -283,12 +283,12 @@ const products = [
       },
       {
         id: '6', name: 'Boost Astro Smart Watch', description: 'Enjoy the amazing features including heart rate, Bluetooth 5.3, calls, sleep tracker, flashlight, water resistance, find phone, voice assistant and distance tracker. Moreover, have a comfortable wear with multiple dials and 2 straps. Screen size: 1.43 inches. Brand warranty 1 year. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '8500', pictureUrl: [Astro],
-        customClass: 'description ',
+        customClass: 'description noPrice',
 
       },
       {
         id: '7', name: 'Boost Cosmic Smart Watch', description: 'Enjoy automatic heart rate monitor, Bluetooth calling, call notifications, sleep tracker, flashlight, password unlocking, water resistance, find phone, voice assistant, stress test, steps counter and 2.01 inch Amoled. Moreover, enjoy comfortable wear with multiple dials and 2 straps. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '10000', pictureUrl: [boostCosmic],
-        customClass: 'description ',
+        customClass: 'description noPrice ',
 
       },
       // {
