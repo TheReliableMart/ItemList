@@ -76,6 +76,7 @@ import Yolo10000Charcoal from './Pictures/Yolo10000Charcoal.jpg';
 import Itel10000 from './Pictures/Itel10000.jpg';
 import Astro from './Pictures/Astro.jpg';
 import boostCosmic from './Pictures/boostCosmic.jpg';
+import ImilabW12 from './Pictures/ImilabW12.jpg';
 
 
 
@@ -85,6 +86,8 @@ import Fasterwireless from './Pictures/Fasterwireless.jpg';
 import Faster20W from './Pictures/Faster20W.jpg';
 import SpaceSP075 from './Pictures/SpaceSP075.jpg';
 import FasterW10 from './Pictures/FasterW10.jpg';
+import DanyTitan from './Pictures/DanyTitan.jpg';
+import Audionicspark from './Pictures/Audionicspark.jpg';
 
 
 // //RULERS
@@ -288,7 +291,12 @@ const products = [
       },
       {
         id: '7', name: 'Boost Cosmic Smart Watch', description: 'Enjoy automatic heart rate monitor, Bluetooth calling, call notifications, sleep tracker, flashlight, password unlocking, water resistance, find phone, voice assistant, stress test, steps counter and 2.01 inch Amoled. Moreover, enjoy comfortable wear with multiple dials and 2 straps. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '10000', pictureUrl: [boostCosmic],
-        customClass: 'description noPrice ',
+        customClass: 'description noPrice '},
+      {
+        id: '8', name: 'IMILAB SMART BUSSINESS WATCH 12', description: `330 mAh battery 
+UpTo 30 days backup
+IP68. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.`, price: '10000', pictureUrl: [ImilabW12],
+        customClass: 'description noPrice '
 
       },
       // {
@@ -351,6 +359,19 @@ Capacity : 10000 mAh,
 Output : 2.1A,
 Battery Type:Polymer Lithium,
 Warranty: 1 year Warranty. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4690', pictureUrl: [FasterW10],
+        customClass: 'description '
+      },
+      {
+        id: '6', name: 'Dany Titan T-100', description: `22.5W 20,000 mAh 
+2 USB Outputs (Quick Charge)
+Dual Input (Type-C +Micro)
+
+Size: 68x143.1x29 (mm)
+Net Weight: 418.1 grams`, price: '6000', pictureUrl: [DanyTitan],
+        customClass: 'description '
+      },
+      {
+        id: '7', name: 'Audionic Spark Pro S200', description: `Audionic Spark Pro S200: 10000mAh power bank with 22.5W PD & QC 3.0 fast charging.`, price: '4400', pictureUrl: [Audionicspark],
         customClass: 'description '
       },
     ],
