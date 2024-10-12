@@ -191,7 +191,7 @@ const products = [
       { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '920', pictureUrl: [enrg], customClass: '' },
       { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '400', pictureUrl: [Gionee450], customClass: '' },
       // { id: '4', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold" },
-      { id: '4', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description sold' },
+      { id: '4', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description ' },
       // {
       //   id: '6', name: 'Redmi Buds 3 White Global', description: `Brand: Xiaomi
       //   Model: Redmi buds 3, Colour: White, Wireless connection: Bluetooth 5.2,  Battery Capacity: 35mAh (single earbud), Battery type: Lithium-ion polymer battery, Input parameters: 5V70mA, Communication Range: 10m (open space free of obstacles), Single earbud net weight: 4.5 g, Earbud dimensions: 40.7 x 16.9 x 18.7mm. `, price: '5500', pictureUrl: [Redmi7450], customClass: "description  ",
