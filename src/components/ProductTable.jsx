@@ -189,7 +189,7 @@ const products = [
     items: [
       { id: '1', name: 'BOYA mic', description: 'Original Boya Mic with 18 months warranty. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '2800', pictureUrl: [Boya2800], customClass: 'description' },
       { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '920', pictureUrl: [enrg], customClass: '' },
-      { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '420', pictureUrl: [Gionee450], customClass: 'sold' },
+      { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '420', pictureUrl: [Gionee450], customClass: '' },
       // { id: '4', name: 'Gaming Handsfree', description: 'Gaming Handsfree with 2 mics', price: '850', pictureUrl: [GamingHandsfree], customClass: "sold" },
       { id: '4', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description ' },
       // {
@@ -216,19 +216,19 @@ const products = [
     category: 'Mouse and MousePads',
     id: 'MouseandMousePads',
     items: [
-      { id: '1', name: 'Wired Mouse', description: 'Good Quality mouse', price: '400', pictureUrl: [], customClass: 'sold' },
+      { id: '1', name: 'Wired Mouse', description: 'Good Quality mouse', price: '400', pictureUrl: [], customClass: '' },
       {
         id: '2', name: 'RGB Mouse', description: 'Wired with 7 lights', price: '650', pictureUrl: [GamingMouse520]
         // customClass: 'sold'
-        , customClass: 'sold'},
+        , customClass: ''},
 
-      { id: '3', name: 'Wired Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1500', pictureUrl: [gamingMouseWired], customClass: 'sold' },
+      { id: '3', name: 'Wired Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1500', pictureUrl: [gamingMouseWired], customClass: '' },
 
       { id: '4', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1900', pictureUrl: [gamingMouseWireless], customClass: '' },
 
-      { id: '5', name: 'RGB Semi-Mechanical Keyboard ', description: 'Semi Mechanical wired Keyboard', price: '2250', pictureUrl: [RGBKeyboard], customClass: 'sold' },
+      { id: '5', name: 'RGB Semi-Mechanical Keyboard ', description: 'Semi Mechanical wired Keyboard', price: '2250', pictureUrl: [RGBKeyboard], customClass: '' },
 
-      { id: '6', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '180', pictureUrl: [MousePad120], customClass: 'sold' },
+      { id: '6', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '180', pictureUrl: [MousePad120], customClass: '' },
 
       { id: '7', name: 'MousePad', description: 'Good Quality Mousepad, available in black ', price: '260', pictureUrl: [MousePad250], customClass: '' },
     ],
