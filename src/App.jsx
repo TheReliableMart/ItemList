@@ -17,8 +17,8 @@ const App = () => {
   useEffect(() => {
     const checkDiscountPeriod = () => {
       const now = new Date();
-      const discountStart = new Date(now.getFullYear(), 10, 10, 11, 34); // Nov 11, 12:00 PM
-      const discountEnd = new Date(now.getFullYear(), 10, 10, 11, 35); // Nov 11, 11:59 PM
+      const discountStart = new Date(now.getFullYear(), 10, 11, 0, 0); // Nov 11, 12:00 PM
+      const discountEnd = new Date(now.getFullYear(), 10, 12, 0, 0); // Nov 11, 11:59 PM
 
       // Apply discount only within this period
       if (now >= discountStart && now <= discountEnd) {
