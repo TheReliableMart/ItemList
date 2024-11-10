@@ -412,10 +412,10 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll = true }) => {
   // Calculate the discounted price based on type
   const applyDiscount = (price, type) => {
     const numericPrice = parseFloat(price.split(' ')[0]);
-    if (type === 'calculator') {
-      return (numericPrice * 0.95).toFixed(2); // 5% off for calculators
-    }
-    return (numericPrice * 0.90).toFixed(2); // 10% off for other items
+    // if (type === 'calculator') {
+    //   return (numericPrice * 0.95).toFixed(2); // 5% off for calculators
+    // }
+    return (numericPrice * 0.89).toFixed(2); // 10% off for other items
   };
 
   return (
