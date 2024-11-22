@@ -247,7 +247,7 @@ const products = [
       {
         id: '8', name: 'IMILAB SMART BUSSINESS WATCH 12', description: `330 mAh battery 
 UpTo 30 days backup
-IP68. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.`, price: '10000', pictureUrl: [ImilabW12],
+IP68. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.`, price: '6000', pictureUrl: [ImilabW12],
         customClass: 'description noPrice '
 
       },
@@ -270,7 +270,7 @@ IP68. 1 year brand warranty. NOTE: This item has brand warranty and cannot be cl
  Net Weight : 236g
  Gross Weight : 270g
  Product Dimension : 14.8 x 6.9 x 1.6 cm
- Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4123', pictureUrl: [Fasterwireless], customClass: 'description '
+ Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4550', pictureUrl: [Fasterwireless], customClass: 'description '
       },
 
       {
