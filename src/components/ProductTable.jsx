@@ -6,7 +6,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 /*Pictures*/
 //ACCESSORIES
 import OriginalMicroCable from './Pictures/OriginalMicroCable.jpg';
-import microbasic from './Pictures/OriginalMicroCable.jpg';
+import microbasic from './Pictures/microbasic.jpg';
 import HDMiBasic from './Pictures/HDMiBasic.jpg';
 import Acable from './Pictures/Acable.jpg';
 
@@ -63,6 +63,16 @@ import Phillips6000 from './Pictures/Phillips6000.jpg';
 import Phillips10000 from './Pictures/Phillips10000.jpg';
 import Dingling from './Pictures/Dingling.jpg';
 
+
+// J.
+import Flames from './Pictures/J/Flames.jpg';
+import Janan from './Pictures/J/Janan.jpg';
+import Zarar from './Pictures/J/Zarar.jpg';
+import J from './Pictures/J/J.jpg';
+import J10C from './Pictures/J/J10C.jpg';
+import UNS from './Pictures/J/UNS.jpg';
+import Drift from './Pictures/J/Drift.jpg';
+import Hemani from './Pictures/J/Hemani.jpg';
 
 //WATCHES
 
@@ -155,7 +165,7 @@ const products = [
     items: [
       { id: '1', name: 'BOYA mic', description: 'Original Boya Mic with 18 months warranty. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '2800', pictureUrl: [Boya2800], customClass: 'description' },
       { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '920', pictureUrl: [enrg], customClass: '' },
-      { id: '3', name: 'Gionee Handsfree', description: 'Original', price: '420', pictureUrl: [Gionee450], customClass: '' },
+      { id: '3', name: 'Gionee Handsfree', description: 'High Quality', price: '420', pictureUrl: [Gionee450], customClass: '' },
       { id: '4', name: 'Faster Earbuds True Wireless E20 TWS', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. bt 5.1. Available in white color || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4900', pictureUrl: [Faster4900], customClass: 'description ' },
       { id: '5', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description'},
 
@@ -201,6 +211,52 @@ const products = [
       {
         id: '1', name: 'Dingling Professional Trimmer RF-609', description: `The DINGLING has been developed using the latest technical know how. It has been produced using the most modern machinery and all the functions have been thoroughly tested. We hope you will be fully satisfied with the DINGLING. Before use please read the operating instructions carefully,`, price: '3100 ', pictureUrl: [Dingling], 
         customClass: 'description'
+        // customClass: 'soldClass',
+      },
+    ]
+  },
+  {
+    category: 'Perfumes',
+    id: 'Perfumes',
+    items: [
+      {
+        id: '1', name: 'J. Flames of Passion', description: `Flames of Passion — a bold and sensual fragrance that ignites the senses. It opens with zesty Mandarin, Bergamot, and juicy Red Berries, unfolding into a heart of Caramel, Rose, and Jasmine. The scent lingers with a warm, captivating base of Vanilla, Oakmoss, and Musks.`, price: '4700 ', pictureUrl: [Flames], 
+        customClass: 'description noPrice'
+        // customClass: 'soldClass',
+      },
+      {
+        id: '2', name: 'J. Janan Musk', description: `Janan Musk is an ode to quiet strength. Its fresh citrus notes meet soft florals and melt into a warm blend of musk, amber, and cashmere woods. A refined, modern scent that lingers like a whispered memory, it evokes confidence, connection, and calm. Crafted for those who find elegance in restraint.`, price: '7100 ', pictureUrl: [Janan], 
+        customClass: 'description noPrice'
+        // customClass: 'soldClass',
+      },
+      {
+        id: '3', name: 'J. ZARAR GOLD - 30ml', description: `Size	30ml; Fragrance Category	Fruity, Woody`, price: '2200 ', pictureUrl: [Zarar], 
+        customClass: 'description noPrice'
+        // customClass: 'soldClass',
+      },
+      {
+        id: '4', name: 'J. Perfumes', description: `For any other Perfume`, price: 'As Per MRP ', pictureUrl: [J], 
+        customClass: 'description noPrice'
+        // customClass: 'soldClass',
+      },
+      {
+        id: '5', name: 'Hemani Shaheen J10C', description: `Shaheen J10C is a bold and defiant scent forged for men who rise in the face of challenge. It opens with an energetic burst of pink pepper, cardamom, and violet leaves;  a sharp strike that mirrors the intensity of a fighter jet in motion. `, price: '3900 ', pictureUrl: [J10C], 
+        customClass: 'description noPrice'
+        // customClass: 'soldClass',
+      },
+      {
+        id: '6', name: 'UNS', description: `UNS is a tender, luminous perfume that captures the quiet beauty of connection. It opens with the soft brightness of bergamot and peony; fresh yet comforting, like the first smile exchanged between kindred souls. At its heart, the endless elegance of rose blends with the golden warmth of amber, creating a delicate sense of intimacy. The scent settles into a soft base of musk and woody notes, warm and grounding, like the feeling of being truly seen and understood.`, price: '3900 ', pictureUrl: [UNS], 
+        customClass: 'description noPrice'
+        // customClass: 'soldClass',
+      },
+      {
+        id: '7', name: 'Drift', description: `Introducing Drift, a fragrance that embodies the exhilarating rush of a perfectly executed drift. This scent is a tribute to the individual who embraces the edge, balancing precision with a daring spirit. It opens with the sharp, invigorating notes of Bergamot and Grapefruit, mirroring the initial burst of adrenaline. `, price: '920 ', pictureUrl: [Drift], 
+        customClass: 'description noPrice'
+        // customClass: 'soldClass',
+      },
+      {
+        id: '6', name: 'WB by Hemani', description: `For any other Perfume`, price: 'As per MRP ', pictureUrl: [Hemani], 
+        customClass: 'description noPrice'
         // customClass: 'soldClass',
       },
     ]

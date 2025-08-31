@@ -133,6 +133,7 @@ const categories = [
   { name: 'Mic and Headphones', id: 'MicAndHeadphones' },
   { name: 'Mouse and MousePads', id: 'MouseandMousePads' },
   { name: 'Trimmers', id: 'Trimmers' },
+  { name: 'Perfumes', id: 'Perfumes' },
   { name: 'Watches', id: 'Watches' },
   { name: 'Power Banks', id: 'PowerBanks' },
   // { name: 'Rulers', id: 'rulers' },
