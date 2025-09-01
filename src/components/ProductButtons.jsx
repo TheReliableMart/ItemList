@@ -53,7 +53,6 @@
 
 
 
-// ProductButtons.jsx
 import React, { useState } from 'react';
 import styles from './ProductButtons.module.css';
 
@@ -70,13 +69,13 @@ const categories = [
   { name: 'Sports', id: 'sports' },
 ];
 
-const ProductButtons = ({ onSelectCategory }) => {
-  const [selectedCategory, setSelectedCategory] = useState('all');
+const ProductButtons = ({ onSelectCategory, selectedCategory, applyDiscountToAll, closeSearchBar }) => {
+  const [currentCategory, setCurrentCategory] = useState('all');
 
   const handleCategoryClick = (id) => {
-    setSelectedCategory(id);
+    setCurrentCategory(id);
     onSelectCategory(id);
-    // Scroll to the category section smoothly
+    closeSearchBar(); // Close search bar when a category is clicked
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -90,7 +89,7 @@ const ProductButtons = ({ onSelectCategory }) => {
           key={category.id}
           onClick={() => handleCategoryClick(category.id)}
           className={`${styles.customButton} ${
-            selectedCategory === category.id ? styles.activeButton : ''
+            currentCategory === category.id ? styles.activeButton : ''
           }`}
         >
           {category.name}
