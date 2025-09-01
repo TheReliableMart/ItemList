@@ -1,0 +1,43 @@
+/* SearchBar.module.css */
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: #f8f9fa; /* Light background to match store theme */
+  width: 100vw;
+}
+
+.searchInput {
+  width: 50%;
+  max-width: 600px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #6CBEC7;
+  box-shadow: 0 0 8px rgba(108, 190, 199, 0.5);
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .searchInput {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 480px) and (orientation: landscape) {
+  .searchInput {
+    width: 80%;
+    font-size: 12px;
+    padding: 8px;
+  }
+}
