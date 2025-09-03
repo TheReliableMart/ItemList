@@ -85,6 +85,11 @@ import Phillips6000 from './Pictures/Phillips6000.jpg';
 import Phillips10000 from './Pictures/Phillips10000.jpg';
 import Dingling from './Pictures/Dingling.jpg';
 
+//Laptops 
+import Elitebook440 from './Pictures/Elitebook440.jpg';
+import ZBook from './Pictures/ZBook.jpg';
+
+
 
 // J.
 import Flames from './Pictures/J/Flames.jpg';
@@ -294,6 +299,38 @@ const products = [
         // customClass: 'soldClass',
       },
 
+    ]
+  },
+  {
+    category: 'Laptops',
+    id: 'Laptops',
+    items: [
+      {
+        id: '1', name: 'HP Elitebook 440 G7 ', description: `Core i5 10th Gen 
+8GB RAM ,
+256GB SSD, 
+2GB dedicated Graphics card,
+
+7 days money back  guarantee,
+15 days check warranty`, price: '78000 ', pictureUrl: [Elitebook440],
+        customClass: 'description'
+        // customClass: 'soldClass',
+      },
+      {
+        id: '2', name: 'HP zbook', description: `Core i9 11 Gen 
+32GB RAM ,
+512GB SSD,
+8gb Dedicated Graphics Card RTX A4000,
+condition: 9/10,
+Good battery life, 
+Excellent processing power,
+
+
+7 days money back  guarantee
+15 days check warranty`, price: '180000 ', pictureUrl: [ZBook],
+        customClass: 'description'
+        // customClass: 'soldClass',
+      },
     ]
   },
   {

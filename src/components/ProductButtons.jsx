@@ -64,6 +64,7 @@ const categories = [
   { name: 'Mic and Headphones', id: 'MicAndHeadphones' },
   { name: 'Mouse and MousePads', id: 'MouseandMousePads' },
   { name: 'Electronics', id: 'Electronics' },
+  { name: 'Laptops', id: 'Laptops' },
   { name: 'Trimmers', id: 'Trimmers' },
   { name: 'Perfumes', id: 'Perfumes' },
   { name: 'Watches', id: 'Watches' },
