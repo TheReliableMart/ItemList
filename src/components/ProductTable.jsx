@@ -242,13 +242,13 @@ const products = [
 
       { id: '3', name: 'Wired Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1500', pictureUrl: [gamingMouseWired], customClass: '' },
 
-      { id: '4', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1900', pictureUrl: [gamingMouseWireless], customClass: '' },
+      { id: '4', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1600', pictureUrl: [gamingMouseWireless], customClass: '' },
 
-      { id: '5', name: 'RGB Semi-Mechanical Keyboard ', description: 'Semi Mechanical wired Keyboard', price: '2250', pictureUrl: [RGBKeyboard], customClass: '' },
+      { id: '5', name: 'RGB Semi-Mechanical Keyboard ', description: 'Semi Mechanical wired Keyboard', price: '2050', pictureUrl: [RGBKeyboard], customClass: '' },
 
       { id: '6', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '180', pictureUrl: [MousePad120], customClass: '' },
 
-      { id: '7', name: 'MousePad', description: 'Good Quality Mousepad, available in black ', price: '260', pictureUrl: [MousePad250], customClass: '' },
+      { id: '7', name: 'MousePad', description: 'Good Quality Mousepad, available in black ', price: '230', pictureUrl: [MousePad250], customClass: '' },
     ],
   },
   {
@@ -388,7 +388,7 @@ const products = [
       {
         id: '8', name: 'IMILAB SMART BUSSINESS WATCH 12', description: `330 mAh battery 
 UpTo 30 days backup
-IP68. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.`, price: '6000', pictureUrl: [ImilabW12],
+IP68. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.`, price: '7500', pictureUrl: [ImilabW12],
         customClass: 'description noPrice '
 
       },
@@ -423,7 +423,7 @@ IP68. 1 year brand warranty. NOTE: This item has brand warranty and cannot be cl
  Total Output : 20W
  Net Weight : 180g
  Product Dimension : 875726 mm
- Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4638', pictureUrl: [Faster20W],
+ Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4000', pictureUrl: [Faster20W],
         customClass: 'description '
       },
 
@@ -432,11 +432,11 @@ IP68. 1 year brand warranty. NOTE: This item has brand warranty and cannot be cl
  Capacity : 5000
  Output : 2.1A
  Battery Type : Polymer Lithium
- Warranty : 1 Year Warranty. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '1855', pictureUrl: [Faster5k],
+ Warranty : 1 Year Warranty. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '1500', pictureUrl: [Faster5k],
         customClass: 'description '
       },
       {
-        id: '4', name: 'Space SPEED 20000 mAH', description: `Space SPEED 20000 mAH 3.0 Power Bank SP-075. Qualcomm Quick Charge 3.0, PD Technology, Luxurious, Metallic Body, Modern LCD Display`, price: '8830', pictureUrl: [SpaceSP075],
+        id: '4', name: 'Space SPEED 20000 mAH', description: `Space SPEED 20000 mAH 3.0 Power Bank SP-075. Qualcomm Quick Charge 3.0, PD Technology, Luxurious, Metallic Body, Modern LCD Display`, price: '8800', pictureUrl: [SpaceSP075],
         customClass: 'description '
       },
       {
@@ -459,7 +459,7 @@ Net Weight: 418.1 grams`, price: '6000', pictureUrl: [DanyTitan],
         customClass: 'description '
       },
       {
-        id: '7', name: 'Audionic Spark Pro S200', description: `Audionic Spark Pro S200: 10000mAh power bank with 22.5W PD & QC 3.0 fast charging.`, price: '4400', pictureUrl: [Audionicspark],
+        id: '7', name: 'Audionic Spark Pro S200', description: `Audionic Spark Pro S200: 10000mAh power bank with 22.5W PD & QC 3.0 fast charging.`, price: '4600', pictureUrl: [Audionicspark],
         customClass: 'description '
       },
     ],
