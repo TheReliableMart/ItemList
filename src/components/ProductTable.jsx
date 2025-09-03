@@ -1,7 +1,7 @@
 import styles from './ProductTable.module.css';
 import { useState, useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import { FaEye } from "react-icons/fa";
 
 /*Pictures*/
 //ACCESSORIES
@@ -143,33 +143,41 @@ const products = [
     id: 'Accessories',
     items: [
       { id: '1', name: 'RGB RingLight', description: '20 Light Modes', price: '1200', pictureUrl: [RingLight] },
-      { id: '2', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [microbasic] },
-      { id: '3', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
-      { id: '4', name: 'TypeC Charging Cable', description: 'High Quality Cable', price: '500', pictureUrl: [OriginalTypeC], customClass: '' },
-      { id: '5', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 70W', price: '150', pictureUrl: [CNormal] },
-      { id: '6', name: 'TypeC Charging Cable', description: 'Basic Quality Cable || upTo 33W', price: '250', pictureUrl: [typeCbasic] },
-      { id: '7', name: 'Anker Lightning Cable', description: 'MFi Certified', price: '2000', pictureUrl: [MFiCable] },
-      { id: '8', name: 'ANSTY Lightning Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
-      { id: '9', name: 'Lightning Cable', description: 'Basic Quality', price: '280', pictureUrl: [Lighteningbasic] },
-      { id: '10', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
-      { id: '11', name: 'Card Reader', description: 'SD Card Reader', price: '50', pictureUrl: [CardReader] },
-      { id: '12', name: 'Type C OTG', description: 'Good Quality OTG', price: '100', pictureUrl: [COtg] },
-      { id: '13', name: 'Wifi Dongle', description: 'Alfa Wifi Dongle', price: '500', pictureUrl: [WifiAlfaDongle] },
-      { id: '14', name: 'Power Cable', description: 'Good Quality 1m Length', price: '220', pictureUrl: [PowerCable] },
-      { id: '15', name: 'VGA Cable', description: 'Good Quality 1m Length', price: '250', pictureUrl: [VGACable] },
-      { id: '16', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '350', pictureUrl: [HDMIcableOrg] },
+      
+      { id: '2', name: 'Card Reader', description: 'SD Card Reader', price: '50', pictureUrl: [CardReader] },
+      { id: '3', name: 'Type C OTG', description: 'Good Quality OTG', price: '100', pictureUrl: [COtg] },
+      { id: '4', name: 'Wifi Dongle', description: 'Alfa Wifi Dongle', price: '500', pictureUrl: [WifiAlfaDongle] },
+     
+
+
+      { id: '5', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] },
+      { id: '6', name: '2 in 1 3.5mm', description: 'connector for PCs', price: '280', pictureUrl: [Connetorpc] },
+
+
+    ],
+  },
+  {
+    category: 'Chargers & Cables',
+    id: 'Chargers',
+    items: [
+      { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [microbasic] },
+      { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
+      { id: '3', name: 'TypeC Charging Cable', description: 'High Quality Cable', price: '500', pictureUrl: [OriginalTypeC], customClass: '' },
+      { id: '4', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 70W', price: '250', pictureUrl: [typeCbasic] },
+      { id: '5', name: 'TypeC Charging Cable', description: 'Basic Quality Cable || upTo 70W', price: '150', pictureUrl: [CNormal] },
+      { id: '6', name: 'Anker Lightning Cable', description: 'MFi Certified', price: '2000', pictureUrl: [MFiCable] },
+      { id: '7', name: 'ANSTY Lightning Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
+      { id: '8', name: 'Lightning Cable', description: 'Basic Quality', price: '280', pictureUrl: [Lighteningbasic] },
+      { id: '9', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
+       { id: '10', name: 'Power Cable', description: 'Good Quality 1m Length', price: '220', pictureUrl: [PowerCable] },
+      { id: '11', name: 'VGA Cable', description: 'Good Quality 1m Length', price: '250', pictureUrl: [VGACable] },
+      { id: '13', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '350', pictureUrl: [HDMIcableOrg] },
     
 
       {
-        id: '17', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Acable],
+        id: '13', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Acable],
         // customClass: 'description',
       },
-
-
-
-      { id: '18', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] },
-      { id: '19', name: '2 in 1 3.5mm', description: 'connector for PCs', price: '280', pictureUrl: [Connetorpc] },
-
 
     ],
   },
@@ -762,6 +770,7 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
                 const originalPrice = item.price;
                 const finalPrice = getFinalPrice(item);
 
+                
                 return (
                   <tr key={item.id}>
                     <td>{item.id}</td>
@@ -769,12 +778,12 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
                     <td>
                       {hasDescriptionClass ? (
                         <div>
-                          <button
-                            className={styles.viewButton}
-                            onClick={() => handleShowModal(item)}
-                          >
-                            View
-                          </button>
+                            <button
+                              className={styles.viewButton}
+                              onClick={() => handleShowModal(item)}
+                            >
+                              <FaEye size={20} />
+                            </button>
                         </div>
                       ) : (
                         item.description
