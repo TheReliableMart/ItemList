@@ -33,7 +33,7 @@
 //     onSelectCategory(id);    // Trigger callback for parent component
 //   };
 
-  
+
 //   return (
 //     <div className={styles.buttonContainer}>
 //       {categories.map((category) => (
@@ -62,6 +62,7 @@ const categories = [
   { name: 'USBs', id: 'USBs' },
   { name: 'Mic and Headphones', id: 'MicAndHeadphones' },
   { name: 'Mouse and MousePads', id: 'MouseandMousePads' },
+  { name: 'Electronics', id: 'Electronics' },
   { name: 'Trimmers', id: 'Trimmers' },
   { name: 'Perfumes', id: 'Perfumes' },
   { name: 'Watches', id: 'Watches' },
@@ -88,9 +89,8 @@ const ProductButtons = ({ onSelectCategory, selectedCategory, applyDiscountToAll
         <button
           key={category.id}
           onClick={() => handleCategoryClick(category.id)}
-          className={`${styles.customButton} ${
-            currentCategory === category.id ? styles.activeButton : ''
-          }`}
+          className={`${styles.customButton} ${currentCategory === category.id ? styles.activeButton : ''
+            }`}
         >
           {category.name}
         </button>

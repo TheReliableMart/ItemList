@@ -1,18 +1,25 @@
 import styles from './ProductTable.module.css';
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 /*Pictures*/
 //ACCESSORIES
+import RingLight from './Pictures/RingLight.jpg';
 import OriginalMicroCable from './Pictures/OriginalMicroCable.jpg';
 import microbasic from './Pictures/microbasic.jpg';
 import HDMiBasic from './Pictures/HDMiBasic.jpg';
 import Acable from './Pictures/Acable.jpg';
 
 import typeCbasic from './Pictures/typeCbasic.jpg';
+import CNormal from './Pictures/CNormal.jpg';
 import Lightening1500 from './Pictures/Lightening1500.jpg';
+import CardReader from './Pictures/CardReader.jpg';
+import COtg from './Pictures/COtg.jpg';
+import WifiAlfaDongle from './Pictures/WifiAlfaDongle.jpg';
 import Lighteningbasic from './Pictures/Lighteningbasic.jpg';
+import PowerCable from './Pictures/PowerCable.jpg';
+import VGACable from './Pictures/VGACable.jpg';
 import USBHub from './Pictures/USBHub.jpg';
 import HDMIcableOrg from './Pictures/HDMIcableOrg.jpg';
 import MFiCable from './Pictures/MFiCable.jpg';
@@ -35,6 +42,11 @@ import SandiskiXpand from './Pictures/SandiskiXpand.jpg';
 //MIC 
 import enrg from './Pictures/Lavalier1000.jpg';
 import Gionee450 from './Pictures/Gionee450.jpg';
+import CGionee from './Pictures/CGionee.jpg';
+import NormalGionee from './Pictures/NormalGionee.jpg';
+import Cjionee from './Pictures/Cjionee.jpg';
+import Jionee from './Pictures/Jionee.jpg';
+import Mark1 from './Pictures/Mark1.jpg';
 import GamingHeadphone from './Pictures/GamingHeadphone.jpg';
 import Boya2800 from './Pictures/Boya2800.jpg';
 import GamingHandsfree from './Pictures/GamingHandsfree.jpg';
@@ -50,14 +62,23 @@ import Boostwave from './Pictures/Boostwave.jpg';
 
 //Mouse
 import GamingMouse520 from './Pictures/GamingMouse520.jpg';
+import DellWiredMouse from './Pictures/DellWiredMouse.jpg';
+import DellWireLessMouse from './Pictures/DellWireLessMouse.jpg';
 import gamingMouseWireless from './Pictures/gamingMouseWireless.jpg';
 import gamingMouseWired from './Pictures/gamingMouseWired.jpg';
-import RGBKeyboard from './Pictures/RGBKeyboard.jpg';
+import RGBKeyboard from   './Pictures/RGBKeyboard.jpg';
 //1;
 
 import MousePad250 from './Pictures/MousePad250.jpg';
 import MousePad120 from './Pictures/MousePad120.jpg';
 
+// Electronics
+import UNO from './Pictures/UNO.jpg';
+import IR from './Pictures/IR.jpg';
+import US from './Pictures/US.jpg';
+import L298 from './Pictures/L298.jpg';
+import CellCase3 from './Pictures/3CellCase.jpg';
+import CellCase2 from './Pictures/2CellCase.jpg';
 // Trimmer
 import Phillips8000 from './Pictures/Phillips8000.jpg';
 import Phillips6000 from './Pictures/Phillips6000.jpg';
@@ -121,27 +142,34 @@ const products = [
     category: 'Accessories',
     id: 'Accessories',
     items: [
-      { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [microbasic] },
-      { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
-      { id: '3', name: 'TypeC Charging Cable', description: 'Original infinix Cable', price: '600', pictureUrl: [OriginalTypeC], customClass: '' },
-      { id: '4', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 33W', price: '250', pictureUrl: [typeCbasic] },
-      { id: '5', name: 'Anker Lightning Cable', description: 'MFi Certified', price: '2000', pictureUrl: [MFiCable] },
-      { id: '6', name: 'ANSTY Lightning Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
-      { id: '7', name: 'Lightning Cable', description: 'Basic Quality', price: '280', pictureUrl: [Lighteningbasic] },
-      { id: '8', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '450', pictureUrl: [HDMIcableOrg] },
-      { id: '9', name: 'HDMI Cable', description: 'Normal Quality 1.5m Length', price: '300', pictureUrl: [HDMiBasic], customClass: '' },
+      { id: '1', name: 'RGB RingLight', description: '20 Light Modes', price: '1200', pictureUrl: [RingLight] },
+      { id: '2', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [microbasic] },
+      { id: '3', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
+      { id: '4', name: 'TypeC Charging Cable', description: 'High Quality Cable', price: '500', pictureUrl: [OriginalTypeC], customClass: '' },
+      { id: '5', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 70W', price: '150', pictureUrl: [CNormal] },
+      { id: '6', name: 'TypeC Charging Cable', description: 'Basic Quality Cable || upTo 33W', price: '250', pictureUrl: [typeCbasic] },
+      { id: '7', name: 'Anker Lightning Cable', description: 'MFi Certified', price: '2000', pictureUrl: [MFiCable] },
+      { id: '8', name: 'ANSTY Lightning Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
+      { id: '9', name: 'Lightning Cable', description: 'Basic Quality', price: '280', pictureUrl: [Lighteningbasic] },
+      { id: '10', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
+      { id: '11', name: 'Card Reader', description: 'SD Card Reader', price: '50', pictureUrl: [CardReader] },
+      { id: '12', name: 'Type C OTG', description: 'Good Quality OTG', price: '100', pictureUrl: [COtg] },
+      { id: '13', name: 'Wifi Dongle', description: 'Alfa Wifi Dongle', price: '500', pictureUrl: [WifiAlfaDongle] },
+      { id: '14', name: 'Power Cable', description: 'Good Quality 1m Length', price: '220', pictureUrl: [PowerCable] },
+      { id: '15', name: 'VGA Cable', description: 'Good Quality 1m Length', price: '250', pictureUrl: [VGACable] },
+      { id: '16', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '350', pictureUrl: [HDMIcableOrg] },
+    
 
       {
-        id: '10', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Acable],
+        id: '17', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Acable],
         // customClass: 'description',
       },
 
-      { id: '11', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
 
 
-      { id: '12', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] },
-      { id: '13', name: '2 in 1 3.5mm', description: 'connector for PCs', price: '280', pictureUrl: [Connetorpc] },
-   
+      { id: '18', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] },
+      { id: '19', name: '2 in 1 3.5mm', description: 'connector for PCs', price: '280', pictureUrl: [Connetorpc] },
+
 
     ],
   },
@@ -149,9 +177,9 @@ const products = [
     category: 'USBs',
     id: 'USBs',
     items: [
-      { id: '1', name: 'Sandisk OTG Drive M3.0 256GB', description: 'Compatible with OTG-enabled Android devices.', price: '6800', pictureUrl: [Sandisk6800] , customClass: ''},
-      { id: '2', name: 'Sandisk Otg Dual Drive Android', description: `64GB Flash || Brand Warranty`, price: '2400', pictureUrl: [Sandisk2400], customClass: ''},
-      { id: '3', name: 'Sandisk iXpand Flash Drive', description: `256GB || Brand Warranty`, price: '18000', pictureUrl: [SandiskiXpand], customClass: ''},
+      { id: '1', name: 'Sandisk OTG Drive M3.0 256GB', description: 'Compatible with OTG-enabled Android devices.', price: '6800', pictureUrl: [Sandisk6800], customClass: '' },
+      { id: '2', name: 'Sandisk Otg Dual Drive Android', description: `64GB Flash || Brand Warranty`, price: '2400', pictureUrl: [Sandisk2400], customClass: '' },
+      { id: '3', name: 'Sandisk iXpand Flash Drive', description: `256GB || Brand Warranty`, price: '18000', pictureUrl: [SandiskiXpand], customClass: '' },
       { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '128GB Flash', price: '3100', pictureUrl: [Sandisk3100], customClass: 'noPrice' },
       // { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '256GB Flash', price: '6750', pictureUrl: [Sandisk6750], customClass: 'noPrice' },
       { id: '5', name: 'SanDisk - Ultra Fit 3.1', description: '32GB Flash', price: '1500', pictureUrl: [Sandisk1500], customClass: 'noPrice' },
@@ -166,26 +194,33 @@ const products = [
     items: [
       { id: '1', name: 'BOYA mic', description: 'Original Boya Mic with 18 months warranty. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '2800', pictureUrl: [Boya2800], customClass: 'description' },
       { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '920', pictureUrl: [enrg], customClass: '' },
-      { id: '3', name: 'Gionee Handsfree', description: 'High Quality', price: '420', pictureUrl: [Gionee450], customClass: '' },
-      { id: '4', name: 'Zero Aura ENC Earbuds ', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. Features of Aura:
-40 Hour Battery Life
-Aerofit Design
-HyperBass Technology
-IPX5 Water Resistance
-Instant Pairing || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '3500', pictureUrl: [ZeroAura], customClass: 'description ' },
-      { id: '5', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description'},
+      { id: '3', name: 'Gionee Handsfree', description: 'Normal Quality', price: '300', pictureUrl: [NormalGionee], customClass: '' },
+      { id: '4', name: 'Gionee Handsfree', description: 'High Quality', price: '420', pictureUrl: [Gionee450], customClass: '' },
+      { id: '5', name: 'Type C Gionee ', description: 'High Quality', price: '500', pictureUrl: [CGionee], customClass: '' },
+      { id: '6', name: 'Audionic Jionee Type C', description: 'Original', price: '750', pictureUrl: [Cjionee], customClass: '' },
+      { id: '7', name: 'Audionic Jionee', description: 'Original', price: '500', pictureUrl: [Jionee], customClass: '' },
+      { id: '8', name: 'Audionic Mark 1', description: 'Original', price: '500', pictureUrl: [Mark1], customClass: '' },
+      {
+        id: '9', name: 'Zero Aura ENC Earbuds ', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. Features of Aura:
+        40 Hour Battery Life
+        Aerofit Design
+        HyperBass Technology
+        IPX5 Water Resistance
+        Instant Pairing || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '3500', pictureUrl: [ZeroAura], customClass: 'description '
+      },
+      { id: '10', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4980', pictureUrl: [SpaceHeadphones], customClass: 'description' },
 
-      { id: '6', name: 'K2 Gaming Headphones', description: 'Gaming Headphones with RGB lights, 50mm driver, comfortable design, ', price: '2750', pictureUrl: [GamingHeadphone], customClass: "description" },
-      { id: '7', name: 'Boost Groove wireless headset', description: 'Experience seamless connectivity with Bluetooth 5.0+EDR on Boost Groove headset for enhanced performance. 5 hours play time with micro SD card supported. Enjoy immersive sound with 40mm speakers and audio jack. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller. ', price: '3000', pictureUrl: [BoostGroovewirelessheadset], customClass: "description noPrice" },
+      { id: '11', name: 'K2 Gaming Headphones', description: 'Gaming Headphones with RGB lights, 50mm driver, comfortable design, ', price: '2750', pictureUrl: [GamingHeadphone], customClass: "description" },
+      { id: '12', name: 'Boost Groove wireless headset', description: 'Experience seamless connectivity with Bluetooth 5.0+EDR on Boost Groove headset for enhanced performance. 5 hours play time with micro SD card supported. Enjoy immersive sound with 40mm speakers and audio jack. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller. ', price: '3000', pictureUrl: [BoostGroovewirelessheadset], customClass: "description noPrice" },
 
-      { id: '8', name: 'Boost Sonic wireless Headset', description: 'Enjoy ultimate calling and play experience with Bluetooth 5.0+EDR and an amazing battery life. Memory card and aux cable supported.  7 color lightening with immersive 40mm speaker. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '3500', pictureUrl: [BoostSonic], customClass: "description noPrice" },
+      { id: '13', name: 'Boost Sonic wireless Headset', description: 'Enjoy ultimate calling and play experience with Bluetooth 5.0+EDR and an amazing battery life. Memory card and aux cable supported.  7 color lightening with immersive 40mm speaker. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '3500', pictureUrl: [BoostSonic], customClass: "description noPrice" },
 
-      { id: '9', name: 'Boost Echo wired gaming Headset', description: 'Enjoy comfortable and adjustable Headband with Ergonomic earcups. Stand out in style with dynamic RGB lightening and immersive experience with 7.1 virtual sound and tangle free cable. Communicate clearly with high quality, built-in microphone. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller. ', price: '5500', pictureUrl: [BoostEcho], customClass: "description noPrice" },
+      { id: '14', name: 'Boost Echo wired gaming Headset', description: 'Enjoy comfortable and adjustable Headband with Ergonomic earcups. Stand out in style with dynamic RGB lightening and immersive experience with 7.1 virtual sound and tangle free cable. Communicate clearly with high quality, built-in microphone. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller. ', price: '5500', pictureUrl: [BoostEcho], customClass: "description noPrice" },
 
-      { id: '10', name: 'Boost Pulse wireless Anc Headphone', description: 'Enjoy uninterrupted listening with Bluetooth 5.3 and amazing battery life with dynamic sound. Experience Active Noise Cancellation and talk time upto 20 hours. Fast type-C charging. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '6000', pictureUrl: [BoostPulse], customClass: "description noPrice" },
-      
-      { id: '11', name: 'Boost Sync premium ANC wireless Headset', description: ' Enjoy ultimate calling and listening with Bluetooth 5.4 and an amazing battery life upto 60 hours playing hours. Experience 27dB noise cancellation and 40mm Neodymium speakers. IPX4 resistance offering protection against splashes and sweat. Aux cable supported. Available in black and blue color. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '8000', pictureUrl: [BoostSync], customClass: "description noPrice" },
-      { id: '12', name: 'Boost Wave premium hybrid ANC headset.', description: 'Experience a quality listening upto 80 hours play time with Bluetooth 5.4 and IPX4 water resistance. Enhance gaming experience with 45MS and 35dB Hybrid noise cancellation. Travel case included. Type-C charging with aux cable supported. Available in black and blue color. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '11000', pictureUrl: [Boostwave], customClass: "description noPrice" },
+      { id: '15', name: 'Boost Pulse wireless Anc Headphone', description: 'Enjoy uninterrupted listening with Bluetooth 5.3 and amazing battery life with dynamic sound. Experience Active Noise Cancellation and talk time upto 20 hours. Fast type-C charging. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '6000', pictureUrl: [BoostPulse], customClass: "description noPrice" },
+
+      { id: '16', name: 'Boost Sync premium ANC wireless Headset', description: ' Enjoy ultimate calling and listening with Bluetooth 5.4 and an amazing battery life upto 60 hours playing hours. Experience 27dB noise cancellation and 40mm Neodymium speakers. IPX4 resistance offering protection against splashes and sweat. Aux cable supported. Available in black and blue color. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '8000', pictureUrl: [BoostSync], customClass: "description noPrice" },
+      { id: '17', name: 'Boost Wave premium hybrid ANC headset.', description: 'Experience a quality listening upto 80 hours play time with Bluetooth 5.4 and IPX4 water resistance. Enhance gaming experience with 45MS and 35dB Hybrid noise cancellation. Travel case included. Type-C charging with aux cable supported. Available in black and blue color. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '11000', pictureUrl: [Boostwave], customClass: "description noPrice" },
     ],
   },
 
@@ -195,27 +230,70 @@ Instant Pairing || NOTE: This Item has brand warranty, not to be claimed through
     items: [
       // { id: '1', name: 'Wired Mouse', description: 'Good Quality mouse', price: '400', pictureUrl: [], customClass: '' },
       {
-        id: '1', name: 'RGB Mouse', description: 'Wired with 7 lights', price: '650', pictureUrl: [GamingMouse520]
+        id: '1', name: 'Wired Mouse', description: 'Normal Quality', price: '350', pictureUrl: [DellWiredMouse]
         // customClass: 'sold'
-        , customClass: ''},
+        , customClass: ''
+      },
+      {
+        id: '2', name: 'WireLess Mouse', description: 'Normal Quality', price: '750', pictureUrl: [DellWireLessMouse]
+        // customClass: 'sold'
+        , customClass: ''
+      },
 
-      { id: '2', name: 'Wired Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1500', pictureUrl: [gamingMouseWired], customClass: '' },
+      { id: '3', name: 'Wired Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1500', pictureUrl: [gamingMouseWired], customClass: '' },
 
-      { id: '3', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1900', pictureUrl: [gamingMouseWireless], customClass: '' },
+      { id: '4', name: 'Wireless Gaming Mouse', description: 'with RGB lights and 6 buttons', price: '1900', pictureUrl: [gamingMouseWireless], customClass: '' },
 
-      { id: '4', name: 'RGB Semi-Mechanical Keyboard ', description: 'Semi Mechanical wired Keyboard', price: '2250', pictureUrl: [RGBKeyboard], customClass: '' },
+      { id: '5', name: 'RGB Semi-Mechanical Keyboard ', description: 'Semi Mechanical wired Keyboard', price: '2250', pictureUrl: [RGBKeyboard], customClass: '' },
 
-      { id: '5', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '180', pictureUrl: [MousePad120], customClass: '' },
+      { id: '6', name: 'MousePad', description: 'Basic Mousepad, available in orange and yellow ', price: '180', pictureUrl: [MousePad120], customClass: '' },
 
-      { id: '6', name: 'MousePad', description: 'Good Quality Mousepad, available in black ', price: '260', pictureUrl: [MousePad250], customClass: '' },
+      { id: '7', name: 'MousePad', description: 'Good Quality Mousepad, available in black ', price: '260', pictureUrl: [MousePad250], customClass: '' },
     ],
+  },
+  {
+    category: 'Electronics',
+    id: 'Electronics',
+    items: [
+      {
+        id: '1', name: 'Arduino UNO Microcontroller', description: `Perfect for Projects`, price: '1150 ', pictureUrl: [UNO],
+        customClass: 'noPrice'
+        // customClass: 'soldClass',
+      },
+      {
+        id: '2', name: 'L298 Motor Driver', description: `Perfect for Projects`, price: '500 ', pictureUrl: [L298],
+        customClass: 'noPrice'
+        // customClass: 'soldClass',
+      },
+      {
+        id: '3', name: 'IR Sensor', description: `Perfect for Projects`, price: '180 ', pictureUrl: [IR],
+        customClass: 'noPrice'
+        // customClass: 'soldClass',
+      },
+      {
+        id: '4', name: 'UltraSonic Sensor', description: `Perfect for Projects`, price: '300 ', pictureUrl: [US],
+        customClass: 'noPrice'
+        // customClass: 'soldClass',
+      },
+      {
+        id: '5', name: '2 Cells, Cell Holder', description: `Perfect for Projects`, price: '140 ', pictureUrl: [CellCase2],
+        customClass: 'noPrice'
+        // customClass: 'soldClass',
+      },
+      {
+        id: '6', name: '3 Cells, Cell Holder', description: `Perfect for Projects`, price: '180 ', pictureUrl: [CellCase3],
+        customClass: 'noPrice'
+        // customClass: 'soldClass',
+      },
+
+    ]
   },
   {
     category: 'Trimmers',
     id: 'Trimmers',
     items: [
       {
-        id: '1', name: 'Dingling Professional Trimmer RF-609', description: `The DINGLING has been developed using the latest technical know how. It has been produced using the most modern machinery and all the functions have been thoroughly tested. We hope you will be fully satisfied with the DINGLING. Before use please read the operating instructions carefully,`, price: '3100 ', pictureUrl: [Dingling], 
+        id: '1', name: 'Dingling Professional Trimmer RF-609', description: `The DINGLING has been developed using the latest technical know how. It has been produced using the most modern machinery and all the functions have been thoroughly tested. We hope you will be fully satisfied with the DINGLING. Before use please read the operating instructions carefully,`, price: '3100 ', pictureUrl: [Dingling],
         customClass: 'description'
         // customClass: 'soldClass',
       },
@@ -226,42 +304,42 @@ Instant Pairing || NOTE: This Item has brand warranty, not to be claimed through
     id: 'Perfumes',
     items: [
       {
-        id: '1', name: 'J. Flames of Passion', description: `Flames of Passion — a bold and sensual fragrance that ignites the senses. It opens with zesty Mandarin, Bergamot, and juicy Red Berries, unfolding into a heart of Caramel, Rose, and Jasmine. The scent lingers with a warm, captivating base of Vanilla, Oakmoss, and Musks.`, price: '4700 ', pictureUrl: [Flames], 
+        id: '1', name: 'J. Flames of Passion', description: `Flames of Passion — a bold and sensual fragrance that ignites the senses. It opens with zesty Mandarin, Bergamot, and juicy Red Berries, unfolding into a heart of Caramel, Rose, and Jasmine. The scent lingers with a warm, captivating base of Vanilla, Oakmoss, and Musks.`, price: '4700 ', pictureUrl: [Flames],
         customClass: 'description noPrice'
         // customClass: 'soldClass',
       },
       {
-        id: '2', name: 'J. Janan Musk', description: `Janan Musk is an ode to quiet strength. Its fresh citrus notes meet soft florals and melt into a warm blend of musk, amber, and cashmere woods. A refined, modern scent that lingers like a whispered memory, it evokes confidence, connection, and calm. Crafted for those who find elegance in restraint.`, price: '7100 ', pictureUrl: [Janan], 
+        id: '2', name: 'J. Janan Musk', description: `Janan Musk is an ode to quiet strength. Its fresh citrus notes meet soft florals and melt into a warm blend of musk, amber, and cashmere woods. A refined, modern scent that lingers like a whispered memory, it evokes confidence, connection, and calm. Crafted for those who find elegance in restraint.`, price: '7100 ', pictureUrl: [Janan],
         customClass: 'description noPrice'
         // customClass: 'soldClass',
       },
       {
-        id: '3', name: 'J. ZARAR GOLD - 30ml', description: `Size	30ml; Fragrance Category	Fruity, Woody`, price: '2200 ', pictureUrl: [Zarar], 
+        id: '3', name: 'J. ZARAR GOLD - 30ml', description: `Size	30ml; Fragrance Category	Fruity, Woody`, price: '2200 ', pictureUrl: [Zarar],
         customClass: 'description noPrice'
         // customClass: 'soldClass',
       },
       {
-        id: '4', name: 'J. Perfumes', description: `For any other Perfume`, price: 'As Per MRP ', pictureUrl: [J], 
+        id: '4', name: 'J. Perfumes', description: `For any other Perfume`, price: 'As Per MRP ', pictureUrl: [J],
         customClass: 'description noPrice'
         // customClass: 'soldClass',
       },
       {
-        id: '5', name: 'Hemani Shaheen J10C', description: `Shaheen J10C is a bold and defiant scent forged for men who rise in the face of challenge. It opens with an energetic burst of pink pepper, cardamom, and violet leaves;  a sharp strike that mirrors the intensity of a fighter jet in motion. `, price: '3900 ', pictureUrl: [J10C], 
+        id: '5', name: 'Hemani Shaheen J10C', description: `Shaheen J10C is a bold and defiant scent forged for men who rise in the face of challenge. It opens with an energetic burst of pink pepper, cardamom, and violet leaves;  a sharp strike that mirrors the intensity of a fighter jet in motion. `, price: '3900 ', pictureUrl: [J10C],
         customClass: 'description noPrice'
         // customClass: 'soldClass',
       },
       {
-        id: '6', name: 'Hemani UNS', description: `UNS is a tender, luminous perfume that captures the quiet beauty of connection. It opens with the soft brightness of bergamot and peony; fresh yet comforting, like the first smile exchanged between kindred souls. At its heart, the endless elegance of rose blends with the golden warmth of amber, creating a delicate sense of intimacy. The scent settles into a soft base of musk and woody notes, warm and grounding, like the feeling of being truly seen and understood.`, price: '3900 ', pictureUrl: [UNS], 
+        id: '6', name: 'Hemani UNS', description: `UNS is a tender, luminous perfume that captures the quiet beauty of connection. It opens with the soft brightness of bergamot and peony; fresh yet comforting, like the first smile exchanged between kindred souls. At its heart, the endless elegance of rose blends with the golden warmth of amber, creating a delicate sense of intimacy. The scent settles into a soft base of musk and woody notes, warm and grounding, like the feeling of being truly seen and understood.`, price: '3900 ', pictureUrl: [UNS],
         customClass: 'description noPrice'
         // customClass: 'soldClass',
       },
       {
-        id: '7', name: 'Hemani Drift', description: `Introducing Drift, a fragrance that embodies the exhilarating rush of a perfectly executed drift. This scent is a tribute to the individual who embraces the edge, balancing precision with a daring spirit. It opens with the sharp, invigorating notes of Bergamot and Grapefruit, mirroring the initial burst of adrenaline. `, price: '920 ', pictureUrl: [Drift], 
+        id: '7', name: 'Hemani Drift', description: `Introducing Drift, a fragrance that embodies the exhilarating rush of a perfectly executed drift. This scent is a tribute to the individual who embraces the edge, balancing precision with a daring spirit. It opens with the sharp, invigorating notes of Bergamot and Grapefruit, mirroring the initial burst of adrenaline. `, price: '920 ', pictureUrl: [Drift],
         customClass: 'description noPrice'
         // customClass: 'soldClass',
       },
       {
-        id: '8', name: 'WB by Hemani', description: `For any other Perfume`, price: 'As per MRP ', pictureUrl: [Hemani], 
+        id: '8', name: 'WB by Hemani', description: `For any other Perfume`, price: 'As per MRP ', pictureUrl: [Hemani],
         customClass: 'description noPrice'
         // customClass: 'soldClass',
       },
@@ -305,7 +383,8 @@ Instant Pairing || NOTE: This Item has brand warranty, not to be claimed through
       },
       {
         id: '7', name: 'Boost Cosmic Smart Watch', description: 'Enjoy automatic heart rate monitor, Bluetooth calling, call notifications, sleep tracker, flashlight, password unlocking, water resistance, find phone, voice assistant, stress test, steps counter and 2.01 inch Amoled. Moreover, enjoy comfortable wear with multiple dials and 2 straps. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '10000', pictureUrl: [boostCosmic],
-        customClass: 'description noPrice '},
+        customClass: 'description noPrice '
+      },
       {
         id: '8', name: 'IMILAB SMART BUSSINESS WATCH 12', description: `330 mAh battery 
 UpTo 30 days backup
@@ -404,9 +483,9 @@ Net Weight: 418.1 grams`, price: '6000', pictureUrl: [DanyTitan],
         //  customClass:'sold'
 
       },
-      { id: '4', name: 'Cricket Tennis Ball', description: 'FG Don', price: '360', pictureUrl: [FGdon] , customClass: 'price'},
+      { id: '4', name: 'Cricket Tennis Ball', description: 'FG Don', price: '360', pictureUrl: [FGdon], customClass: 'price' },
       { id: '5', name: 'Cricket Tennis Ball', description: 'Shine Ball', price: '360', pictureUrl: [ShineBall], customClass: 'price' },
-      { id: '6', name: 'Cricket Tennis Ball', description: 'Large Size Ball', price: '340', pictureUrl: [LargeBall ], customClass: 'price' },
+      { id: '6', name: 'Cricket Tennis Ball', description: 'Large Size Ball', price: '340', pictureUrl: [LargeBall], customClass: 'price' },
       { id: '7', name: 'Cricket Hard Ball', description: 'BK Sports, can be used upto 20 overs', price: '600', pictureUrl: [BKHard] },
       { id: '8', name: 'Cricket Hard Ball', description: 'MZ Sports, can be used upto 20 overs', price: '550', pictureUrl: [MZHard] },
       { id: '9', name: 'Cricket Hard Ball', description: 'Sajjad Sports, can be used upto 20 overs', price: '650', pictureUrl: [SajjadHard] },
