@@ -726,8 +726,180 @@ Net Weight: 418.1 grams`, price: '6000', pictureUrl: [DanyTitan],
 // export default ProductTable;
 
 
+// const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
+//   const [selectedItem, setSelectedItem] = useState(null);
+
+//   useEffect(() => {
+//     if (searchTerm) {
+//       const matchedCategory = products.find((category) =>
+//         category.items.some((item) =>
+//           item.name.toLowerCase().includes(searchTerm.toLowerCase())
+//         )
+//       );
+//       if (matchedCategory) {
+//         const element = document.getElementById(matchedCategory.id);
+//         if (element) {
+//           element.scrollIntoView({ behavior: 'smooth' });
+//         }
+//       }
+//     }
+//   }, [searchTerm]);
+
+//   const filteredProducts = products
+//     .filter((category) => selectedCategory === 'all' || category.id === selectedCategory)
+//     .map((category) => ({
+//       ...category,
+//       items: category.items.filter((item) =>
+//         item.name.toLowerCase().includes(searchTerm.toLowerCase())
+//       ),
+//     }))
+//     .filter((category) => category.items.length > 0 || selectedCategory === category.id);
+
+//   const generateWhatsAppLink = (itemName, price) => {
+//     const message = `Hello, I'm interested in buying ${itemName} for ${price} PKR. Can you provide more details?`;
+//     const whatsappNumber = '923160175207';
+//     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+//   };
+
+//   const handleShowModal = (item) => {
+//     setSelectedItem(item);
+//   };
+
+//   const handleCloseModal = () => {
+//     setSelectedItem(null);
+//   };
+
+//   const getFinalPrice = (item) => {
+//     const hasPriceClass = item.customClass?.includes('price');
+//     const noPriceClass = item.customClass?.includes('noPrice');
+//     const numericPrice = parseFloat(item.price.split(' ')[0]);
+//     const discountedPrice = (numericPrice * 0.9).toFixed(2);
+
+//     if (!noPriceClass && (applyDiscountToAll || hasPriceClass)) {
+//       return discountedPrice;
+//     }
+//     return item.price;
+//   };
+
+//   return (
+//     <div className={styles.tableContainer}>
+//       {filteredProducts.map((category, index) => (
+//         <div key={index} id={category.id}>
+//           <h2 className={styles.heading}>{category.category}</h2>
+//           <table className={`table table-striped ${styles.table}`}>
+//             <thead>
+//               <tr>
+//                 <th className={styles.head}>S/No</th>
+//                 <th className={styles.heads}>Items</th>
+//                 <th className={styles.head}>Description</th>
+//                 <th className={styles.head}>Price</th>
+//                 <th className={styles.head}>Buy</th>
+//                 <th className={styles.head}>Picture</th>
+//               </tr>
+//             </thead>
+//             <tbody>
+//               {category.items.map((item) => {
+//                 const hasDescriptionClass = item.customClass?.includes('description');
+//                 const isSold = item.customClass?.includes('sold');
+//                 const hasPriceClass = item.customClass?.includes('price');
+//                 const noPriceClass = item.customClass?.includes('noPrice');
+
+//                 const originalPrice = item.price;
+//                 const finalPrice = getFinalPrice(item);
+
+                
+//                 return (
+//                   <tr key={item.id}>
+//                     <td>{item.id}</td>
+//                     <td>{item.name}</td>
+//                     <td>
+//                       {hasDescriptionClass ? (
+//                         <div>
+//                             <button
+//                               className={styles.viewButton}
+//                               onClick={() => handleShowModal(item)}
+//                             >
+//                               <FaEye size={20} />
+//                             </button>
+//                         </div>
+//                       ) : (
+//                         item.description
+//                       )}
+//                     </td>
+//                     <td>
+//                       {isSold ? (
+//                         <span>{originalPrice}</span>
+//                       ) : (
+//                         <div>
+//                           {(!noPriceClass && (applyDiscountToAll || hasPriceClass)) ? (
+//                             <>
+//                               <span style={{ textDecoration: 'line-through' }}>
+//                                 {originalPrice}
+//                               </span>{' '}
+//                               <span>{finalPrice} PKR</span>
+//                             </>
+//                           ) : (
+//                             <span>{originalPrice}</span>
+//                           )}
+//                         </div>
+//                       )}
+//                     </td>
+//                     <td>
+//                       {isSold ? (
+//                         <button className={`${styles.btn} ${styles.disabledBtn}`} disabled>
+//                           Sold
+//                         </button>
+//                       ) : (
+//                         <a
+//                           href={generateWhatsAppLink(item.name, finalPrice)}
+//                           target="_blank"
+//                           rel="noopener noreferrer"
+//                           className={styles.btn}
+//                         >
+//                           <i className="fas fa-shopping-cart"></i>
+//                         </a>
+//                       )}
+//                     </td>
+//                     <td>
+//                       <a
+//                         href={item.pictureUrl[0]}
+//                         target="_blank"
+//                         rel="noopener noreferrer"
+//                         className={styles.btn}
+//                       >
+//                         <i className="fas fa-camera"></i>
+//                       </a>
+//                     </td>
+//                   </tr>
+//                 );
+//               })}
+//             </tbody>
+//           </table>
+//           <hr style={{ border: '2px solid black', marginBottom: '20px' }} />
+//         </div>
+//       ))}
+
+//       {selectedItem && (
+//         <div className={styles.modalOverlay} onClick={handleCloseModal}>
+//           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+//             <h2>{selectedItem.name}</h2>
+//             <p>{selectedItem.description}</p>
+//             <button className={styles.closeModalButton} onClick={handleCloseModal}>
+//               Close
+//             </button>
+//           </div>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default ProductTable;
+
+
 const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
   const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     if (searchTerm) {
@@ -767,6 +939,14 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
 
   const handleCloseModal = () => {
     setSelectedItem(null);
+  };
+
+  const handleShowImageModal = (imageUrl) => {
+    setSelectedImage(imageUrl);
+  };
+
+  const handleCloseImageModal = () => {
+    setSelectedImage(null);
   };
 
   const getFinalPrice = (item) => {
@@ -861,14 +1041,12 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
                       )}
                     </td>
                     <td>
-                      <a
-                        href={item.pictureUrl[0]}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <button
+                        onClick={() => handleShowImageModal(item.pictureUrl[0])}
                         className={styles.btn}
                       >
                         <i className="fas fa-camera"></i>
-                      </a>
+                      </button>
                     </td>
                   </tr>
                 );
@@ -886,6 +1064,17 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
             <p>{selectedItem.description}</p>
             <button className={styles.closeModalButton} onClick={handleCloseModal}>
               Close
+            </button>
+          </div>
+        </div>
+      )}
+
+      {selectedImage && (
+        <div className={styles.modalOverlay} onClick={handleCloseImageModal}>
+          <div className={styles.imageModalContent} onClick={(e) => e.stopPropagation()}>
+            <img src={selectedImage} alt="Product" className={styles.modalImage} />
+            <button className={styles.closeImageButton} onClick={handleCloseImageModal}>
+              ×
             </button>
           </div>
         </div>
