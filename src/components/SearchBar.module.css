@@ -1,58 +1,112 @@
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1000; /* Below searchButton */
+}
+
 .searchInput {
   width: 0;
   max-width: 600px;
-  padding: 12px 15px;
+  padding: 12px 30px 12px 15px; /* Space for clear button */
   font-size: 16px;
-  border: 2px solid #6CBEC7; /* Added themed border */
+  border: 2px solid #FFB100; /* Theme color */
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for boundary */
-  background-color: #f8f9fa; /* Light background to match theme */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f8f9fa;
   position: absolute;
-  top: 50px; /* Adjusted to be slightly higher, overlapping description on mobile */
+  top: 50px; /* Adjusted to match previous position */
   right: 20px;
   opacity: 0;
   transition: width 0.4s ease, opacity 0.4s ease;
+  z-index: 1000; /* Ensure below searchButton */
 }
 
 .searchInput.expand {
-  width: 30vw; /* 30% width for PC */
+  width: 30vw;
   opacity: 1;
 }
 
 .searchInput:focus {
   outline: none;
-  border-color: #1230AE; /* Darker blue on focus to match active button theme */
+  border-color: #1230AE; /* Theme color */
   box-shadow: 0 0 8px rgba(18, 48, 174, 0.5);
+}
+
+.clearButton {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #FFB100; /* Theme color */
+  color: black;
+  border: none;
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  z-index: 1050; /* Below searchButton but above input */
+  visibility: visible; /* Ensure visibility */
+}
+
+.clearButton:hover {
+  background-color: #1230AE; /* Theme color */
+  color: white;
 }
 
 /* Mobile screens */
 @media (max-width: 768px) {
   .searchInput {
-    padding: 10px;
+    padding: 10px 25px 10px 10px;
     font-size: 14px;
-    top: 45px; /* Moved higher to overlap description but not title */
+    top: 45px; /* Adjusted for mobile */
     right: 15px;
-    border: 2px solid #6CBEC7;
+    border: 2px solid #FFB100;
     background-color: #f8f9fa;
+    z-index: 1000;
   }
 
   .searchInput.expand {
-    width: 70vw; /* 70% width for mobile */
+    width: 70vw;
+  }
+
+  .clearButton {
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    z-index: 1050;
+    visibility: visible;
   }
 }
 
 /* Mobile landscape */
 @media (max-width: 480px) and (orientation: landscape) {
   .searchInput {
-    padding: 8px;
+    padding: 8px 20px 8px 8px;
     font-size: 12px;
-    top: 40px; /* Slightly higher for landscape */
+    top: 40px; /* Adjusted for landscape */
     right: 10px;
-    border: 2px solid #6CBEC7;
+    border: 2px solid #FFB100;
     background-color: #f8f9fa;
+    z-index: 1000;
   }
 
   .searchInput.expand {
-    width: 70vw; /* Maintain 70% width for mobile landscape */
+    width: 70vw;
+  }
+
+  .clearButton {
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    z-index: 1050;
+    visibility: visible;
   }
 }

@@ -13,7 +13,7 @@
 }
 
 .anker {
-  color: yellow;
+  color: #FFB100; /* Updated theme color */
   text-decoration: none;
   font-size: 15px;
   position: relative;
@@ -28,14 +28,14 @@
   bottom: -3px;
   width: 100%;
   height: 2px;
-  background: #ffeb3b;
+  background: #FFB100; /* Updated theme color */
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease;
 }
 
 .anker:hover {
-  color: rgb(230, 139, 225);
+  color: #1230AE; /* Contrast color for hover */
 }
 
 .anker:hover::after {

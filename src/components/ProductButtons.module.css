@@ -15,8 +15,8 @@
 
 /* Button styling */
 .customButton {
-  background-color: #6CBEC7;
-  color: black;
+  background-color: #FFB100; /* Updated theme color */
+  color: #3C3D37;
   padding: 10px 20px;
   margin: 5px;
   border-radius: 5px;
@@ -28,25 +28,24 @@
   transition: all 0.3s ease;
   white-space: nowrap;
   position: relative;
-  /* overflow: hidden; */
 }
 
 /* Button hover effect */
 .customButton:hover {
-  background-color: #0057b3c9;
-  color: white;
+  background-color: #3C3D37; /* Contrast color for hover */
+  color: #FFB100;
 }
 
 /* Focus state for accessibility */
 .customButton:focus {
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 5px rgba(18, 48, 174, 0.5); /* Updated to match contrast color */
 }
 
 /* Active button styling with animation */
 .activeButton {
-  background-color: #1230AE !important;
-  color: white;
+  background-color: #3C3D37 !important; /* Already matches contrast color */
+  color: #FFB100;
   animation: slideIn 0.3s ease forwards;
 }
 

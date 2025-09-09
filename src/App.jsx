@@ -67,8 +67,6 @@
 // export default App;
 
 
-
-// App.jsx
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
@@ -81,13 +79,14 @@ const App = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [applyDiscountToAll, setApplyDiscountToAll] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const [isSearchOpen, setIsSearchOpen] = useState(false); // Added to manage search bar state
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [resetSearch, setResetSearch] = useState(false); // Added for search reset
 
   useEffect(() => {
     const checkDiscountPeriod = () => {
       const now = new Date();
-      const discountStart = new Date(now.getFullYear(), 10, 11, 0, 0); // Nov 11, 12:00 PM
-      const discountEnd = new Date(now.getFullYear(), 10, 12, 0, 0); // Nov 11, 11:59 PM
+      const discountStart = new Date(now.getFullYear(), 10, 11, 0, 0); // Nov 11, 12:00 AM
+      const discountEnd = new Date(now.getFullYear(), 10, 12, 0, 0); // Nov 12, 12:00 AM
 
       if (now >= discountStart && now <= discountEnd) {
         setApplyDiscountToAll(true);
@@ -102,9 +101,22 @@ const App = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  // Reset search term when category changes or after viewing results
+  useEffect(() => {
+    setResetSearch(true); // Trigger reset when selectedCategory changes
+  }, [selectedCategory]);
+
+  // Clear resetSearch flag after it's used
+  useEffect(() => {
+    if (resetSearch) {
+      setResetSearch(false);
+    }
+  }, [resetSearch]);
+
   // Function to close search bar
   const closeSearchBar = () => {
     setIsSearchOpen(false);
+    setResetSearch(true); // Reset search when closing the search bar
   };
 
   return (
@@ -114,6 +126,7 @@ const App = () => {
         setSearchTerm={setSearchTerm}
         isSearchOpen={isSearchOpen}
         setIsSearchOpen={setIsSearchOpen}
+        resetSearch={resetSearch} // Pass resetSearch to Header
       />
       <main className={styles.content}>
         <div className="col-12">
@@ -121,7 +134,7 @@ const App = () => {
             onSelectCategory={setSelectedCategory}
             selectedCategory={selectedCategory}
             applyDiscountToAll={applyDiscountToAll}
-            closeSearchBar={closeSearchBar} // Pass callback to ProductButtons
+            closeSearchBar={closeSearchBar}
           />
           <ProductTable
             selectedCategory={selectedCategory}

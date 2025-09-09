@@ -9,7 +9,7 @@
 
 .brandName {
   font-size: 45px;
-  background: linear-gradient(270deg, #7EACB5, #007bff);
+  background: linear-gradient(270deg, #FFB100, #1230AE);
   background-size: 400% 400%;
   color: transparent;
   -webkit-background-clip: text;
@@ -31,26 +31,30 @@
   right: 20px;
   display: flex;
   align-items: center;
+  z-index: 1100; /* Above other header elements */
 }
 
 .searchButton {
-  background-color: #6CBEC7;
+  background-color: #FFB100;
   border: none;
   border-radius: 5px;
   padding: 8px 12px;
   cursor: pointer;
-  color: white;
+  color: black;
   font-size: 16px;
   transition: background-color 0.3s ease;
+  z-index: 1200; /* Above SearchBar */
+  pointer-events: auto; /* Ensure clickability */
 }
 
 .searchButton:hover {
-  background-color: #0057b3c9;
+  background-color: #1230AE;
+  color: white;
 }
 
 .searchButton:focus {
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 5px rgba(18, 48, 174, 0.5);
 }
 
 /* Gradient Slide Animation */
@@ -112,6 +116,8 @@
   .searchButton {
     padding: 6px 10px;
     font-size: 14px;
+    z-index: 1200;
+    pointer-events: auto;
   }
 }
 
@@ -132,5 +138,7 @@
   .searchButton {
     padding: 5px 8px;
     font-size: 12px;
+    z-index: 1200;
+    pointer-events: auto;
   }
 }

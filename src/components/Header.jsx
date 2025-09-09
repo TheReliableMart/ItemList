@@ -12,15 +12,15 @@
 
 // export default Header;
 
-
-
 import React, { useEffect } from 'react';
+import SearchBar from './SearchBar';
 import styles from './Header.module.css';
-import searchStyles from './SearchBar.module.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-function Header({ searchTerm, setSearchTerm, isSearchOpen, setIsSearchOpen }) {
-  const toggleSearch = () => {
+function Header({ searchTerm, setSearchTerm, isSearchOpen, setIsSearchOpen, resetSearch }) {
+  const toggleSearch = (e) => {
+    e.stopPropagation(); // Prevent event bubbling
+    console.log('Search button clicked, isSearchOpen:', !isSearchOpen); // Debug log
     setIsSearchOpen(!isSearchOpen);
   };
 
@@ -40,16 +40,19 @@ function Header({ searchTerm, setSearchTerm, isSearchOpen, setIsSearchOpen }) {
       <h1 className={styles.brandName}>The Reliable Mart</h1>
       <p className={styles.description}>Where the Quality Matters</p>
       <div className={styles.searchContainer}>
-        <button onClick={toggleSearch} className={styles.searchButton}>
+        <button
+          onClick={toggleSearch}
+          className={styles.searchButton}
+          aria-label="Toggle search"
+        >
           <i className="fas fa-search"></i>
         </button>
         {isSearchOpen && (
-          <input
-            type="text"
-            placeholder="Search products (e.g., ANC Headphone)..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className={`${searchStyles.searchInput} ${isSearchOpen ? searchStyles.expand : ''}`}
+          <SearchBar
+            searchTerm={searchTerm}
+            setSearchTerm={setSearchTerm}
+            resetSearch={resetSearch}
+            isSearchOpen={isSearchOpen} // Pass isSearchOpen for expand class
           />
         )}
       </div>

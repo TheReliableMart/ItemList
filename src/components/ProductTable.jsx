@@ -12,6 +12,7 @@ import HDMiBasic from './Pictures/HDMiBasic.jpg';
 import Acable from './Pictures/Acable.jpg';
 
 import typeCbasic from './Pictures/typeCbasic.jpg';
+import CtoC from './Pictures/CtoC.jpg';
 import CNormal from './Pictures/CNormal.jpg';
 import Lightening1500 from './Pictures/Lightening1500.jpg';
 import CardReader from './Pictures/CardReader.jpg';
@@ -168,19 +169,20 @@ const products = [
       { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [microbasic] },
       { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
       { id: '3', name: 'TypeC Charging Cable', description: 'High Quality Cable', price: '500', pictureUrl: [OriginalTypeC], customClass: '' },
-      { id: '4', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 70W', price: '250', pictureUrl: [typeCbasic] },
-      { id: '5', name: 'TypeC Charging Cable', description: 'Basic Quality Cable || upTo 70W', price: '150', pictureUrl: [CNormal] },
-      { id: '6', name: 'Anker Lightning Cable', description: 'MFi Certified', price: '2000', pictureUrl: [MFiCable] },
-      { id: '7', name: 'ANSTY Lightning Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
-      { id: '8', name: 'Lightning Cable', description: 'Basic Quality', price: '280', pictureUrl: [Lighteningbasic] },
-      { id: '9', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
-       { id: '10', name: 'Power Cable', description: 'Good Quality 1m Length', price: '220', pictureUrl: [PowerCable] },
-      { id: '11', name: 'VGA Cable', description: 'Good Quality 1m Length', price: '250', pictureUrl: [VGACable] },
+      { id: '4', name: 'TypeC to C Cable', description: 'Original Baseus Cable', price: '800', pictureUrl: [CtoC], customClass: '' },
+      { id: '5', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 70W', price: '250', pictureUrl: [typeCbasic] },
+      { id: '6', name: 'TypeC Charging Cable', description: 'Basic Quality Cable || upTo 70W', price: '150', pictureUrl: [CNormal] },
+      { id: '7', name: 'Anker Lightning Cable', description: 'MFi Certified', price: '2000', pictureUrl: [MFiCable] },
+      { id: '8', name: 'ANSTY Lightning Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
+      { id: '9', name: 'Lightning Cable', description: 'Basic Quality', price: '280', pictureUrl: [Lighteningbasic] },
+      { id: '10', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
+       { id: '11', name: 'Power Cable', description: 'Good Quality 1m Length', price: '220', pictureUrl: [PowerCable] },
+      { id: '12', name: 'VGA Cable', description: 'Good Quality 1m Length', price: '250', pictureUrl: [VGACable] },
       { id: '13', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '350', pictureUrl: [HDMIcableOrg] },
     
 
       {
-        id: '13', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Acable],
+        id: '14', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Acable],
         // customClass: 'description',
       },
 

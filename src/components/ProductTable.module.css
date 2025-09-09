@@ -20,8 +20,8 @@
 
 /* Button Styles */
 .customButton {
-  background-color: #007bff;
-  color: white;
+  background-color: #FFB100; /* Updated theme color */
+  color: black;
   padding: 10px 20px;
   margin: 5px;
   border-radius: 5px;
@@ -57,15 +57,16 @@
   text-align: center;
   border-color: white; 
   padding: 4px 8px;
-  background-color: #7EACB5; /* Green button */
-  color: white;
+  background-color: #ffce5d; /* Updated theme color */
+  color: black;
   border-radius: 5px;
   font-size: 12px;
   text-decoration: none;
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #ffd500; /* Contrast color for hover */
+  color: white;
 }
 
 .disabledBtn {
@@ -83,19 +84,20 @@
 
 /* Heading Styles */
 .heading {
-  background-color: #AAB396;
+  background-color: #FFB100; /* Updated theme color */
   padding: 10px 15px;
   margin: 10px;
   text-align: center;
   font-size: 1.3rem;
   border-radius: 5px;
   box-shadow: 0px 4px 6px rgba(55, 58, 29, 0.99);
+  color: black;
 }
 
 /* View Button Styles */
 .viewButton {
-  background-color: #7EACB5;
-  color: white;
+  background-color: #FFB100; /* Updated theme color */
+  color: black;
   border: none;
   padding: 8px 16px;
   cursor: pointer;
@@ -103,7 +105,8 @@
 }
 
 .viewButton:hover {
-  background-color: #0056b3;
+  background-color: #1230AE; /* Contrast color for hover */
+  color: white;
 }
 
 /* Modal Styles */
@@ -144,7 +147,7 @@
 .modalImage {
   max-width: 100%;
   max-height: 80vh;
-  border: 2px solid #000;
+  border: 2px solid #1230AE; /* Updated border color for contrast */
   border-radius: 4px;
   object-fit: contain;
 }
@@ -169,7 +172,7 @@
   position: absolute;
   top: -20px;
   right: -20px;
-  background-color: #e36a76;
+  background-color: #FFB100;
   color: white;
   border: none;
   font-size: 24px;
