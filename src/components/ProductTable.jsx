@@ -932,7 +932,7 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
     .filter((category) => category.items.length > 0 || selectedCategory === category.id);
 
   const generateWhatsAppLink = (itemName, price) => {
-    const message = `Assalamualaikum, I'm interested in buying ${itemName} for ${price} PKR. Can you Please confirm your order?`;
+    const message = `Assalamualaikum, I'm interested in buying ${itemName} for ${price} PKR. Can you Please confirm this order?`;
     const whatsappNumber = '923160175207';
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   };
