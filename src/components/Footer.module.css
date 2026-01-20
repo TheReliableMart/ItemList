@@ -35,7 +35,7 @@
 }
 
 .anker:hover {
-  color: #1230AE; /* Contrast color for hover */
+  color: #6f8bfa; /* Contrast color for hover */
 }
 
 .anker:hover::after {

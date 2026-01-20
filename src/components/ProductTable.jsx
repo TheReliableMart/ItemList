@@ -12,7 +12,7 @@ import HDMiBasic from './Pictures/HDMiBasic.jpg';
 import Acable from './Pictures/Acable.jpg';
 
 import typeCbasic from './Pictures/typeCbasic.jpg';
-import CtoC from './Pictures/CtoC.jpg';
+import CtoC from './Pictures/CtoC.png';
 import CNormal from './Pictures/CNormal.jpg';
 import Lightening1500 from './Pictures/Lightening1500.jpg';
 import CardReader from './Pictures/CardReader.jpg';
@@ -22,6 +22,7 @@ import Lighteningbasic from './Pictures/Lighteningbasic.jpg';
 import PowerCable from './Pictures/PowerCable.jpg';
 import VGACable from './Pictures/VGACable.jpg';
 import USBHub from './Pictures/USBHub.jpg';
+import CHub from './Pictures/CHub.jpg';
 import HDMIcableOrg from './Pictures/HDMIcableOrg.jpg';
 import MFiCable from './Pictures/MFiCable.jpg';
 import ANSTYlighteningCable from './Pictures/ANSTYlighteningCable.jpg';
@@ -158,7 +159,8 @@ const products = [
 
 
       { id: '5', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] },
-      { id: '6', name: '2 in 1 3.5mm', description: 'connector for PCs', price: '280', pictureUrl: [Connetorpc] },
+      { id: '6', name: 'Type C hub', description: 'Good Quality 4 Ports USB Hub', price: '650', pictureUrl: [CHub] },
+      { id: '7', name: '2 in 1 3.5mm', description: 'connector for PCs', price: '280', pictureUrl: [Connetorpc] },
 
 
     ],
@@ -170,7 +172,7 @@ const products = [
       { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [microbasic] },
       { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
       { id: '3', name: 'TypeC Charging Cable', description: 'High Quality Cable', price: '500', pictureUrl: [OriginalTypeC], customClass: '' },
-      { id: '4', name: 'TypeC to C Cable', description: 'Original Baseus Cable', price: '800', pictureUrl: [CtoC], customClass: '' },
+      { id: '4', name: 'TypeC to C Cable', description: 'Original Baseus Cable', price: '2000', pictureUrl: [CtoC], customClass: '' },
       { id: '5', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 70W', price: '250', pictureUrl: [typeCbasic] },
       { id: '6', name: 'TypeC Charging Cable', description: 'Basic Quality Cable || upTo 70W', price: '150', pictureUrl: [CNormal] },
       { id: '7', name: 'Anker Lightning Cable', description: 'MFi Certified', price: '2000', pictureUrl: [MFiCable] },
@@ -216,7 +218,7 @@ const products = [
       { id: '6', name: 'Audionic Jionee Type C', description: 'Original', price: '750', pictureUrl: [Cjionee], customClass: '' },
       { id: '7', name: 'Audionic Jionee', description: 'Original', price: '500', pictureUrl: [Jionee], customClass: '' },
       { id: '8', name: 'Audionic Mark 1', description: 'Original', price: '500', pictureUrl: [Mark1], customClass: '' },
-      { id: '9', name: 'Lenovo HE05X Neckband', description: 'Excellent Battery | 6 Months Warranty', price: '1000', pictureUrl: [HE05X], customClass: '' },
+      { id: '9', name: 'Lenovo HE05X Neckband', description: 'Excellent Battery | 6 Months Warranty', price: '1500', pictureUrl: [HE05X], customClass: '' },
       {
         id: '10', name: 'Zero Aura ENC Earbuds ', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. Features of Aura:
         40 Hour Battery Life
@@ -225,19 +227,19 @@ const products = [
         IPX5 Water Resistance
         Instant Pairing || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '3500', pictureUrl: [ZeroAura], customClass: 'description '
       },
-      { id: '11', name: 'K2 Gaming Headphones', description: 'Gaming Headphones with RGB lights, 50mm driver, comfortable design, ', price: '2750', pictureUrl: [GamingHeadphone], customClass: "description" },
+      { id: '11', name: 'Onikuma Gaming Headphones', description: 'Gaming Headphones with 50mm driver, comfortable design, ', price: '2900', pictureUrl: [GamingHeadphone], customClass: "" },
       { id: '12', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4000', pictureUrl: [SpaceHeadphones], customClass: 'description' },
 
-      { id: '13', name: 'Boost Groove wireless headset', description: 'Experience seamless connectivity with Bluetooth 5.0+EDR on Boost Groove headset for enhanced performance. 5 hours play time with micro SD card supported. Enjoy immersive sound with 40mm speakers and audio jack. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller. ', price: '3000', pictureUrl: [BoostGroovewirelessheadset], customClass: "description noPrice" },
+      // { id: '13', name: 'Boost Groove wireless headset', description: 'Experience seamless connectivity with Bluetooth 5.0+EDR on Boost Groove headset for enhanced performance. 5 hours play time with micro SD card supported. Enjoy immersive sound with 40mm speakers and audio jack. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller. ', price: '3000', pictureUrl: [BoostGroovewirelessheadset], customClass: "description noPrice" },
 
-      { id: '14', name: 'Boost Sonic wireless Headset', description: 'Enjoy ultimate calling and play experience with Bluetooth 5.0+EDR and an amazing battery life. Memory card and aux cable supported.  7 color lightening with immersive 40mm speaker. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '3500', pictureUrl: [BoostSonic], customClass: "description noPrice" },
+      // { id: '14', name: 'Boost Sonic wireless Headset', description: 'Enjoy ultimate calling and play experience with Bluetooth 5.0+EDR and an amazing battery life. Memory card and aux cable supported.  7 color lightening with immersive 40mm speaker. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '3500', pictureUrl: [BoostSonic], customClass: "description noPrice" },
 
-      { id: '15', name: 'Boost Echo wired gaming Headset', description: 'Enjoy comfortable and adjustable Headband with Ergonomic earcups. Stand out in style with dynamic RGB lightening and immersive experience with 7.1 virtual sound and tangle free cable. Communicate clearly with high quality, built-in microphone. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller. ', price: '5500', pictureUrl: [BoostEcho], customClass: "description noPrice" },
+      // { id: '15', name: 'Boost Echo wired gaming Headset', description: 'Enjoy comfortable and adjustable Headband with Ergonomic earcups. Stand out in style with dynamic RGB lightening and immersive experience with 7.1 virtual sound and tangle free cable. Communicate clearly with high quality, built-in microphone. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller. ', price: '5500', pictureUrl: [BoostEcho], customClass: "description noPrice" },
 
-      { id: '16', name: 'Boost Pulse wireless Anc Headphone', description: 'Enjoy uninterrupted listening with Bluetooth 5.3 and amazing battery life with dynamic sound. Experience Active Noise Cancellation and talk time upto 20 hours. Fast type-C charging. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '6000', pictureUrl: [BoostPulse], customClass: "description noPrice" },
+      // { id: '16', name: 'Boost Pulse wireless Anc Headphone', description: 'Enjoy uninterrupted listening with Bluetooth 5.3 and amazing battery life with dynamic sound. Experience Active Noise Cancellation and talk time upto 20 hours. Fast type-C charging. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '6000', pictureUrl: [BoostPulse], customClass: "description noPrice" },
 
-      { id: '17', name: 'Boost Sync premium ANC wireless Headset', description: ' Enjoy ultimate calling and listening with Bluetooth 5.4 and an amazing battery life upto 60 hours playing hours. Experience 27dB noise cancellation and 40mm Neodymium speakers. IPX4 resistance offering protection against splashes and sweat. Aux cable supported. Available in black and blue color. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '8000', pictureUrl: [BoostSync], customClass: "description noPrice" },
-      { id: '18', name: 'Boost Wave premium hybrid ANC headset.', description: 'Experience a quality listening upto 80 hours play time with Bluetooth 5.4 and IPX4 water resistance. Enhance gaming experience with 45MS and 35dB Hybrid noise cancellation. Travel case included. Type-C charging with aux cable supported. Available in black and blue color. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '11000', pictureUrl: [Boostwave], customClass: "description noPrice" },
+      // { id: '17', name: 'Boost Sync premium ANC wireless Headset', description: ' Enjoy ultimate calling and listening with Bluetooth 5.4 and an amazing battery life upto 60 hours playing hours. Experience 27dB noise cancellation and 40mm Neodymium speakers. IPX4 resistance offering protection against splashes and sweat. Aux cable supported. Available in black and blue color. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '8000', pictureUrl: [BoostSync], customClass: "description noPrice" },
+      // { id: '18', name: 'Boost Wave premium hybrid ANC headset.', description: 'Experience a quality listening upto 80 hours play time with Bluetooth 5.4 and IPX4 water resistance. Enhance gaming experience with 45MS and 35dB Hybrid noise cancellation. Travel case included. Type-C charging with aux cable supported. Available in black and blue color. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '11000', pictureUrl: [Boostwave], customClass: "description noPrice" },
     ],
   },
 
@@ -317,7 +319,7 @@ const products = [
 
 7 days money back  guarantee,
 15 days check warranty`, price: '78000 ', pictureUrl: [Elitebook440],
-        customClass: 'description'
+        customClass: 'description soldClass'
         // customClass: 'soldClass',
       },
       {
@@ -332,7 +334,7 @@ Excellent processing power,
 
 7 days money back  guarantee
 15 days check warranty`, price: '180000 ', pictureUrl: [ZBook],
-        customClass: 'description'
+        customClass: 'description soldClass'
         // customClass: 'soldClass',
       },
     ]
@@ -342,8 +344,8 @@ Excellent processing power,
     id: 'Trimmers',
     items: [
       {
-        id: '1', name: 'Dingling Professional Trimmer RF-609', description: `The DINGLING has been developed using the latest technical know how. It has been produced using the most modern machinery and all the functions have been thoroughly tested. We hope you will be fully satisfied with the DINGLING. Before use please read the operating instructions carefully,`, price: '3100 ', pictureUrl: [Dingling],
-        customClass: 'description'
+        id: '1', name: 'Dingling Professional Trimmer RF-609', description: `The DINGLING has been developed using the latest technical know how. It has been produced using the most modern machinery and all the functions have been thoroughly tested. We hope you will be fully satisfied with the DINGLING. Before use please read the operating instructions carefully,`, price: '3500 ', pictureUrl: [Dingling],
+        customClass: 'description '
         // customClass: 'soldClass',
       },
     ]
@@ -460,7 +462,7 @@ IP68. 1 year brand warranty. NOTE: This item has brand warranty and cannot be cl
  Net Weight : 236g
  Gross Weight : 270g
  Product Dimension : 14.8 x 6.9 x 1.6 cm
- Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4550', pictureUrl: [Fasterwireless], customClass: 'description '
+ Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4550', pictureUrl: [Fasterwireless], customClass: 'description soldClass'
       },
 
       {
