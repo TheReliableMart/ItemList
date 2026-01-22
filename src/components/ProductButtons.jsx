@@ -60,6 +60,7 @@ const categories = [
   { name: 'All', id: 'all' },
   { name: 'Accessories', id: 'Accessories' },
   { name: 'Chargers & Cables', id: 'Chargers' },
+  { name: 'Protectors', id: 'Protectors' },
   { name: 'USBs', id: 'USBs' },
   { name: 'Mic and Headphones', id: 'MicAndHeadphones' },
   { name: 'Mouse and MousePads', id: 'MouseandMousePads' },

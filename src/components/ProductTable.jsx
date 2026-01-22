@@ -30,6 +30,9 @@ import ANSTYlighteningCable from './Pictures/ANSTYlighteningCable.jpg';
 import Connetorpc from './Pictures/Connetorpc.jpg';
 import OriginalTypeC from './Pictures/OriginalTypeC.jpg';
 
+//Protectors
+import Protector from './Pictures/Protector.jpg';
+
 //USBs
 
 import Sandisk6800 from './Pictures/Sandisk6800.jpg';
@@ -193,6 +196,48 @@ const products = [
 
     ],
   },
+  {
+    category: 'Protectors',
+    id: 'Protectors',
+    items: [
+  { id: '1', name: 'POCO F3 GT', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '2', name: 'POCO F4 GT', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '3', name: 'POCO F5', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '4', name: 'POCO X5 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '5', name: 'Xiaomi Redmi Note 12 Pro 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '6', name: 'Xiaomi Redmi Note 12 Pro Plus', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '7', name: 'Xiaomi Redmi Note 12 Explorer', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '8', name: 'Xiaomi Redmi Note 13', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '9', name: 'Xiaomi Redmi Note 13R Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '10', name: 'Infinix Note 10 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '11', name: 'Infinix Note 30 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '12', name: 'Infinix Note 30 VIP', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '13', name: 'Infinix Note 40', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '14', name: 'Infinix GT 10 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '15', name: 'Infinix GT 20 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '16', name: 'Infinix Hot 9', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '17', name: 'Tecno Camon 20', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '18', name: 'Tecno Camon 20 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '19', name: 'Tecno Camon 30', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '20', name: 'Tecno Camon 30 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '21', name: 'Tecno Camon 30 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '22', name: 'Tecno POVA 6', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '23', name: 'Tecno POVA 6 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '24', name: 'OPPO Reno 8 Pro 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '25', name: 'OPPO Reno 8 Pro Plus 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '26', name: 'OPPO Reno 11S', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '27', name: 'OPPO F25', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '28', name: 'OPPO F25 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '29', name: 'Motorola G13', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '30', name: 'Motorola G23', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '31', name: 'Motorola G34', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '32', name: 'Motorola G45', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '33', name: 'Motorola G53', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '34', name: 'Realme Note 10 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+{ id: '35', name: 'Realme Note 13', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+
+    ]
+    },
   {
     category: 'USBs',
     id: 'USBs',
