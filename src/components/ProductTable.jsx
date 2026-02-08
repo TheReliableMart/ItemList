@@ -59,6 +59,7 @@ import Boya2800 from './Pictures/Boya2800.jpg';
 import GamingHandsfree from './Pictures/GamingHandsfree.jpg';
 import Faster4900 from './Pictures/Faster4900.jpg';
 import ZeroAura from './Pictures/ZeroAura.jpg';
+import BEME from './Pictures/BEME.png';
 import SpaceHeadphones from './Pictures/SpaceHeadphones.jpg';
 import BoostGroovewirelessheadset from './Pictures/BoostGroovewirelessheadset.jpg';
 import BoostSonic from './Pictures/BoostSonic.jpg';
@@ -265,17 +266,32 @@ const products = [
       { id: '6', name: 'Audionic Jionee Type C', description: 'Original', price: '750', pictureUrl: [Cjionee], customClass: '' },
       { id: '7', name: 'Audionic Jionee', description: 'Original', price: '500', pictureUrl: [Jionee], customClass: '' },
       { id: '8', name: 'Audionic Mark 1', description: 'Original', price: '500', pictureUrl: [Mark1], customClass: '' },
-      { id: '9', name: 'Lenovo HE05X Neckband', description: 'Excellent Battery | 6 Months Warranty', price: '1500', pictureUrl: [HE05X], customClass: '' },
+      { id: '9', name: 'Lenovo HE05X Neckband', description: 'Excellent Battery | 6 Months Warranty', price: '1000', pictureUrl: [HE05X], customClass: '' },
       {
-        id: '10', name: 'Zero Aura ENC Earbuds ', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. Features of Aura:
+        id: '10', name: 'BEME Elite Buds Pro 3 Voice Changing Earbuds ', description: `
+Active Noice Cancellation 
+ENC for Best Calling Experience 
+Upto 12m range 
+Voice Changing 
+25hrs of Playback 
+
+What’s in the Box
+• BEME Elite Buds Pro 3
+• Multiple Eartip Sizes
+• Charging Case
+• Cleaning Pen
+• Neck Band Carabiner Hook`, price: '5999', pictureUrl: [BEME], customClass: 'description '
+      },
+      {
+        id: '11', name: 'Zero Aura ENC Earbuds ', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. Features of Aura:
         40 Hour Battery Life
         Aerofit Design
         HyperBass Technology
         IPX5 Water Resistance
-        Instant Pairing || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '3500', pictureUrl: [ZeroAura], customClass: 'description '
+        Instant Pairing || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '3500', pictureUrl: [ZeroAura], customClass: 'description soldClass'
       },
-      { id: '11', name: 'Onikuma Gaming Headphones', description: 'Gaming Headphones with 50mm driver, comfortable design, ', price: '2900', pictureUrl: [GamingHeadphone], customClass: "" },
-      { id: '12', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4000', pictureUrl: [SpaceHeadphones], customClass: 'description' },
+      { id: '12', name: 'Onikuma Gaming Headphones', description: 'Gaming Headphones with 50mm driver, comfortable design, ', price: '2750', pictureUrl: [GamingHeadphone], customClass: "" },
+      { id: '13', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4000', pictureUrl: [SpaceHeadphones], customClass: 'description' },
 
       // { id: '13', name: 'Boost Groove wireless headset', description: 'Experience seamless connectivity with Bluetooth 5.0+EDR on Boost Groove headset for enhanced performance. 5 hours play time with micro SD card supported. Enjoy immersive sound with 40mm speakers and audio jack. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller. ', price: '3000', pictureUrl: [BoostGroovewirelessheadset], customClass: "description noPrice" },
 
@@ -401,43 +417,43 @@ Excellent processing power,
     category: 'Perfumes',
     id: 'Perfumes',
     items: [
+      // {
+      //   id: '1', name: 'J. Flames of Passion', description: `Flames of Passion — a bold and sensual fragrance that ignites the senses. It opens with zesty Mandarin, Bergamot, and juicy Red Berries, unfolding into a heart of Caramel, Rose, and Jasmine. The scent lingers with a warm, captivating base of Vanilla, Oakmoss, and Musks.`, price: '4700 ', pictureUrl: [Flames],
+      //   customClass: 'description noPrice'
+      //   // customClass: 'soldClass',
+      // },
+      // {
+      //   id: '2', name: 'J. Janan Musk', description: `Janan Musk is an ode to quiet strength. Its fresh citrus notes meet soft florals and melt into a warm blend of musk, amber, and cashmere woods. A refined, modern scent that lingers like a whispered memory, it evokes confidence, connection, and calm. Crafted for those who find elegance in restraint.`, price: '7100 ', pictureUrl: [Janan],
+      //   customClass: 'description noPrice'
+      //   // customClass: 'soldClass',
+      // },
+      // {
+      //   id: '3', name: 'J. ZARAR GOLD - 30ml', description: `Size	30ml; Fragrance Category	Fruity, Woody`, price: '2200 ', pictureUrl: [Zarar],
+      //   customClass: 'description noPrice'
+      //   // customClass: 'soldClass',
+      // },
       {
-        id: '1', name: 'J. Flames of Passion', description: `Flames of Passion — a bold and sensual fragrance that ignites the senses. It opens with zesty Mandarin, Bergamot, and juicy Red Berries, unfolding into a heart of Caramel, Rose, and Jasmine. The scent lingers with a warm, captivating base of Vanilla, Oakmoss, and Musks.`, price: '4700 ', pictureUrl: [Flames],
+        id: '1', name: 'J. Perfumes', description: `For any other Perfume`, price: 'As Per MRP ', pictureUrl: [J],
         customClass: 'description noPrice'
         // customClass: 'soldClass',
       },
+      // {
+      //   id: '5', name: 'Hemani Shaheen J10C', description: `Shaheen J10C is a bold and defiant scent forged for men who rise in the face of challenge. It opens with an energetic burst of pink pepper, cardamom, and violet leaves;  a sharp strike that mirrors the intensity of a fighter jet in motion. `, price: '3900 ', pictureUrl: [J10C],
+      //   customClass: 'description noPrice'
+      //   // customClass: 'soldClass',
+      // },
+      // {
+      //   id: '6', name: 'Hemani UNS', description: `UNS is a tender, luminous perfume that captures the quiet beauty of connection. It opens with the soft brightness of bergamot and peony; fresh yet comforting, like the first smile exchanged between kindred souls. At its heart, the endless elegance of rose blends with the golden warmth of amber, creating a delicate sense of intimacy. The scent settles into a soft base of musk and woody notes, warm and grounding, like the feeling of being truly seen and understood.`, price: '3900 ', pictureUrl: [UNS],
+      //   customClass: 'description noPrice'
+      //   // customClass: 'soldClass',
+      // },
+      // {
+      //   id: '7', name: 'Hemani Drift', description: `Introducing Drift, a fragrance that embodies the exhilarating rush of a perfectly executed drift. This scent is a tribute to the individual who embraces the edge, balancing precision with a daring spirit. It opens with the sharp, invigorating notes of Bergamot and Grapefruit, mirroring the initial burst of adrenaline. `, price: '920 ', pictureUrl: [Drift],
+      //   customClass: 'description noPrice'
+      //   // customClass: 'soldClass',
+      // },
       {
-        id: '2', name: 'J. Janan Musk', description: `Janan Musk is an ode to quiet strength. Its fresh citrus notes meet soft florals and melt into a warm blend of musk, amber, and cashmere woods. A refined, modern scent that lingers like a whispered memory, it evokes confidence, connection, and calm. Crafted for those who find elegance in restraint.`, price: '7100 ', pictureUrl: [Janan],
-        customClass: 'description noPrice'
-        // customClass: 'soldClass',
-      },
-      {
-        id: '3', name: 'J. ZARAR GOLD - 30ml', description: `Size	30ml; Fragrance Category	Fruity, Woody`, price: '2200 ', pictureUrl: [Zarar],
-        customClass: 'description noPrice'
-        // customClass: 'soldClass',
-      },
-      {
-        id: '4', name: 'J. Perfumes', description: `For any other Perfume`, price: 'As Per MRP ', pictureUrl: [J],
-        customClass: 'description noPrice'
-        // customClass: 'soldClass',
-      },
-      {
-        id: '5', name: 'Hemani Shaheen J10C', description: `Shaheen J10C is a bold and defiant scent forged for men who rise in the face of challenge. It opens with an energetic burst of pink pepper, cardamom, and violet leaves;  a sharp strike that mirrors the intensity of a fighter jet in motion. `, price: '3900 ', pictureUrl: [J10C],
-        customClass: 'description noPrice'
-        // customClass: 'soldClass',
-      },
-      {
-        id: '6', name: 'Hemani UNS', description: `UNS is a tender, luminous perfume that captures the quiet beauty of connection. It opens with the soft brightness of bergamot and peony; fresh yet comforting, like the first smile exchanged between kindred souls. At its heart, the endless elegance of rose blends with the golden warmth of amber, creating a delicate sense of intimacy. The scent settles into a soft base of musk and woody notes, warm and grounding, like the feeling of being truly seen and understood.`, price: '3900 ', pictureUrl: [UNS],
-        customClass: 'description noPrice'
-        // customClass: 'soldClass',
-      },
-      {
-        id: '7', name: 'Hemani Drift', description: `Introducing Drift, a fragrance that embodies the exhilarating rush of a perfectly executed drift. This scent is a tribute to the individual who embraces the edge, balancing precision with a daring spirit. It opens with the sharp, invigorating notes of Bergamot and Grapefruit, mirroring the initial burst of adrenaline. `, price: '920 ', pictureUrl: [Drift],
-        customClass: 'description noPrice'
-        // customClass: 'soldClass',
-      },
-      {
-        id: '8', name: 'WB by Hemani', description: `For any other Perfume`, price: 'As per MRP ', pictureUrl: [Hemani],
+        id: '2', name: 'WB by Hemani', description: `For any other Perfume`, price: 'As per MRP ', pictureUrl: [Hemani],
         customClass: 'description noPrice'
         // customClass: 'soldClass',
       },
