@@ -99,6 +99,20 @@ import ZBook from './Pictures/ZBook.jpg';
 
 
 
+// Face&HairCare
+import Charcoal from './Pictures/SaeedGhani/Charcoal.jpg';
+import CoconutOil from './Pictures/SaeedGhani/CoconutOil.jpg';
+import AloeVera from './Pictures/SaeedGhani/AloeVera.jpg';
+import BeardOil60ml from './Pictures/SaeedGhani/BeardOil60ml.jpg';
+import HyaluronicAcid from './Pictures/SaeedGhani/HyaluronicAcid.jpg';
+import RoseWaterSpray from './Pictures/SaeedGhani/RoseWaterSpray.jpg';
+import Sandal from './Pictures/SaeedGhani/Sandal.jpg';
+import SheaButterDailyNourishingLotion100ml from './Pictures/SaeedGhani/SheaButterDailyNourishingLotion100ml.jpg';
+import VitaminC from './Pictures/SaeedGhani/VitaminC.jpg';
+import VitaminCBrighteningAntiAgingSuperSerum30ml from './Pictures/SaeedGhani/VitaminCBrightening&Anti-AgingSuperSerum30ml.jpg';
+import VitaminCDailyGlowLotion from './Pictures/SaeedGhani/VitaminCDailyGlowLotion.jpg';
+
+
 // J.
 import Flames from './Pictures/J/Flames.jpg';
 import Janan from './Pictures/J/Janan.jpg';
@@ -266,7 +280,7 @@ const products = [
       { id: '6', name: 'Audionic Jionee Type C', description: 'Original', price: '750', pictureUrl: [Cjionee], customClass: '' },
       { id: '7', name: 'Audionic Jionee', description: 'Original', price: '500', pictureUrl: [Jionee], customClass: '' },
       { id: '8', name: 'Audionic Mark 1', description: 'Original', price: '500', pictureUrl: [Mark1], customClass: '' },
-      { id: '9', name: 'Lenovo HE05X Neckband', description: 'Excellent Battery | 6 Months Warranty', price: '1000', pictureUrl: [HE05X], customClass: '' },
+      { id: '9', name: 'Lenovo HE05X Neckband', description: 'Available on Demand ', price: '1000', pictureUrl: [HE05X], customClass: 'sold' },
       {
         id: '10', name: 'BEME Elite Buds Pro 3 Voice Changing Earbuds ', description: `
 Active Noice Cancellation 
@@ -407,12 +421,117 @@ Excellent processing power,
     id: 'Trimmers',
     items: [
       {
-        id: '1', name: 'Dingling Professional Trimmer RF-609', description: `The DINGLING has been developed using the latest technical know how. It has been produced using the most modern machinery and all the functions have been thoroughly tested. We hope you will be fully satisfied with the DINGLING. Before use please read the operating instructions carefully,`, price: '3500 ', pictureUrl: [Dingling],
-        customClass: 'description '
+        id: '1', name: 'Dingling Professional Trimmer RF-609', description: `Available on Demand`, price: '3500 ', pictureUrl: [Dingling],
+        customClass: ' '
         // customClass: 'soldClass',
       },
     ]
   },
+  {
+  category: 'Face & Hair Care',
+  id: 'Face&HairCare',
+  items: [
+    // Face Wash (Top)
+    {
+      id: '1',
+      name: 'Activated Charcoal Face Wash',
+      description: '100ml Face Wash',
+      price: '450',
+      pictureUrl: [Charcoal],
+      customClass: ' noPrice'
+    },
+    {
+      id: '2',
+      name: 'Vitamin C Face Wash',
+      description: '150ml Face Wash',
+      price: '595',
+      pictureUrl: [VitaminC],
+      customClass: ' noPrice'
+    },
+    {
+      id: '3',
+      name: 'Hyaluronic Acid Face Wash',
+      description: '100ml Face Wash',
+      price: '600',
+      pictureUrl: [HyaluronicAcid],
+      customClass: ' noPrice'
+    },
+    {
+      id: '4',
+      name: 'Sandal Face Wash',
+      description: '100ml Face Wash',
+      price: '350',
+      pictureUrl: [Sandal],
+      customClass: ' noPrice'
+    },
+
+    // Treatment
+    {
+      id: '5',
+      name: 'Vitamin C Super Serum',
+      description: 'Brightening & Anti-Aging (30ml)',
+      price: '1050',
+      pictureUrl: [VitaminCBrighteningAntiAgingSuperSerum30ml],
+      customClass: ' noPrice'
+    },
+
+    // Moisturizer / Gel
+    {
+      id: '6',
+      name: 'Aloe Vera Gel',
+      description: '100ml Moisturizing Gel',
+      price: '350',
+      pictureUrl: [AloeVera],
+      customClass: ' noPrice'
+    },
+
+    // Lotions
+    {
+      id: '7',
+      name: 'Shea Butter Lotion',
+      description: 'Nourishing Lotion 100ml',
+      price: '350',
+      pictureUrl: [SheaButterDailyNourishingLotion100ml],
+      customClass: ' noPrice'
+    },
+    {
+      id: '8',
+      name: 'Vitamin C Daily Glow Lotion',
+      description: '100ml Lotion',
+      price: '520',
+      pictureUrl: [VitaminCDailyGlowLotion],
+      customClass: ' noPrice'
+    },
+
+    // Oils
+    {
+      id: '9',
+      name: 'Coconut Oil',
+      description: '100ml',
+      price: '320',
+      pictureUrl: [CoconutOil],
+      customClass: ' noPrice'
+    },
+    {
+      id: '10',
+      name: 'Beard Oil',
+      description: '60ml',
+      price: '600',
+      pictureUrl: [BeardOil60ml],
+      customClass: ' noPrice'
+    },
+
+    // Finishing / Misc
+    {
+      id: '11',
+      name: 'Rose Water Spray',
+      description: '120ml',
+      price: '220',
+      pictureUrl: [RoseWaterSpray],
+      customClass: ' noPrice'
+    }
+  ]
+},
   {
     category: 'Perfumes',
     id: 'Perfumes',
@@ -434,7 +553,7 @@ Excellent processing power,
       // },
       {
         id: '1', name: 'J. Perfumes', description: `For any other Perfume`, price: 'As Per MRP ', pictureUrl: [J],
-        customClass: 'description noPrice'
+        customClass: ' noPrice'
         // customClass: 'soldClass',
       },
       // {
@@ -454,7 +573,7 @@ Excellent processing power,
       // },
       {
         id: '2', name: 'WB by Hemani', description: `For any other Perfume`, price: 'As per MRP ', pictureUrl: [Hemani],
-        customClass: 'description noPrice'
+        customClass: ' noPrice'
         // customClass: 'soldClass',
       },
     ]

@@ -67,6 +67,7 @@ const categories = [
   { name: 'Electronics', id: 'Electronics' },
   { name: 'Laptops', id: 'Laptops' },
   { name: 'Trimmers', id: 'Trimmers' },
+  { name: 'Face & Hair Care', id: 'Face&HairCare' },
   { name: 'Perfumes', id: 'Perfumes' },
   { name: 'Watches', id: 'Watches' },
   { name: 'Power Banks', id: 'PowerBanks' },
