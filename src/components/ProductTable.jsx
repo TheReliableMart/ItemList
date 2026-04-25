@@ -101,6 +101,7 @@ import ZBook from './Pictures/ZBook.jpg';
 
 // Face&HairCare
 import Charcoal from './Pictures/SaeedGhani/Charcoal.jpg';
+import Charcoal50ml from './Pictures/SaeedGhani/Charcoal50ml.jpg';
 import CoconutOil from './Pictures/SaeedGhani/CoconutOil.jpg';
 import AloeVera from './Pictures/SaeedGhani/AloeVera.jpg';
 import BeardOil60ml from './Pictures/SaeedGhani/BeardOil60ml.jpg';
@@ -109,6 +110,8 @@ import RoseWaterSpray from './Pictures/SaeedGhani/RoseWaterSpray.jpg';
 import Sandal from './Pictures/SaeedGhani/Sandal.jpg';
 import SheaButterDailyNourishingLotion100ml from './Pictures/SaeedGhani/SheaButterDailyNourishingLotion100ml.jpg';
 import VitaminC from './Pictures/SaeedGhani/VitaminC.jpg';
+import VitaminC50ml from './Pictures/SaeedGhani/VitaminC50ml.jpg';
+import SPF15SunscreenLotion from './Pictures/SaeedGhani/SPF15SunscreenLotion.jpg';
 import VitaminCBrighteningAntiAgingSuperSerum30ml from './Pictures/SaeedGhani/VitaminCBrightening&Anti-AgingSuperSerum30ml.jpg';
 import VitaminCDailyGlowLotion from './Pictures/SaeedGhani/VitaminCDailyGlowLotion.jpg';
 
@@ -431,104 +434,137 @@ Excellent processing power,
   category: 'Face & Hair Care',
   id: 'Face&HairCare',
   items: [
-    // Face Wash (Top)
+    // Face Wash (Grouped + Size Ordered)
+
     {
       id: '1',
+      name: 'Activated Charcoal Face Wash',
+      description: '50ml Face Wash',
+      price: '300',
+      pictureUrl: [Charcoal50ml],
+      customClass: 'beauty'
+    },
+    {
+      id: '2',
       name: 'Activated Charcoal Face Wash',
       description: '100ml Face Wash',
       price: '450',
       pictureUrl: [Charcoal],
-      customClass: ' noPrice'
+      customClass: 'beauty'
+    },
+
+    {
+      id: '3',
+      name: 'Vitamin C Face Wash',
+      description: '50ml Face Wash',
+      price: '300',
+      pictureUrl: [VitaminC50ml],
+      customClass: 'beauty'
     },
     {
-      id: '2',
+      id: '4',
       name: 'Vitamin C Face Wash',
       description: '150ml Face Wash',
       price: '595',
       pictureUrl: [VitaminC],
-      customClass: ' noPrice'
+      customClass: 'beauty'
     },
+
     {
-      id: '3',
+      id: '5',
       name: 'Hyaluronic Acid Face Wash',
       description: '100ml Face Wash',
       price: '600',
       pictureUrl: [HyaluronicAcid],
-      customClass: ' noPrice'
+      customClass: 'beauty'
     },
     {
-      id: '4',
+      id: '6',
       name: 'Sandal Face Wash',
       description: '100ml Face Wash',
       price: '350',
       pictureUrl: [Sandal],
-      customClass: ' noPrice'
+      customClass: 'beauty'
     },
 
     // Treatment
+
     {
-      id: '5',
+      id: '7',
       name: 'Vitamin C Super Serum',
       description: 'Brightening & Anti-Aging (30ml)',
       price: '1050',
       pictureUrl: [VitaminCBrighteningAntiAgingSuperSerum30ml],
-      customClass: ' noPrice'
+      customClass: 'beauty'
     },
 
     // Moisturizer / Gel
+
     {
-      id: '6',
+      id: '8',
       name: 'Aloe Vera Gel',
       description: '100ml Moisturizing Gel',
       price: '350',
       pictureUrl: [AloeVera],
-      customClass: ' noPrice'
+      customClass: 'beauty'
     },
 
     // Lotions
+
     {
-      id: '7',
+      id: '9',
       name: 'Shea Butter Lotion',
       description: 'Nourishing Lotion 100ml',
       price: '350',
       pictureUrl: [SheaButterDailyNourishingLotion100ml],
-      customClass: ' noPrice'
+      customClass: 'beauty'
     },
     {
-      id: '8',
+      id: '10',
       name: 'Vitamin C Daily Glow Lotion',
       description: '100ml Lotion',
       price: '520',
       pictureUrl: [VitaminCDailyGlowLotion],
-      customClass: ' noPrice'
+      customClass: 'beauty'
+    },
+
+    {
+      id: '11',
+      name: 'Sunscreen Lotion SPF 15',
+      description: '100ml',
+      price: '490',
+      pictureUrl: [SPF15SunscreenLotion],
+      customClass: 'beauty'
     },
 
     // Oils
+
     {
-      id: '9',
+      id: '12',
       name: 'Coconut Oil',
       description: '100ml',
       price: '320',
       pictureUrl: [CoconutOil],
-      customClass: ' noPrice'
+      customClass: 'beauty'
     },
     {
-      id: '10',
+      id: '13',
       name: 'Beard Oil',
       description: '60ml',
       price: '600',
       pictureUrl: [BeardOil60ml],
-      customClass: ' noPrice'
+      customClass: 'beauty'
     },
 
-    // Finishing / Misc
+    // Finishing
+
     {
-      id: '11',
+      id: '14',
       name: 'Rose Water Spray',
       description: '120ml',
       price: '220',
       pictureUrl: [RoseWaterSpray],
-      customClass: ' noPrice'
+      customClass: 'beauty'
     }
   ]
 },
@@ -757,165 +793,11 @@ Net Weight: 418.1 grams`, price: '6000', pictureUrl: [DanyTitan],
 
 ];
 
-// const ProductTable = ({ selectedCategory, applyDiscountToAll = true }) => {
-//   const [selectedItem, setSelectedItem] = useState(null);
-
-//   // Filter products based on the selected category
-//   const filteredProducts = selectedCategory === 'all'
-//     ? products
-//     : products.filter(category => category.id === selectedCategory);
-
-//   // Generate WhatsApp link based on the item name and price
-//   const generateWhatsAppLink = (name, price) => {
-//     const numericPrice = price.split(' ')[0]; // Extract numeric part of price
-//     const message = `I am interested in ${name} with price ${numericPrice} PKR`;
-//     const whatsappNumber = '923160175207';
-//     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-//   };
-
-//   // Handle button click to show modal
-//   const handleShowModal = (item) => {
-//     setSelectedItem(item);
-//   };
-
-//   // Close the modal
-//   const handleCloseModal = () => {
-//     setSelectedItem(null);
-//   };
-
-//   // Calculate the discounted price based on type
-//   const applyDiscount = (price, type) => {
-//     const numericPrice = parseFloat(price.split(' ')[0]);
-//     // if (type === 'calculator') {
-//     //   return (numericPrice * 0.95).toFixed(2); // 5% off for calculators
-//     // }
-//     return (numericPrice * 0.89).toFixed(2); // 10% off for other items
-//   };
-
-//   return (
-//     <div className={styles.tableContainer}>
-//       {filteredProducts.map((category, index) => (
-//         <div key={index} id={category.id}>
-//           <h2 className={styles.heading}>{category.category}</h2>
-
-//           <table className={`table table-striped ${styles.table}`}>
-//             <thead>
-//               <tr>
-//                 <th className={styles.head}>S/No</th>
-//                 <th className={styles.heads}>Items</th>
-//                 <th className={styles.head}>Description</th>
-//                 <th className={styles.head}>Price</th>
-//                 <th className={styles.head}>Buy</th>
-//                 <th className={styles.head}>Picture</th>
-//               </tr>
-//             </thead>
-//             <tbody>
-//               {category.items.map(item => {
-//                 const hasDescriptionClass = item.customClass?.includes('description');
-//                 const isSold = item.customClass?.includes('sold');
-//                 const hasPriceClass = item.customClass?.includes('price');
-//                 const noPriceClass = item.customClass?.includes('noPrice');
-
-//                 const originalPrice = item.price;
-//                 const discountedPrice = applyDiscount(item.price, item.type);
-
-//                 // Final price: apply discount based on the conditions
-//                 const finalPrice = (!noPriceClass && (applyDiscountToAll || hasPriceClass))
-//                   ? discountedPrice
-//                   : originalPrice;
-
-//                 return (
-//                   <tr key={item.id}>
-//                     <td>{item.id}</td>
-//                     <td>{item.name}</td>
-//                     <td>
-//                       {hasDescriptionClass ? (
-//                         <div>
-//                           <button
-//                             className={styles.viewButton}
-//                             onClick={() => handleShowModal(item)}
-//                           >
-//                             View
-//                           </button>
-//                         </div>
-//                       ) : (
-//                         item.description
-//                       )}
-//                     </td>
-//                     <td>
-//                       {isSold ? (
-//                         <span>{originalPrice}</span>
-//                       ) : (
-//                         <div>
-//                           {(!noPriceClass && (applyDiscountToAll || hasPriceClass)) ? (
-//                             <>
-//                               <span style={{ textDecoration: 'line-through' }}>
-//                                 {originalPrice}
-//                               </span>{' '}
-//                               <span>{finalPrice} PKR</span>
-//                             </>
-//                           ) : (
-//                             <span>{originalPrice}</span>
-//                           )}
-//                         </div>
-//                       )}
-//                     </td>
-//                     <td>
-//                       {isSold ? (
-//                         <button className={`${styles.btn} ${styles.disabledBtn}`} disabled>
-//                           Sold
-//                         </button>
-//                       ) : (
-//                         <a
-//                           href={generateWhatsAppLink(item.name, finalPrice)}
-//                           target="_blank"
-//                           rel="noopener noreferrer"
-//                           className={styles.btn}
-//                         >
-//                           <i className="fas fa-shopping-cart"></i>
-//                         </a>
-//                       )}
-//                     </td>
-//                     <td>
-//                       <a
-//                         href={item.pictureUrl}
-//                         target="_blank"
-//                         rel="noopener noreferrer"
-//                         className={styles.btn}
-//                       >
-//                         <i className="fas fa-camera"></i>
-//                       </a>
-//                     </td>
-//                   </tr>
-//                 );
-//               })}
-//             </tbody>
-//           </table>
-
-//           <hr style={{ border: '2px solid black', marginBottom: '20px' }} />
-//         </div>
-//       ))}
-
-//       {selectedItem && (
-//         <div className={styles.modalOverlay} onClick={handleCloseModal}>
-//           <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
-//             <h2>{selectedItem.name}</h2>
-//             <p>{selectedItem.description}</p>
-//             <button className={styles.closeModalButton} onClick={handleCloseModal}>
-//               Close
-//             </button>
-//           </div>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default ProductTable;
-
+//WITHOUT BEAUTY FUNC 
 
 // const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
 //   const [selectedItem, setSelectedItem] = useState(null);
+//   const [selectedImage, setSelectedImage] = useState(null);
 
 //   useEffect(() => {
 //     if (searchTerm) {
@@ -944,7 +826,7 @@ Net Weight: 418.1 grams`, price: '6000', pictureUrl: [DanyTitan],
 //     .filter((category) => category.items.length > 0 || selectedCategory === category.id);
 
 //   const generateWhatsAppLink = (itemName, price) => {
-//     const message = `Hello, I'm interested in buying ${itemName} for ${price} PKR. Can you provide more details?`;
+//     const message = `Assalamualaikum, I'm interested in buying ${itemName} for ${price} PKR. Can you Please confirm this order?`;
 //     const whatsappNumber = '923160175207';
 //     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 //   };
@@ -955,6 +837,14 @@ Net Weight: 418.1 grams`, price: '6000', pictureUrl: [DanyTitan],
 
 //   const handleCloseModal = () => {
 //     setSelectedItem(null);
+//   };
+
+//   const handleShowImageModal = (imageUrl) => {
+//     setSelectedImage(imageUrl);
+//   };
+
+//   const handleCloseImageModal = () => {
+//     setSelectedImage(null);
 //   };
 
 //   const getFinalPrice = (item) => {
@@ -990,6 +880,7 @@ Net Weight: 418.1 grams`, price: '6000', pictureUrl: [DanyTitan],
 //                 const hasDescriptionClass = item.customClass?.includes('description');
 //                 const isSold = item.customClass?.includes('sold');
 //                 const hasPriceClass = item.customClass?.includes('price');
+//                 const hasbeautyClass = item.customClass?.includes('beauty');
 //                 const noPriceClass = item.customClass?.includes('noPrice');
 
 //                 const originalPrice = item.price;
@@ -1029,6 +920,7 @@ Net Weight: 418.1 grams`, price: '6000', pictureUrl: [DanyTitan],
 //                           ) : (
 //                             <span>{originalPrice}</span>
 //                           )}
+                     
 //                         </div>
 //                       )}
 //                     </td>
@@ -1049,14 +941,12 @@ Net Weight: 418.1 grams`, price: '6000', pictureUrl: [DanyTitan],
 //                       )}
 //                     </td>
 //                     <td>
-//                       <a
-//                         href={item.pictureUrl[0]}
-//                         target="_blank"
-//                         rel="noopener noreferrer"
+//                       <button
+//                         onClick={() => handleShowImageModal(item.pictureUrl[0])}
 //                         className={styles.btn}
 //                       >
 //                         <i className="fas fa-camera"></i>
-//                       </a>
+//                       </button>
 //                     </td>
 //                   </tr>
 //                 );
@@ -1078,16 +968,29 @@ Net Weight: 418.1 grams`, price: '6000', pictureUrl: [DanyTitan],
 //           </div>
 //         </div>
 //       )}
+
+//       {selectedImage && (
+//         <div className={styles.modalOverlay} onClick={handleCloseImageModal}>
+//           <div className={styles.imageModalContent} onClick={(e) => e.stopPropagation()}>
+//             <img src={selectedImage} alt="Product" className={styles.modalImage} />
+//             <button className={styles.closeImageButton} onClick={handleCloseImageModal}>
+//               ×
+//             </button>
+//           </div>
+//         </div>
+//       )}
 //     </div>
 //   );
 // };
 
 // export default ProductTable;
 
-
 const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
   const [selectedItem, setSelectedItem] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
+
+  // ===== Beauty Discount State =====
+  const [isBeautyDiscountActive, setIsBeautyDiscountActive] = useState(false);
 
   useEffect(() => {
     if (searchTerm) {
@@ -1105,6 +1008,33 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
     }
   }, [searchTerm]);
 
+  // ===== Pakistan Time-based Beauty Discount (NO API) =====
+  useEffect(() => {
+    const checkTime = () => {
+      const now = new Date(
+        new Date().toLocaleString("en-US", { timeZone: "Asia/Karachi" })
+      );
+
+      // ===== CHANGE TIME HERE =====
+      const start = new Date('2026-04-25T17:00:00'); // 5 PM PKT
+      const end = new Date('2026-04-25T16`:59:59');
+
+      if (now >= start && now <= end) {
+        setIsBeautyDiscountActive(true);
+      } else {
+        setIsBeautyDiscountActive(false);
+      }
+
+      // DEBUG (remove later)
+      console.log("PK Time:", now);
+      console.log("Active:", now >= start && now <= end);
+    };
+
+    checkTime();
+    const interval = setInterval(checkTime, 60000);
+    return () => clearInterval(interval);
+  }, []);
+
   const filteredProducts = products
     .filter((category) => selectedCategory === 'all' || category.id === selectedCategory)
     .map((category) => ({
@@ -1121,31 +1051,37 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   };
 
-  const handleShowModal = (item) => {
-    setSelectedItem(item);
-  };
+  const handleShowModal = (item) => setSelectedItem(item);
+  const handleCloseModal = () => setSelectedItem(null);
+  const handleShowImageModal = (imageUrl) => setSelectedImage(imageUrl);
+  const handleCloseImageModal = () => setSelectedImage(null);
 
-  const handleCloseModal = () => {
-    setSelectedItem(null);
-  };
-
-  const handleShowImageModal = (imageUrl) => {
-    setSelectedImage(imageUrl);
-  };
-
-  const handleCloseImageModal = () => {
-    setSelectedImage(null);
-  };
-
+  // ===== FINAL PRICE LOGIC =====
   const getFinalPrice = (item) => {
-    const hasPriceClass = item.customClass?.includes('price');
-    const noPriceClass = item.customClass?.includes('noPrice');
-    const numericPrice = parseFloat(item.price.split(' ')[0]);
-    const discountedPrice = (numericPrice * 0.9).toFixed(2);
+    const custom = item.customClass?.toLowerCase() || '';
 
-    if (!noPriceClass && (applyDiscountToAll || hasPriceClass)) {
-      return discountedPrice;
+    const hasPriceClass = custom.includes('price');
+    const noPriceClass = custom.includes('noprice');
+    const isBeauty = custom.includes('beauty');
+
+    const numericPrice = parseFloat(item.price.split(' ')[0]);
+
+    const discount10 = (numericPrice * 0.9).toFixed(2);
+    const discount15 = (numericPrice * 0.85).toFixed(2);
+
+    if (noPriceClass) return item.price;
+
+    // 1. ALWAYS discount items
+    if (hasPriceClass) return discount10;
+
+    // 2. Beauty time-based
+    if (isBeauty) {
+      return isBeautyDiscountActive ? discount15 : item.price;
     }
+
+    // 3. Global discount
+    if (applyDiscountToAll) return discount10;
+
     return item.price;
   };
 
@@ -1154,6 +1090,7 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
       {filteredProducts.map((category, index) => (
         <div key={index} id={category.id}>
           <h2 className={styles.heading}>{category.category}</h2>
+
           <table className={`table table-striped ${styles.table}`}>
             <thead>
               <tr>
@@ -1165,41 +1102,48 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
                 <th className={styles.head}>Picture</th>
               </tr>
             </thead>
+
             <tbody>
               {category.items.map((item) => {
-                const hasDescriptionClass = item.customClass?.includes('description');
-                const isSold = item.customClass?.includes('sold');
-                const hasPriceClass = item.customClass?.includes('price');
-                const noPriceClass = item.customClass?.includes('noPrice');
+                const custom = item.customClass?.toLowerCase() || '';
+
+                const hasDescriptionClass = custom.includes('description');
+                const isSold = custom.includes('sold');
+                const hasPriceClass = custom.includes('price');
+                const isBeauty = custom.includes('beauty');
+                const noPriceClass = custom.includes('noprice');
 
                 const originalPrice = item.price;
                 const finalPrice = getFinalPrice(item);
 
-                
                 return (
                   <tr key={item.id}>
                     <td>{item.id}</td>
                     <td>{item.name}</td>
+
                     <td>
                       {hasDescriptionClass ? (
-                        <div>
-                            <button
-                              className={styles.viewButton}
-                              onClick={() => handleShowModal(item)}
-                            >
-                              <FaEye size={20} />
-                            </button>
-                        </div>
+                        <button
+                          className={styles.viewButton}
+                          onClick={() => handleShowModal(item)}
+                        >
+                          <FaEye size={20} />
+                        </button>
                       ) : (
                         item.description
                       )}
                     </td>
+
                     <td>
                       {isSold ? (
                         <span>{originalPrice}</span>
                       ) : (
                         <div>
-                          {(!noPriceClass && (applyDiscountToAll || hasPriceClass)) ? (
+                          {(!noPriceClass && (
+                            hasPriceClass ||
+                            (isBeauty && isBeautyDiscountActive) ||
+                            (!isBeauty && applyDiscountToAll)
+                          )) ? (
                             <>
                               <span style={{ textDecoration: 'line-through' }}>
                                 {originalPrice}
@@ -1212,6 +1156,7 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
                         </div>
                       )}
                     </td>
+
                     <td>
                       {isSold ? (
                         <button className={`${styles.btn} ${styles.disabledBtn}`} disabled>
@@ -1228,6 +1173,7 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
                         </a>
                       )}
                     </td>
+
                     <td>
                       <button
                         onClick={() => handleShowImageModal(item.pictureUrl[0])}
@@ -1241,6 +1187,7 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
               })}
             </tbody>
           </table>
+
           <hr style={{ border: '2px solid black', marginBottom: '20px' }} />
         </div>
       ))}
