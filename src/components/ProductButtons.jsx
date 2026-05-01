@@ -58,6 +58,7 @@ import styles from './ProductButtons.module.css';
 
 const categories = [
   { name: 'All', id: 'all' },
+  { name: 'Face & Hair Care', id: 'Face&HairCare' },
   { name: 'Accessories', id: 'Accessories' },
   { name: 'Chargers & Cables', id: 'Chargers' },
   { name: 'Protectors', id: 'Protectors' },
@@ -67,7 +68,6 @@ const categories = [
   { name: 'Electronics', id: 'Electronics' },
   { name: 'Laptops', id: 'Laptops' },
   { name: 'Trimmers', id: 'Trimmers' },
-  { name: 'Face & Hair Care', id: 'Face&HairCare' },
   { name: 'Perfumes', id: 'Perfumes' },
   { name: 'Watches', id: 'Watches' },
   { name: 'Power Banks', id: 'PowerBanks' },

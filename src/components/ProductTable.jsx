@@ -1016,8 +1016,8 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
       );
 
       // ===== CHANGE TIME HERE =====
-      const start = new Date('2026-04-25T17:00:00'); // 5 PM PKT
-      const end = new Date('2026-04-25T16`:59:59');
+      const start = new Date('2026-05-02T00:00:00'); // 5 PM PKT
+      const end = new Date('2026-05-03T23:59:59');
 
       if (now >= start && now <= end) {
         setIsBeautyDiscountActive(true);
@@ -1066,8 +1066,16 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
 
     const numericPrice = parseFloat(item.price.split(' ')[0]);
 
-    const discount10 = (numericPrice * 0.9).toFixed(2);
+    
+    
+    
+    //Beauty Discount
+    const discount10 = (numericPrice * 0.80).toFixed(2);
     const discount15 = (numericPrice * 0.85).toFixed(2);
+    const discount20 = (numericPrice * 0.80).toFixed(2);
+    const discount25 = (numericPrice * 0.75).toFixed(2);
+    const discount30 = (numericPrice * 0.7).toFixed(2);
+    const discount35 = (numericPrice * 0.65).toFixed(2);
 
     if (noPriceClass) return item.price;
 
@@ -1076,7 +1084,7 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
 
     // 2. Beauty time-based
     if (isBeauty) {
-      return isBeautyDiscountActive ? discount15 : item.price;
+      return isBeautyDiscountActive ? discount20 : item.price;
     }
 
     // 3. Global discount
