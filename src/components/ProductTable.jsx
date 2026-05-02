@@ -168,6 +168,144 @@ import PokerCards from './Pictures/PokerCards.jpg';
 
 
 const products = [
+    {
+  category: 'Face & Hair Care',
+  id: 'Face&HairCare',
+  items: [
+    // Face Wash (Grouped + Size Ordered)
+
+    {
+      id: '1',
+      name: 'Activated Charcoal Face Wash',
+      description: '50ml Face Wash',
+      price: '300',
+      pictureUrl: [Charcoal50ml],
+      customClass: 'beauty'
+    },
+    {
+      id: '2',
+      name: 'Activated Charcoal Face Wash',
+      description: '100ml Face Wash',
+      price: '450',
+      pictureUrl: [Charcoal],
+      customClass: 'beauty'
+    },
+
+    {
+      id: '3',
+      name: 'Vitamin C Face Wash',
+      description: '50ml Face Wash',
+      price: '300',
+      pictureUrl: [VitaminC50ml],
+      customClass: 'beauty'
+    },
+    {
+      id: '4',
+      name: 'Vitamin C Face Wash',
+      description: '150ml Face Wash',
+      price: '595',
+      pictureUrl: [VitaminC],
+      customClass: 'beauty'
+    },
+
+    {
+      id: '5',
+      name: 'Hyaluronic Acid Face Wash',
+      description: '100ml Face Wash',
+      price: '600',
+      pictureUrl: [HyaluronicAcid],
+      customClass: 'beauty'
+    },
+    {
+      id: '6',
+      name: 'Sandal Face Wash',
+      description: '100ml Face Wash',
+      price: '350',
+      pictureUrl: [Sandal],
+      customClass: 'beauty'
+    },
+
+    // Treatment
+
+    {
+      id: '7',
+      name: 'Vitamin C Super Serum',
+      description: 'Brightening & Anti-Aging (30ml)',
+      price: '1050',
+      pictureUrl: [VitaminCBrighteningAntiAgingSuperSerum30ml],
+      customClass: 'beauty'
+    },
+
+    // Moisturizer / Gel
+
+    {
+      id: '8',
+      name: 'Aloe Vera Gel',
+      description: '100ml Moisturizing Gel',
+      price: '350',
+      pictureUrl: [AloeVera],
+      customClass: 'beauty'
+    },
+
+    // Lotions
+
+    {
+      id: '9',
+      name: 'Shea Butter Lotion',
+      description: 'Nourishing Lotion 100ml',
+      price: '350',
+      pictureUrl: [SheaButterDailyNourishingLotion100ml],
+      customClass: 'beauty'
+    },
+    {
+      id: '10',
+      name: 'Vitamin C Daily Glow Lotion',
+      description: '100ml Lotion',
+      price: '520',
+      pictureUrl: [VitaminCDailyGlowLotion],
+      customClass: 'beauty'
+    },
+
+    {
+      id: '11',
+      name: 'Sunscreen Lotion SPF 15',
+      description: '100ml',
+      price: '490',
+      pictureUrl: [SPF15SunscreenLotion],
+      customClass: 'beauty'
+    },
+
+    // Oils
+
+    {
+      id: '12',
+      name: 'Coconut Oil',
+      description: '100ml',
+      price: '320',
+      pictureUrl: [CoconutOil],
+      customClass: 'beauty'
+    },
+    {
+      id: '13',
+      name: 'Beard Oil',
+      description: '60ml',
+      price: '600',
+      pictureUrl: [BeardOil60ml],
+      customClass: 'beauty'
+    },
+
+    // Finishing
+
+    {
+      id: '14',
+      name: 'Rose Water Spray',
+      description: '120ml',
+      price: '220',
+      pictureUrl: [RoseWaterSpray],
+      customClass: 'beauty'
+    }
+  ]
+},
   {
     category: 'Accessories',
     id: 'Accessories',
@@ -430,144 +568,7 @@ Excellent processing power,
       },
     ]
   },
-  {
-  category: 'Face & Hair Care',
-  id: 'Face&HairCare',
-  items: [
-    // Face Wash (Grouped + Size Ordered)
 
-    {
-      id: '1',
-      name: 'Activated Charcoal Face Wash',
-      description: '50ml Face Wash',
-      price: '300',
-      pictureUrl: [Charcoal50ml],
-      customClass: 'beauty'
-    },
-    {
-      id: '2',
-      name: 'Activated Charcoal Face Wash',
-      description: '100ml Face Wash',
-      price: '450',
-      pictureUrl: [Charcoal],
-      customClass: 'beauty'
-    },
-
-    {
-      id: '3',
-      name: 'Vitamin C Face Wash',
-      description: '50ml Face Wash',
-      price: '300',
-      pictureUrl: [VitaminC50ml],
-      customClass: 'beauty'
-    },
-    {
-      id: '4',
-      name: 'Vitamin C Face Wash',
-      description: '150ml Face Wash',
-      price: '595',
-      pictureUrl: [VitaminC],
-      customClass: 'beauty'
-    },
-
-    {
-      id: '5',
-      name: 'Hyaluronic Acid Face Wash',
-      description: '100ml Face Wash',
-      price: '600',
-      pictureUrl: [HyaluronicAcid],
-      customClass: 'beauty'
-    },
-    {
-      id: '6',
-      name: 'Sandal Face Wash',
-      description: '100ml Face Wash',
-      price: '350',
-      pictureUrl: [Sandal],
-      customClass: 'beauty'
-    },
-
-    // Treatment
-
-    {
-      id: '7',
-      name: 'Vitamin C Super Serum',
-      description: 'Brightening & Anti-Aging (30ml)',
-      price: '1050',
-      pictureUrl: [VitaminCBrighteningAntiAgingSuperSerum30ml],
-      customClass: 'beauty'
-    },
-
-    // Moisturizer / Gel
-
-    {
-      id: '8',
-      name: 'Aloe Vera Gel',
-      description: '100ml Moisturizing Gel',
-      price: '350',
-      pictureUrl: [AloeVera],
-      customClass: 'beauty'
-    },
-
-    // Lotions
-
-    {
-      id: '9',
-      name: 'Shea Butter Lotion',
-      description: 'Nourishing Lotion 100ml',
-      price: '350',
-      pictureUrl: [SheaButterDailyNourishingLotion100ml],
-      customClass: 'beauty'
-    },
-    {
-      id: '10',
-      name: 'Vitamin C Daily Glow Lotion',
-      description: '100ml Lotion',
-      price: '520',
-      pictureUrl: [VitaminCDailyGlowLotion],
-      customClass: 'beauty'
-    },
-
-    {
-      id: '11',
-      name: 'Sunscreen Lotion SPF 15',
-      description: '100ml',
-      price: '490',
-      pictureUrl: [SPF15SunscreenLotion],
-      customClass: 'beauty'
-    },
-
-    // Oils
-
-    {
-      id: '12',
-      name: 'Coconut Oil',
-      description: '100ml',
-      price: '320',
-      pictureUrl: [CoconutOil],
-      customClass: 'beauty'
-    },
-    {
-      id: '13',
-      name: 'Beard Oil',
-      description: '60ml',
-      price: '600',
-      pictureUrl: [BeardOil60ml],
-      customClass: 'beauty'
-    },
-
-    // Finishing
-
-    {
-      id: '14',
-      name: 'Rose Water Spray',
-      description: '120ml',
-      price: '220',
-      pictureUrl: [RoseWaterSpray],
-      customClass: 'beauty'
-    }
-  ]
-},
   {
     category: 'Perfumes',
     id: 'Perfumes',
