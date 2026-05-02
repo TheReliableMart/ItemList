@@ -244,7 +244,7 @@ const products = [
       description: '100ml Moisturizing Gel',
       price: '350',
       pictureUrl: [AloeVera],
-      customClass: 'beauty'
+      customClass: 'beauty soldClass'
     },
 
     // Lotions
