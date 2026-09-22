@@ -69,7 +69,7 @@ const categories = [
   { name: 'Laptops', id: 'Laptops' },
   { name: 'Trimmers', id: 'Trimmers' },
   { name: 'Perfumes', id: 'Perfumes' },
-  { name: 'Watches', id: 'Watches' },
+  // { name: 'Watches', id: 'Watches' },
   { name: 'Power Banks', id: 'PowerBanks' },
   { name: 'Sports', id: 'sports' },
 ];

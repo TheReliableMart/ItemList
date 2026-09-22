@@ -102,7 +102,7 @@ import ZBook from './Pictures/ZBook.jpg';
 // Face&HairCare
 import Charcoal from './Pictures/SaeedGhani/Charcoal.jpg';
 import Charcoal50ml from './Pictures/SaeedGhani/Charcoal50ml.jpg';
-import CoconutOil from './Pictures/SaeedGhani/CoconutOil.jpg';
+import CoconutOil from './Pictures/SaeedGhani/CoconutOil.png';
 import AloeVera from './Pictures/SaeedGhani/AloeVera.jpg';
 import BeardOil60ml from './Pictures/SaeedGhani/BeardOil60ml.jpg';
 import HyaluronicAcid from './Pictures/SaeedGhani/HyaluronicAcid.jpg';
@@ -233,7 +233,7 @@ const products = [
       description: 'Brightening & Anti-Aging (30ml)',
       price: '1050',
       pictureUrl: [VitaminCBrighteningAntiAgingSuperSerum30ml],
-      customClass: 'beauty'
+      customClass: 'beauty Sold'
     },
 
     // Moisturizer / Gel
@@ -244,7 +244,7 @@ const products = [
       description: '100ml Moisturizing Gel',
       price: '350',
       pictureUrl: [AloeVera],
-      customClass: 'beauty soldClass'
+      customClass: 'beauty Sold'
     },
 
     // Lotions
@@ -263,7 +263,7 @@ const products = [
       description: '100ml Lotion',
       price: '520',
       pictureUrl: [VitaminCDailyGlowLotion],
-      customClass: 'beauty'
+      customClass: 'beauty Sold'
     },
 
     {
@@ -280,8 +280,8 @@ const products = [
     {
       id: '12',
       name: 'Coconut Oil',
-      description: '100ml',
-      price: '320',
+      description: '185ml',
+      price: '500',
       pictureUrl: [CoconutOil],
       customClass: 'beauty'
     },
@@ -400,7 +400,7 @@ const products = [
     items: [
       { id: '1', name: 'Sandisk OTG Drive M3.0 256GB', description: 'Compatible with OTG-enabled Android devices.', price: '6800', pictureUrl: [Sandisk6800], customClass: '' },
       { id: '2', name: 'Sandisk Otg Dual Drive Android', description: `64GB Flash || Brand Warranty`, price: '2400', pictureUrl: [Sandisk2400], customClass: '' },
-      { id: '3', name: 'Sandisk iXpand Flash Drive', description: `256GB || Brand Warranty`, price: '18000', pictureUrl: [SandiskiXpand], customClass: '' },
+      { id: '3', name: 'Sandisk iXpand Flash Drive', description: `256GB || Brand Warranty`, price: '18000', pictureUrl: [SandiskiXpand], customClass: 'Sold' },
       { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '128GB Flash', price: '3100', pictureUrl: [Sandisk3100], customClass: 'noPrice' },
       // { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '256GB Flash', price: '6750', pictureUrl: [Sandisk6750], customClass: 'noPrice' },
       { id: '5', name: 'SanDisk - Ultra Fit 3.1', description: '32GB Flash', price: '1500', pictureUrl: [Sandisk1500], customClass: 'noPrice' },
@@ -414,7 +414,7 @@ const products = [
     id: 'MicAndHeadphones',
     items: [
       { id: '1', name: 'BOYA mic', description: 'Original Boya Mic with 36 months warranty. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '2800', pictureUrl: [Boya2800], customClass: 'description' },
-      { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '920', pictureUrl: [enrg], customClass: '' },
+      { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '920', pictureUrl: [enrg], customClass: 'Sold' },
       { id: '3', name: 'Gionee Handsfree', description: 'Normal Quality', price: '300', pictureUrl: [NormalGionee], customClass: '' },
       { id: '4', name: 'Gionee Handsfree', description: 'High Quality', price: '420', pictureUrl: [Gionee450], customClass: '' },
       { id: '5', name: 'Type C Gionee ', description: 'High Quality', price: '500', pictureUrl: [CGionee], customClass: '' },
@@ -435,7 +435,7 @@ What’s in the Box
 • Multiple Eartip Sizes
 • Charging Case
 • Cleaning Pen
-• Neck Band Carabiner Hook`, price: '5999', pictureUrl: [BEME], customClass: 'description '
+• Neck Band Carabiner Hook`, price: '5999', pictureUrl: [BEME], customClass: 'description Sold'
       },
       {
         id: '11', name: 'Zero Aura ENC Earbuds ', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. Features of Aura:
@@ -619,49 +619,49 @@ Excellent processing power,
     category: 'Watches',
     id: 'Watches',
     items: [
-      {
-        id: '1', name: 'Yolo Epic Bluetooth Calling Smart Watch', description: `1.91" Bright HD display, Bluetooth calling, music playback, built-in speaker and microphone, 120+ professional sports modes, heart rate, blood pressure & blood oxygen monitoring, messages and app notifications synchronization, AI voice assistant, sleep monitoring, weather updates, smart battery life, IP67 water resistant. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '8500', pictureUrl: [Yolo8500],
-        customClass: 'description',
-      },
+//       {
+//         id: '1', name: 'Yolo Epic Bluetooth Calling Smart Watch', description: `1.91" Bright HD display, Bluetooth calling, music playback, built-in speaker and microphone, 120+ professional sports modes, heart rate, blood pressure & blood oxygen monitoring, messages and app notifications synchronization, AI voice assistant, sleep monitoring, weather updates, smart battery life, IP67 water resistant. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '8500', pictureUrl: [Yolo8500],
+//         customClass: 'description',
+//       },
 
 
-      {
-        id: '2', name: 'Yolo Fortuner Pro Bluetooth Calling Smart Watch - Mystery Black', description: 'Ultra-bright 1.32" HD display, Bluetooth calling, music playback, built-in HD speaker and microphone, heart rate sensor, blood pressure & blood oxygen tracking, 120+ professional sports modes, real-time notifications, weather forecast, AI voice assistant, IP67 water & dustproof, long-lasting battery life. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '12000', pictureUrl: [Yolo12000],
+//       {
+//         id: '2', name: 'Yolo Fortuner Pro Bluetooth Calling Smart Watch - Mystery Black', description: 'Ultra-bright 1.32" HD display, Bluetooth calling, music playback, built-in HD speaker and microphone, heart rate sensor, blood pressure & blood oxygen tracking, 120+ professional sports modes, real-time notifications, weather forecast, AI voice assistant, IP67 water & dustproof, long-lasting battery life. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '12000', pictureUrl: [Yolo12000],
 
-        customClass: "description",
-      },
-      {
-        id: '3', name: 'Yolo Thunder Bluetooth Calling Smart Watch - Admiral Blue', description: 'Rounded 1.32", high-resolution display, Bluetooth Calling, answering and dialing calls and listening to music on the go, 28 mainstream sports modes, heart rate tracking, blood pressure & blood oxygen monitoring, stay connected with real-time smart notifications, live watch faces for a personal touch of style, AI voice assistant, sleep monitoring, weather information, smart battery life, IP67 water resistant. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '10000', pictureUrl: [Yolo10000],
-        customClass: "description",
+//         customClass: "description",
+//       },
+//       {
+//         id: '3', name: 'Yolo Thunder Bluetooth Calling Smart Watch - Admiral Blue', description: 'Rounded 1.32", high-resolution display, Bluetooth Calling, answering and dialing calls and listening to music on the go, 28 mainstream sports modes, heart rate tracking, blood pressure & blood oxygen monitoring, stay connected with real-time smart notifications, live watch faces for a personal touch of style, AI voice assistant, sleep monitoring, weather information, smart battery life, IP67 water resistant. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '10000', pictureUrl: [Yolo10000],
+//         customClass: "description",
 
-      },
+//       },
 
 
-      {
-        id: '4', name: 'Yolo Fortuner Bluetooth Calling Smart Watch - Charcoal Black', description: 'Built-in Speaker and Microphone, 1.3" HD Display, Live Watch Faces, Multiple Sports Modes, Heart Rate Sensor, SpO2, IP67 Water Resistant, Smart Notifications and Much More.  NOTE: This Item has brand warranty, not to be claimed through seller.', price: '10000', pictureUrl: [Yolo10000Charcoal],
-        customClass: "description",
-      },
-      {
-        id: '5', name: 'Itel Smart Watch - ISW 31 With Bt Calling', description: 'BT calling, Clear voice, 1.72" HD color display, Blood Oxygen Monitor SpO2, Heart Rate Monitor, Narrow Metal Bezel Design, Multiple Sport Modes (7+ Sport Modes), Smart Notifications, Music Playback & Control, Camera Control, IP67 Water Resistance, 1 Year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.', price: '10000', pictureUrl: [Itel10000],
-        customClass: 'description ',
+//       {
+//         id: '4', name: 'Yolo Fortuner Bluetooth Calling Smart Watch - Charcoal Black', description: 'Built-in Speaker and Microphone, 1.3" HD Display, Live Watch Faces, Multiple Sports Modes, Heart Rate Sensor, SpO2, IP67 Water Resistant, Smart Notifications and Much More.  NOTE: This Item has brand warranty, not to be claimed through seller.', price: '10000', pictureUrl: [Yolo10000Charcoal],
+//         customClass: "description",
+//       },
+//       {
+//         id: '5', name: 'Itel Smart Watch - ISW 31 With Bt Calling', description: 'BT calling, Clear voice, 1.72" HD color display, Blood Oxygen Monitor SpO2, Heart Rate Monitor, Narrow Metal Bezel Design, Multiple Sport Modes (7+ Sport Modes), Smart Notifications, Music Playback & Control, Camera Control, IP67 Water Resistance, 1 Year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.', price: '10000', pictureUrl: [Itel10000],
+//         customClass: 'description ',
 
-      },
-      {
-        id: '6', name: 'Boost Astro Smart Watch', description: 'Enjoy the amazing features including heart rate, Bluetooth 5.3, calls, sleep tracker, flashlight, water resistance, find phone, voice assistant and distance tracker. Moreover, have a comfortable wear with multiple dials and 2 straps. Screen size: 1.43 inches. Brand warranty 1 year. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '8500', pictureUrl: [Astro],
-        customClass: 'description noPrice',
+//       },
+//       {
+//         id: '6', name: 'Boost Astro Smart Watch', description: 'Enjoy the amazing features including heart rate, Bluetooth 5.3, calls, sleep tracker, flashlight, water resistance, find phone, voice assistant and distance tracker. Moreover, have a comfortable wear with multiple dials and 2 straps. Screen size: 1.43 inches. Brand warranty 1 year. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '8500', pictureUrl: [Astro],
+//         customClass: 'description noPrice',
 
-      },
-      {
-        id: '7', name: 'Boost Cosmic Smart Watch', description: 'Enjoy automatic heart rate monitor, Bluetooth calling, call notifications, sleep tracker, flashlight, password unlocking, water resistance, find phone, voice assistant, stress test, steps counter and 2.01 inch Amoled. Moreover, enjoy comfortable wear with multiple dials and 2 straps. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '10000', pictureUrl: [boostCosmic],
-        customClass: 'description noPrice '
-      },
-      {
-        id: '8', name: 'IMILAB SMART BUSSINESS WATCH 12', description: `330 mAh battery 
-UpTo 30 days backup
-IP68. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.`, price: '7500', pictureUrl: [ImilabW12],
-        customClass: 'description noPrice '
+//       },
+//       {
+//         id: '7', name: 'Boost Cosmic Smart Watch', description: 'Enjoy automatic heart rate monitor, Bluetooth calling, call notifications, sleep tracker, flashlight, password unlocking, water resistance, find phone, voice assistant, stress test, steps counter and 2.01 inch Amoled. Moreover, enjoy comfortable wear with multiple dials and 2 straps. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.', price: '10000', pictureUrl: [boostCosmic],
+//         customClass: 'description noPrice '
+//       },
+//       {
+//         id: '8', name: 'IMILAB SMART BUSSINESS WATCH 12', description: `330 mAh battery 
+// UpTo 30 days backup
+// IP68. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller.`, price: '7500', pictureUrl: [ImilabW12],
+//         customClass: 'description noPrice '
 
-      },
+//       },
     ],
   },
   {
@@ -703,7 +703,7 @@ IP68. 1 year brand warranty. NOTE: This item has brand warranty and cannot be cl
  Output : 2.1A
  Battery Type : Polymer Lithium
  Warranty : 1 Year Warranty. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '1500', pictureUrl: [Faster5k],
-        customClass: 'description '
+        customClass: 'description Sold'
       },
       {
         id: '4', name: 'Space SPEED 20000 mAH', description: `Space SPEED 20000 mAH 3.0 Power Bank SP-075. Qualcomm Quick Charge 3.0, PD Technology, Luxurious, Metallic Body, Modern LCD Display`, price: '8800', pictureUrl: [SpaceSP075],
@@ -717,15 +717,15 @@ Capacity : 10000 mAh,
 Output : 2.1A,
 Battery Type:Polymer Lithium,
 Warranty: 1 year Warranty. NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4690', pictureUrl: [FasterW10],
-        customClass: 'description '
+        customClass: 'description Sold'
       },
       {
-        id: '6', name: 'Dany Titan T-100', description: `22.5W 20,000 mAh 
+        id: '6', name: 'Dany Titan T-90', description: `22.5W 10,000 mAh 
 2 USB Outputs (Quick Charge)
 Dual Input (Type-C +Micro)
 
 Size: 68x143.1x29 (mm)
-Net Weight: 418.1 grams`, price: '6000', pictureUrl: [DanyTitan],
+Net Weight: 418.1 grams`, price: '3000', pictureUrl: [DanyTitan],
         customClass: 'description '
       },
       {
