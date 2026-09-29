@@ -47,6 +47,7 @@ import SandiskiXpand from './Pictures/SandiskiXpand.jpg';
 
 //MIC 
 import enrg from './Pictures/Lavalier1000.jpg';
+import XiaomiTypeCHandsfree from './Pictures/XiaomiTypeCHandsfree.jpg';
 import Gionee450 from './Pictures/Gionee450.jpg';
 import CGionee from './Pictures/CGionee.jpg';
 import NormalGionee from './Pictures/NormalGionee.jpg';
@@ -102,6 +103,9 @@ import ZBook from './Pictures/ZBook.jpg';
 // Face&HairCare
 import Charcoal from './Pictures/SaeedGhani/Charcoal.jpg';
 import Charcoal50ml from './Pictures/SaeedGhani/Charcoal50ml.jpg';
+import RivajBambooCharcoal from './Pictures/SaeedGhani/RivajBambooCharcoal.jpg';
+import ArganOilShampoo from './Pictures/SaeedGhani/ArganOilShampoo.png';
+import MughziatShampoo from './Pictures/SaeedGhani/MughziatShampoo.png';
 import CoconutOil from './Pictures/SaeedGhani/CoconutOil.png';
 import AloeVera from './Pictures/SaeedGhani/AloeVera.jpg';
 import BeardOil60ml from './Pictures/SaeedGhani/BeardOil60ml.jpg';
@@ -190,9 +194,38 @@ const products = [
       pictureUrl: [Charcoal],
       customClass: 'beauty'
     },
-
+    
     {
       id: '3',
+      name: 'Bamboo Charcoal Face Wash',
+      description: '100ml Face Wash',
+      price: '325',
+      pictureUrl: [RivajBambooCharcoal],
+      customClass: 'beauty'
+    },
+    
+    {
+      id: '4',
+      name: 'Mughziat Shampoo',
+      description: '185 ml',
+      price: '450',
+      pictureUrl: [MughziatShampoo],
+      customClass: 'beauty'
+    },
+    {
+      id: '5',
+      name: 'Argan Oil Shampoo',
+      description: '185 ml',
+      price: '450',
+      pictureUrl: [ArganOilShampoo],
+      customClass: 'beauty'
+    },
+
+
+
+
+    {
+      id: '6',
       name: 'Vitamin C Face Wash',
       description: '50ml Face Wash',
       price: '300',
@@ -200,7 +233,7 @@ const products = [
       customClass: 'beauty'
     },
     {
-      id: '4',
+      id: '7',
       name: 'Vitamin C Face Wash',
       description: '150ml Face Wash',
       price: '595',
@@ -209,7 +242,7 @@ const products = [
     },
 
     {
-      id: '5',
+      id: '8',
       name: 'Hyaluronic Acid Face Wash',
       description: '100ml Face Wash',
       price: '600',
@@ -217,7 +250,7 @@ const products = [
       customClass: 'beauty'
     },
     {
-      id: '6',
+      id: '9',
       name: 'Sandal Face Wash',
       description: '100ml Face Wash',
       price: '350',
@@ -228,7 +261,7 @@ const products = [
     // Treatment
 
     {
-      id: '7',
+      id: '10',
       name: 'Vitamin C Super Serum',
       description: 'Brightening & Anti-Aging (30ml)',
       price: '1050',
@@ -239,7 +272,7 @@ const products = [
     // Moisturizer / Gel
 
     {
-      id: '8',
+      id: '11',
       name: 'Aloe Vera Gel',
       description: '100ml Moisturizing Gel',
       price: '350',
@@ -250,7 +283,7 @@ const products = [
     // Lotions
 
     {
-      id: '9',
+      id: '12',
       name: 'Shea Butter Lotion',
       description: 'Nourishing Lotion 100ml',
       price: '350',
@@ -258,7 +291,7 @@ const products = [
       customClass: 'beauty'
     },
     {
-      id: '10',
+      id: '13',
       name: 'Vitamin C Daily Glow Lotion',
       description: '100ml Lotion',
       price: '520',
@@ -267,7 +300,7 @@ const products = [
     },
 
     {
-      id: '11',
+      id: '14',
       name: 'Sunscreen Lotion SPF 15',
       description: '100ml',
       price: '490',
@@ -278,7 +311,7 @@ const products = [
     // Oils
 
     {
-      id: '12',
+      id: '15',
       name: 'Coconut Oil',
       description: '185ml',
       price: '500',
@@ -286,7 +319,7 @@ const products = [
       customClass: 'beauty'
     },
     {
-      id: '13',
+      id: '16',
       name: 'Beard Oil',
       description: '60ml',
       price: '600',
@@ -297,7 +330,7 @@ const products = [
     // Finishing
 
     {
-      id: '14',
+      id: '17',
       name: 'Rose Water Spray',
       description: '120ml',
       price: '220',
@@ -312,14 +345,14 @@ const products = [
     items: [
       { id: '1', name: 'RGB RingLight', description: '20 Light Modes', price: '1200', pictureUrl: [RingLight] },
       
-      { id: '2', name: 'Card Reader', description: 'SD Card Reader', price: '50', pictureUrl: [CardReader] },
-      { id: '3', name: 'Type C OTG', description: 'Good Quality OTG', price: '100', pictureUrl: [COtg] },
-      { id: '4', name: 'Wifi Dongle', description: 'Alfa Wifi Dongle', price: '500', pictureUrl: [WifiAlfaDongle] },
+      { id: '2', name: 'Card Reader', description: 'SD Card Reader', price: '50', pictureUrl: [CardReader] , customClass: 'beauty'},
+      { id: '3', name: 'Type C OTG', description: 'Good Quality OTG', price: '100', pictureUrl: [COtg] , customClass: 'beauty'},
+      { id: '4', name: 'Wifi Dongle', description: 'Alfa Wifi Dongle', price: '500', pictureUrl: [WifiAlfaDongle], customClass: 'beauty' },
      
 
 
-      { id: '5', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub] },
-      { id: '6', name: 'Type C hub', description: 'Good Quality 4 Ports USB Hub', price: '650', pictureUrl: [CHub] },
+      { id: '5', name: '3.0 USB hub', description: 'Good Quality 4 Ports USB Hub with led indicator', price: '650', pictureUrl: [USBHub], customClass: 'beauty' },
+      { id: '6', name: 'Type C hub', description: 'Good Quality 4 Ports USB Hub', price: '650', pictureUrl: [CHub], customClass: 'beauty' },
       { id: '7', name: '2 in 1 3.5mm', description: 'connector for PCs', price: '280', pictureUrl: [Connetorpc] },
 
 
@@ -329,77 +362,119 @@ const products = [
     category: 'Chargers & Cables',
     id: 'Chargers',
     items: [
-      { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [microbasic] },
-      { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable] },
-      { id: '3', name: 'TypeC Charging Cable', description: 'High Quality Cable', price: '500', pictureUrl: [OriginalTypeC], customClass: '' },
+      { id: '1', name: 'MicroUSB Charging Cable', description: 'Normal Quality', price: '250', pictureUrl: [microbasic], customClass: 'beauty' },
+      { id: '2', name: 'MicroUSB Charging Cable', description: 'Original Cable', price: '350', pictureUrl: [OriginalMicroCable], customClass: 'beauty' },
+      { id: '3', name: 'TypeC Charging Cable', description: 'High Quality Cable', price: '500', pictureUrl: [OriginalTypeC], customClass: 'beauty' },
       { id: '4', name: 'TypeC to C Cable', description: 'Original Baseus Cable', price: '2000', pictureUrl: [CtoC], customClass: '' },
-      { id: '5', name: 'TypeC to C Cable', description: 'YSDBBC Cable', price: '800', pictureUrl: [CtoCL], customClass: '' },
-      { id: '6', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 70W', price: '250', pictureUrl: [typeCbasic] },
+      { id: '5', name: 'TypeC to C Cable', description: 'YSDBBC Cable', price: '800', pictureUrl: [CtoCL], customClass: 'beauty' },
+      { id: '6', name: 'TypeC Charging Cable', description: 'Good Quality Cable || upTo 33  W', price: '250', pictureUrl: [typeCbasic] },
       { id: '7', name: 'TypeC Charging Cable', description: 'Basic Quality Cable || upTo 70W', price: '150', pictureUrl: [CNormal] },
-      { id: '8', name: 'Anker Lightning Cable', description: 'MFi Certified', price: '2000', pictureUrl: [MFiCable] },
-      { id: '9', name: 'ANSTY Lightning Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable] },
+      { id: '8', name: 'Anker Lightning Cable', description: 'MFi Certified', price: '2000', pictureUrl: [MFiCable] , customClass: 'beauty' },
+      { id: '9', name: 'ANSTY Lightning Cable', description: 'Good Quality Cable', price: '450', pictureUrl: [ANSTYlighteningCable], customClass: 'beauty' },
       { id: '10', name: 'Lightning Cable', description: 'Basic Quality', price: '280', pictureUrl: [Lighteningbasic] },
-      { id: '11', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500] },
-       { id: '12', name: 'Power Cable', description: 'Good Quality 1m Length', price: '220', pictureUrl: [PowerCable] },
-      { id: '13', name: 'VGA Cable', description: 'Good Quality 1m Length', price: '250', pictureUrl: [VGACable] },
-      { id: '14', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '350', pictureUrl: [HDMIcableOrg] },
+      { id: '11', name: 'Lightning to 3.5mm Hi-Fi Cable', description: 'Braided Cable 2m Length', price: '1500', pictureUrl: [Lightening1500],
+      customClass: 'beauty' },
+       { id: '12', name: 'Power Cable', description: 'Good Quality 1m Length', price: '220', pictureUrl: [PowerCable], customClass: 'beauty' },
+      { id: '13', name: 'VGA Cable', description: 'Good Quality 1m Length', price: '250', pictureUrl: [VGACable], customClass: 'beauty' },
+      { id: '14', name: 'HDMI Cable', description: 'Good Quality 1m Length', price: '350', pictureUrl: [HDMIcableOrg], customClass: 'beauty' },
     
 
       {
-        id: '15', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Acable],
+        id: '15', name: 'Aux Cable', description: '1m Length', price: '200', pictureUrl: [Acable], customClass: 'beauty'
         // customClass: 'description',
       },
 
     ],
   },
   {
-    category: 'Protectors',
-    id: 'Protectors',
-    items: [
-  { id: '1', name: 'POCO F3 GT', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '2', name: 'POCO F4 GT', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '3', name: 'POCO F5', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '4', name: 'POCO X5 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '5', name: 'Xiaomi Redmi Note 12 Pro 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '6', name: 'Xiaomi Redmi Note 12 Pro Plus', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '7', name: 'Xiaomi Redmi Note 12 Explorer', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '8', name: 'Xiaomi Redmi Note 13', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '9', name: 'Xiaomi Redmi Note 13R Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '10', name: 'Infinix Note 10 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '11', name: 'Infinix Note 30 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '12', name: 'Infinix Note 30 VIP', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '13', name: 'Infinix Note 40', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '14', name: 'Infinix GT 10 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '15', name: 'Infinix GT 20 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '16', name: 'Infinix Hot 9', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '17', name: 'Tecno Camon 20', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '18', name: 'Tecno Camon 20 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '19', name: 'Tecno Camon 30', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '20', name: 'Tecno Camon 30 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '21', name: 'Tecno Camon 30 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '22', name: 'Tecno POVA 6', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '23', name: 'Tecno POVA 6 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '24', name: 'OPPO Reno 8 Pro 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '25', name: 'OPPO Reno 8 Pro Plus 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '26', name: 'OPPO Reno 11S', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '27', name: 'OPPO F25', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '28', name: 'OPPO F25 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '29', name: 'Motorola G13', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '30', name: 'Motorola G23', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '31', name: 'Motorola G34', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '32', name: 'Motorola G45', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '33', name: 'Motorola G53', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '34', name: 'Realme Note 10 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
-{ id: '35', name: 'Realme Note 13', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+  category: 'Protectors',
+  id: 'Protectors',
+  items: [
+    { id: '1', name: 'POCO F3 GT', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '2', name: 'POCO F4 GT', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '3', name: 'POCO F5', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '4', name: 'POCO X5 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '5', name: 'Xiaomi Redmi Note 12 Pro 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '6', name: 'Xiaomi Redmi Note 12 Pro Plus', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '7', name: 'Xiaomi Redmi Note 12 Explorer', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '8', name: 'Xiaomi Redmi Note 13', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '9', name: 'Xiaomi Redmi Note 13R Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '10', name: 'Infinix Note 10 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '11', name: 'Infinix Note 30 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '12', name: 'Infinix Note 30 VIP', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '13', name: 'Infinix Note 40', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '14', name: 'Infinix GT 10 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '15', name: 'Infinix GT 20 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '16', name: 'Infinix Hot 9', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '17', name: 'Tecno Camon 20', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '18', name: 'Tecno Camon 20 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '19', name: 'Tecno Camon 30', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '20', name: 'Tecno Camon 30 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '21', name: 'Tecno Camon 30 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '22', name: 'Tecno POVA 6', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '23', name: 'Tecno POVA 6 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '24', name: 'OPPO Reno 8 Pro 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '25', name: 'OPPO Reno 8 Pro Plus 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '26', name: 'OPPO Reno 11S', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '27', name: 'OPPO F25', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '28', name: 'OPPO F25 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '29', name: 'Motorola G13', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '30', name: 'Motorola G23', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '31', name: 'Motorola G34', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '32', name: 'Motorola G45', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '33', name: 'Motorola G53', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '34', name: 'Realme Note 10 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+    { id: '35', name: 'Realme Note 13', description: 'Tempered Glass', price: '250', pictureUrl: [Protector], customClass: 'beauty' },
+  ]
+},
+//   {
+//     category: 'Protectors',
+//     id: 'Protectors',
+//     items: [
+//   { id: '1', name: 'POCO F3 GT', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '2', name: 'POCO F4 GT', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '3', name: 'POCO F5', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '4', name: 'POCO X5 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '5', name: 'Xiaomi Redmi Note 12 Pro 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '6', name: 'Xiaomi Redmi Note 12 Pro Plus', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '7', name: 'Xiaomi Redmi Note 12 Explorer', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '8', name: 'Xiaomi Redmi Note 13', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '9', name: 'Xiaomi Redmi Note 13R Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '10', name: 'Infinix Note 10 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '11', name: 'Infinix Note 30 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '12', name: 'Infinix Note 30 VIP', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '13', name: 'Infinix Note 40', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '14', name: 'Infinix GT 10 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '15', name: 'Infinix GT 20 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '16', name: 'Infinix Hot 9', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '17', name: 'Tecno Camon 20', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '18', name: 'Tecno Camon 20 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '19', name: 'Tecno Camon 30', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '20', name: 'Tecno Camon 30 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '21', name: 'Tecno Camon 30 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '22', name: 'Tecno POVA 6', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '23', name: 'Tecno POVA 6 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '24', name: 'OPPO Reno 8 Pro 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '25', name: 'OPPO Reno 8 Pro Plus 5G', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '26', name: 'OPPO Reno 11S', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '27', name: 'OPPO F25', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '28', name: 'OPPO F25 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '29', name: 'Motorola G13', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '30', name: 'Motorola G23', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '31', name: 'Motorola G34', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '32', name: 'Motorola G45', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '33', name: 'Motorola G53', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '34', name: 'Realme Note 10 Pro', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
+// { id: '35', name: 'Realme Note 13', description: 'Tempered Glass', price: '250', pictureUrl: [Protector] },
 
-    ]
-    },
+//     ]
+//     },
   {
     category: 'USBs',
     id: 'USBs',
     items: [
       { id: '1', name: 'Sandisk OTG Drive M3.0 256GB', description: 'Compatible with OTG-enabled Android devices.', price: '6800', pictureUrl: [Sandisk6800], customClass: '' },
-      { id: '2', name: 'Sandisk Otg Dual Drive Android', description: `64GB Flash || Brand Warranty`, price: '2400', pictureUrl: [Sandisk2400], customClass: '' },
+      { id: '2', name: 'Sandisk Otg Dual Drive Android', description: `64GB Flash || Brand Warranty`, price: '2400', pictureUrl: [Sandisk2400], customClass: 'beauty' },
       { id: '3', name: 'Sandisk iXpand Flash Drive', description: `256GB || Brand Warranty`, price: '18000', pictureUrl: [SandiskiXpand], customClass: 'Sold' },
       { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '128GB Flash', price: '3100', pictureUrl: [Sandisk3100], customClass: 'noPrice' },
       // { id: '4', name: 'SanDisk - Ultra Fit 3.1', description: '256GB Flash', price: '6750', pictureUrl: [Sandisk6750], customClass: 'noPrice' },
@@ -415,15 +490,16 @@ const products = [
     items: [
       { id: '1', name: 'BOYA mic', description: 'Original Boya Mic with 36 months warranty. NOTE: This Item has brand warranty, not to be claimed through seller.', price: '2800', pictureUrl: [Boya2800], customClass: 'description' },
       { id: '2', name: 'Lavalier XO-MKF 01 Wired Mic', description: '5m Wire', price: '920', pictureUrl: [enrg], customClass: 'Sold' },
-      { id: '3', name: 'Gionee Handsfree', description: 'Normal Quality', price: '300', pictureUrl: [NormalGionee], customClass: '' },
-      { id: '4', name: 'Gionee Handsfree', description: 'High Quality', price: '420', pictureUrl: [Gionee450], customClass: '' },
-      { id: '5', name: 'Type C Gionee ', description: 'High Quality', price: '500', pictureUrl: [CGionee], customClass: '' },
-      { id: '6', name: 'Audionic Jionee Type C', description: 'Original', price: '750', pictureUrl: [Cjionee], customClass: '' },
-      { id: '7', name: 'Audionic Jionee', description: 'Original', price: '500', pictureUrl: [Jionee], customClass: '' },
-      { id: '8', name: 'Audionic Mark 1', description: 'Original', price: '500', pictureUrl: [Mark1], customClass: '' },
-      { id: '9', name: 'Lenovo HE05X Neckband', description: 'Available on Demand ', price: '1000', pictureUrl: [HE05X], customClass: 'sold' },
+      { id: '3', name: 'Xiaomi Type-C Earphones', description: 'Certified by Xiaomi', price: '1700', pictureUrl: [XiaomiTypeCHandsfree], customClass: 'beauty' },
+      { id: '4', name: 'Gionee Handsfree', description: 'Normal Quality', price: '300', pictureUrl: [NormalGionee], customClass: '' },
+      { id: '5', name: 'Gionee Handsfree', description: 'High Quality', price: '420', pictureUrl: [Gionee450], customClass: '' },
+      { id: '6', name: 'Type C Gionee ', description: 'High Quality', price: '500', pictureUrl: [CGionee], customClass: '' },
+      { id: '7', name: 'Audionic Jionee Type C', description: 'Original', price: '750', pictureUrl: [Cjionee], customClass: '' },
+      { id: '8', name: 'Audionic Jionee', description: 'Original', price: '500', pictureUrl: [Jionee], customClass: '' },
+      { id: '9', name: 'Audionic Mark 1', description: 'Original', price: '500', pictureUrl: [Mark1], customClass: '' },
+      { id: '10', name: 'Lenovo HE05X Neckband', description: 'Available on Demand ', price: '1000', pictureUrl: [HE05X], customClass: 'sold' },
       {
-        id: '10', name: 'BEME Elite Buds Pro 3 Voice Changing Earbuds ', description: `
+        id: '11', name: 'BEME Elite Buds Pro 3 Voice Changing Earbuds ', description: `
 Active Noice Cancellation 
 ENC for Best Calling Experience 
 Upto 12m range 
@@ -438,15 +514,15 @@ What’s in the Box
 • Neck Band Carabiner Hook`, price: '5999', pictureUrl: [BEME], customClass: 'description Sold'
       },
       {
-        id: '11', name: 'Zero Aura ENC Earbuds ', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. Features of Aura:
+        id: '12', name: 'Zero Aura ENC Earbuds ', description: ` 1 Year Brand Warranty. ENC, Noise Reduction technology. Features of Aura:
         40 Hour Battery Life
         Aerofit Design
         HyperBass Technology
         IPX5 Water Resistance
         Instant Pairing || NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '3500', pictureUrl: [ZeroAura], customClass: 'description soldClass'
       },
-      { id: '12', name: 'Onikuma Gaming Headphones', description: 'Gaming Headphones with 50mm driver, comfortable design, ', price: '2750', pictureUrl: [GamingHeadphone], customClass: "" },
-      { id: '13', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4000', pictureUrl: [SpaceHeadphones], customClass: 'description' },
+      { id: '13', name: 'Onikuma Gaming Headphones', description: 'Gaming Headphones with 50mm driver, comfortable design, ', price: '2750', pictureUrl: [GamingHeadphone], customClass: "" },
+      { id: '14', name: 'Space wireless Headphones', description: `Driver Unit:40mm, Impedance:320 Ohms, Frequency Response:20-20KHz, Sensitivity:110dB±3dB, Electric Current:3.6V-5V DC, Voltage:≤70 mA, Rechargeable Lithium Battery:250 mAh,Operation Range:10 Meters, Charging Time:2-3 Hours, Standby Time:100 Hours, Memory Card Support: Upto 32GB, L2CAP, A2DP, AVCTP,Supports: AVDTP, AVRCP`, price: '4000', pictureUrl: [SpaceHeadphones], customClass: 'description' },
 
       // { id: '13', name: 'Boost Groove wireless headset', description: 'Experience seamless connectivity with Bluetooth 5.0+EDR on Boost Groove headset for enhanced performance. 5 hours play time with micro SD card supported. Enjoy immersive sound with 40mm speakers and audio jack. 1 year brand warranty. NOTE: This item has brand warranty and cannot be claimed through seller. ', price: '3000', pictureUrl: [BoostGroovewirelessheadset], customClass: "description noPrice" },
 
@@ -694,7 +770,7 @@ Excellent processing power,
  Net Weight : 180g
  Product Dimension : 875726 mm
  Warranty : 1 year Warranty.  NOTE: This Item has brand warranty, not to be claimed through seller.`, price: '4000', pictureUrl: [Faster20W],
-        customClass: 'description '
+        customClass: 'description beauty'
       },
 
       {
@@ -726,7 +802,7 @@ Dual Input (Type-C +Micro)
 
 Size: 68x143.1x29 (mm)
 Net Weight: 418.1 grams`, price: '3000', pictureUrl: [DanyTitan],
-        customClass: 'description '
+        customClass: 'description beauty'
       },
       {
         id: '7', name: 'Audionic Spark Pro S200', description: `Audionic Spark Pro S200: 10000mAh power bank with 22.5W PD & QC 3.0 fast charging.`, price: '4600', pictureUrl: [Audionicspark],
@@ -1017,8 +1093,8 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
       );
 
       // ===== CHANGE TIME HERE =====
-      const start = new Date('2026-05-02T00:00:00'); // 5 PM PKT
-      const end = new Date('2026-05-03T23:59:59');
+      const start = new Date('2026-09-22T12:32:30'); // 5 PM PKT
+      const end = new Date('2026-09-29T23:59:59');
 
       if (now >= start && now <= end) {
         setIsBeautyDiscountActive(true);
