@@ -1093,8 +1093,8 @@ const ProductTable = ({ selectedCategory, applyDiscountToAll, searchTerm }) => {
       );
 
       // ===== CHANGE TIME HERE =====
-      const start = new Date('2026-09-22T12:32:30'); // 5 PM PKT
-      const end = new Date('2026-09-29T23:59:59');
+      const start = new Date('2026-10-10T00:00:00'); // 5 PM PKT
+      const end = new Date('2026-10-14T23:59:59');
 
       if (now >= start && now <= end) {
         setIsBeautyDiscountActive(true);
